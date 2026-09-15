@@ -1,5 +1,6 @@
 param(
-  [int]$Throttle = 6,
+  [int]$MinimumDelaySeconds = 2,
+  [int]$MaximumDelaySeconds = 6,
   [switch]$SkipDownload,
   [switch]$RefreshIndex
 )
@@ -57,21 +58,28 @@ $jobs = foreach ($capture in $latest) {
 }
 
 if (-not $SkipDownload) {
-  $jobs | ForEach-Object -Parallel {
-    $job = $_
-    if (Test-Path -LiteralPath $job.destination) { return }
+  if ($MinimumDelaySeconds -lt 1 -or $MaximumDelaySeconds -lt $MinimumDelaySeconds) {
+    throw 'The request delay must be at least one second and have a valid range.'
+  }
+  $random = [System.Random]::new()
+  $pending = @($jobs | Where-Object { -not (Test-Path -LiteralPath $_.destination) })
+  for ($index = 0; $index -lt $pending.Count; $index++) {
+    $job = $pending[$index]
+    $delayMilliseconds = $random.Next($MinimumDelaySeconds * 1000, ($MaximumDelaySeconds * 1000) + 1)
+    Write-Host "[$($index + 1)/$($pending.Count)] Waiting $([math]::Round($delayMilliseconds / 1000, 1)) seconds before $($job.original)"
+    Start-Sleep -Milliseconds $delayMilliseconds
     New-Item -ItemType Directory -Force -Path (Split-Path -Parent $job.destination) | Out-Null
     $archiveUrl = "https://web.archive.org/web/$($job.timestamp)id_/$($job.original)"
     for ($attempt = 1; $attempt -le 3; $attempt++) {
       try {
-        Invoke-WebRequest -UseBasicParsing -Uri $archiveUrl -OutFile $job.destination -TimeoutSec 90
-        return
+        Invoke-WebRequest -UseBasicParsing -Uri $archiveUrl -OutFile $job.destination -TimeoutSec 90 -Headers @{ 'User-Agent' = 'ricegroupinc-wayback-restoration/1.0 (+https://github.com/cgura/ricegroupinc-wayback)' }
+        break
       } catch {
         if ($attempt -eq 3) { Write-Warning "Failed: $($job.original) :: $($_.Exception.Message)" }
-        Start-Sleep -Seconds (2 * $attempt)
+        Start-Sleep -Seconds (5 * $attempt)
       }
     }
-  } -ThrottleLimit $Throttle
+  }
 }
 
 # Remove archive URL wrappers and keep same-site links local. This only touches HTML.
@@ -96,7 +104,8 @@ The `listingproperties` path is intentionally excluded from the static restorati
 ## Refreshing the archive
 
 Run `pwsh ./scripts/restore-wayback.ps1`. The restore is resumable; already-downloaded
-files are retained. Captures are replayed directly from the Wayback Machine, and this
+files are retained. Replay requests run one at a time, with a randomized 2–6 second
+delay between requests. Captures are replayed directly from the Wayback Machine, and this
 repository does not claim ownership of their underlying content.
 '@ | Set-Content -Encoding utf8 (Join-Path $projectRoot 'README.md')
 

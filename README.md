@@ -9,5 +9,6 @@ The `listingproperties` path is intentionally excluded from the static restorati
 ## Refreshing the archive
 
 Run `pwsh ./scripts/restore-wayback.ps1`. The restore is resumable; already-downloaded
-files are retained. Captures are replayed directly from the Wayback Machine, and this
+files are retained. Replay requests run one at a time, with a randomized 2–6 second
+delay between requests. Captures are replayed directly from the Wayback Machine, and this
 repository does not claim ownership of their underlying content.
