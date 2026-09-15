@@ -1,0 +1,72 @@
+﻿.MultiDisplayBox_TextDiv {
+    BORDER-LEFT: #dbdfe6 1px solid;
+    BORDER-TOP: #ABADB3 1px solid;
+    BORDER-BOTTOM: #E3E9EF 1px solid;
+    POSITION: relative;
+    width: 300px;
+}
+.MultiDisplayBox_imgLeftBox {
+    Position: Absolute;
+    Z-INDEX: 1;
+    Top: 0px;
+    Left: -1px;
+}
+.MultiDisplayBox_TextBox {
+    Color: #666666;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    BORDER: 0px none;
+    height: 16px;
+}
+.MultiDisplayBox_imgDD {
+    position: absolute;
+    top: -1px; 
+    z-index: 1;
+}
+.MultiDisplayBox_Title {
+    Color: #666666;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+ }
+ 
+ .MultiDisplayBox_ddDiv {
+    padding: 3px;
+    background-color: White;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    overflow-x: hidden;
+    overflow-y: auto; 
+    border: #828790 1px solid;    
+ }
+ .MultiDisplayBox_ItemStyle {
+    Color: #666666;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial;
+    POSITION: relative;
+    TOP: -1px;
+ }
+ .MultiDisplayBox_BaseDiv {
+    
+ }
+ .searchfieldplaceholder {
+	text-align: left;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 10px;
+	float:left;
+	margin-left:25px;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #OuterSearchDiv .col-xs-6, #OuterSearchDiv .col-xs-3, #OuterSearchDiv .col-xs-4, #OuterSearchDiv .col-xs-2 {
+        width:100%;
+        margin:5px 0;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+}

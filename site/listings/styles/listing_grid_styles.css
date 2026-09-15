@@ -1,0 +1,313 @@
+﻿.listings-grid-ctrl-row {
+	border-top:1px solid #eee;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+
+
+.listings-grid-ctrl-img {
+	overflow:hidden;
+	height:132px;
+}
+
+.listings-grid-ctrl-img a {
+	display: block;
+}
+
+.listings-grid-ctrl-img img {
+	width: 100%;
+	height:auto;
+}
+
+.listings-grid-ctrl-address {
+	margin-bottom:0;
+}
+
+.panel.image-ctrl-row 
+{
+    overflow:hidden;
+}
+.image-ctrl-row 
+{
+	width:49%;
+}
+
+.gutter-spacer {
+	width:2%;
+}
+
+@media(min-width:1400px) {
+	.image-ctrl-row {
+		width:24%;
+	}
+
+	.gutter-spacer {
+		width:1.33%;
+	}
+
+	.listings-grid-ctrl-img {
+		height: auto;
+		max-width:220px;
+		max-height:160px;
+	}
+}
+
+@media(max-width:1400px) {
+	.image-ctrl-row {
+		width:32%;
+	}
+
+	.gutter-spacer 
+	{
+	    /* changed from 2% to 1.99% for mozilla firefox. - tm*/
+		width:1.99%;
+	}
+	
+	.listings-grid-ctrl-img {
+		height: auto;
+		max-width:220px;
+		max-height:160px;
+	}
+}
+
+@media(max-width:890px) {
+	.image-ctrl-row {
+		width:49%;
+	}
+
+	.gutter-spacer {
+		width:2%;
+	}
+	.listings-grid-ctrl-img {
+		height: auto;
+	}
+}
+
+@media(max-width:400px) {
+	.image-ctrl-row {
+		width:100%;
+	}
+
+	.gutter-spacer {
+		width:0;
+	}
+}
+
+.image-ctrl-photo {
+	text-align:center;
+	position:relative;
+}
+
+.image-ctrl-photo a {
+	display:block;
+}
+
+.image-ctrl-photo a img {
+	width:100%;
+	height:auto;
+	display:inline-block;
+}
+
+.well {
+	padding:12px;
+}
+
+.to-box {
+	width:20%;
+	padding-top:5px;
+}
+
+.form-control.pull-left {
+	width:40%;
+}
+
+.stamp {
+	width:100%;
+	height:1px;
+	background:#eee;
+}
+
+.to-box {
+	width:20%;
+	padding-top:5px;
+}
+
+.form-control.pull-left {
+	width:40%;
+}
+
+.page-loading 
+{
+    font-size: 2em;
+    text-align: center;
+    color: #777;
+}
+
+.map-title 
+{
+    font-weight: bold;
+}
+.infobox-body 
+{
+    font-size: 10px;
+}
+.infobox-body hr 
+{
+    margin: 4px;
+    padding: 0;
+}
+.infobox-body .col-xs-6 
+{
+    font-weight: normal;
+}
+
+.listing-banner {
+	padding: 0 10px;
+	text-align: right;
+	font-size: 1.4em;
+	text-decoration: none !important;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg); /* IE 9 */
+	-webkit-transform: rotate(7deg); /* Safari and Chrome */
+	right: -3px;
+	top: 0;
+	position: absolute;
+	width: 102%;
+	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+.listing-banner.listing-banner-status-Sold,
+.listing-banner.listing-banner-status-Leased,
+.listing-banner.listing-banner-status-Rented {
+	color: #FF192E;
+	background: #fff;
+	border-top: 1px solid rgba(255,0,0,0.5);
+	border-bottom: 1px solid rgba(255,0,0,0.5);
+	letter-spacing: 2px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.listing-banner.listing-is-featured {
+	text-transform: uppercase;
+	background: #f0ad4e;
+	color: #fff;
+	border-top: 1px solid rgba(255,255,255,0.5);
+
+}
+
+.image-ctrl-row .add-to-favorites {
+	float: right;
+}
+.listing-amount {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.image-ctrl-row .listing-amount {
+	float: left;
+}
+
+.image-ctrl-row hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.listing-address1-address2 {
+	display: block;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.listings-grid-ctrl-img a {
+	position: relative;
+
+}
+
+.mls-number 
+{
+    display: block;
+}
+
+.type-and-description 
+{
+    display: block;
+}
+.listing-bed-bath-sqft {
+	display: block;
+}
+
+.add-to-favorites.btn.btn-link {
+	/* really want this to look more like a link */
+	padding: 0;
+}
+
+/* jquery ui for the autocomplete */
+.ui-corner-all {
+	border-bottom-top-radius: 4px;
+	border-left-right-radius: 4px;
+	border-left-bottom-radius: 4px;
+	border-left-left-radius: 4px;
+}
+
+.ui-widget-content {
+	border: 1px solid #aaa;
+	background: #fff;
+}
+
+
+.ui-menu {
+	list-style: none;
+	padding: 2px;
+	margin: 0;
+	display: block;
+	outline: none;
+}
+
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+.ui-menu .ui-menu-item {
+	margin: 0;
+	padding:0;
+	width: 100%;
+}
+
+.ui-state-focus {
+	display: block;
+	background: #0089cf;
+	color: #fff;
+}
+.ui-state-focus:hover {
+	color: #fff;
+}
+
+#cbPropertyTypes tr td label {
+	margin-left: 10px;
+
+}
+
+.open-link-in-new-window {
+	visibility: hidden;
+}
+
+.no-touch-device .listings-grid-ctrl-row:hover {
+    background:#f5f5f5;
+}
+.no-touch-device .image-ctrl-row:hover {
+   background:#f5f5f5;
+}
+.no-touch-device .listings-grid-ctrl-row:hover .open-link-in-new-window,
+.no-touch-device .image-ctrl-row:hover .open-link-in-new-window {
+   visibility: visible;
+} 
+

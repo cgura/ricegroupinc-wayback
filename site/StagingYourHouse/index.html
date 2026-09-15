@@ -1,0 +1,835 @@
+
+<!doctype html>
+
+<form method="post" action="/content.aspx?FileName=Staging.x&amp;" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="ToolkitScriptManager_HiddenField" id="ToolkitScriptManager_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1MTI4MDAwNTQPZBYCAgEPZBYEAgYPZBYCZg9kFgJmDxYCHgRUZXh0Bc0vIA0KPEgxPkhvdyBUbyBTdGFnZSBZb3VyIEhvbWUgZm9yIFNhbGU8L0gxPg0KPERJViBzdHlsZT0iTUFSR0lOOiA0cHg7IEZMT0FUOiBsZWZ0Ij48SU1HIGhzcGFjZT04IGFsdD0iU2VsbCBxdWlja2x5IGluIFBsYW5vIHdpdGggaG9tZSBzdGFnaW5nIGFuZCB3aXRoIG1lIGFzIHlvdXIgYWdlbnQgLSAoMjE0KSA4MDgtMzEwMCIgc3JjPSIvZ3JhcGhpY3MvY2xpcGFydC9BZ2VudHMvU3RhZ2luZy0yLTMuanBnIj48L0RJVj4NCjxQPjxGT05UIGNsYXNzPXhzY29udGVudD5QcmlvciB0byBwbGFjaW5nIHlvdXIgaG91c2Ugb24gdGhlIG1hcmtldCwgY29uc2lkZXIgdGhlIGJlc3Qgd2F5IHRvIHNlbGwgeW91ciBob3VzZTogZXhwZXJ0IGhvbWUgc3RhZ2luZy4gU29tZSBhZHZhbnRhZ2VzIHRvIGhvbWUgc3RhZ2luZyBpbmNsdWRlIGZld2VyIGRheXMgb24gdGhlIG1hcmtldCBhbmQgaGlnaGVyIGJpZHMuIElmIHlvdSB3YW50IHRvIHNlbGwgeW91ciBob3VzZSBxdWlja2x5LCBjaG9vc2UgYSB0aG9yb3VnaGx5IHRob3VnaHQgb3V0IGhvbWUgc3RhZ2luZyBzdHJhdGVneS4gPC9QPg0KPFA+PEZPTlQgY2xhc3M9eHNjb250ZW50PkhvbWUgc3RhZ2luZyBpcyBwYXJ0IG9mIHByZXBhcmluZyB5b3VyIGhvbWUgZm9yIGFuIE9wZW4gSG91c2UuIFN0YWdpbmcgY2VudGVycyBvbiBvbiB5b3VyIGhvbWUncyBwcmVzZW50YXRpb24gdG8gYnV5ZXJzIGFuZCBidXllcnMnIGFnZW50cyB3aGlsZSBzaG93aW5nIG9mZiB0aGUgY2hhcmFjdGVyaXN0aWNzIG9mIHlvdXIgaG9tZSB3aXRoIHN0cmF0ZWdpY2FsbHkgcGxhY2VkIGZ1cm5pdHVyZSBhbmQgcGljdHVyZXMgc28gdGhhdCB5b3VyIGhvbWUgYXBwZWFycyBtb3JlIHNwYWNpb3VzIGFuZCBidXllcnMgY2FuIGVudmlzaW9uIGxpdmluZyBpbiB5b3VyIGhvbWUuIDwvUD4NCjxQPjxGT05UIGNsYXNzPXhzY29udGVudD5JZiB5b3UndmUgY29tcGxldGVseSBtb3ZlZCBvdXQgYWxyZWFkeSwgY29uc2lkZXIgcmVudGluZyBmdXJuaXR1cmUuIFRoZSBnb2FsIGlzIGZvciB5b3VyIGhvdXNlIHRvIHNlZW0gbGl2YWJsZSBhcyBvcHBvc2VkIHRvIHZhY2F0ZWQuIE1vcmUgZGF5cyBvbiB0aGUgbWFya2V0IGFyZSBzdXJlIHNpZ25zIG9mIGhvbWVzIHRoYXQgbGFja2VkIGJlaW5nIHN0YWdlZC4gQXMgYSB0b3AtcHJvZHVjaW5nIGFnZW50IGluIERlbnRvbiBDb3VudHksIEkgY2FuIGdpdmUgeW91IGhvbWUgc3RhZ2luZyB0aXBzIHNvIHRoYXQgeW91ciBob21lIHNlbGxzIGFzIHF1aWNrbHkgYXMgcG9zc2libGUuIFByZXBwaW5nIHlvdXIgaG9tZSBmb3IgYW4gT3BlbiBIb3VzZSBzaG91bGRuJ3QgYmUgdGhvdWdodCBvZiBhcyBhbm90aGVyIGh1cmRsZSBpbiBnZXR0aW5nIHlvdXIgaG91c2Ugc29sZC4gSXQgY2FuIGFjdHVhbGx5IGJlIGEgYmxhc3QuIFRvZ2V0aGVyLCB3ZSdsbCBzdHJpdmUgZm9yIGEgaGlnaCBvZmZlciBmb3IgeW91ciBob3VzZS4gPC9QPg0KPFRBQkxFIGlkPVhTQ2FsbFRvQWN0aW9uQWcgYWxpZ249Y2VudGVyPg0KPFRCT0RZPg0KPFRSPg0KPFREIHN0eWxlPSJGSUxURVI6IGFscGhhKG9wYWNpdHk9NTApOyBIRUlHSFQ6IDJweDsgb3BhY2l0eTogLjgwIiBjbGFzcz1Ob1R4dFBhZCBiZ0NvbG9yPSM5OTk5OTkgY29sU3Bhbj0zPjxJTUcgYWx0PSIiIHNyYz0iL2dyYXBoaWNzL2NsaXBhcnQvYXBwcmFpc2Vycy8yeDJ0cmFucy5naWYiPjwvVEQ+DQo8VEQgc3R5bGU9IkZJTFRFUjogYWxwaGEob3BhY2l0eT01MCk7IFdJRFRIOiAycHg7IG9wYWNpdHk6IC41MCIgY2xhc3M9Tm9UeHRQYWQgYmdDb2xvcj0jOTk5OTk5PjxJTUcgYWx0PSIiIHNyYz0iL2dyYXBoaWNzL2NsaXBhcnQvYXBwcmFpc2Vycy8yeDIuZ2lmIj48L1REPjwvVFI+DQo8VFI+DQo8VEQgc3R5bGU9IkZJTFRFUjogYWxwaGEob3BhY2l0eT01MCk7IFdJRFRIOiAxOHB4OyBvcGFjaXR5OiAuNTA+IiBjbGFzcz1Ob1R4dFBhZCBiZ0NvbG9yPSM5OTk5OTk+PElNRyBzcmM9Ii9ncmFwaGljcy9jbGlwYXJ0L2FwcHJhaXNlcnMvQ2FsbG91dF9UYWIuZ2lmIj48L1REPg0KPFREIGJnQ29sb3I9I2Y5ZjlmOT5Gb3IgYWRkaXRpb25hbCBpbmZvcm1hdGlvbiBhYm91dCBob21lIHN0YWdpbmcgdG8gc2VsbCB5b3VyIGhvbWUgcXVpY2tseSBpbiBQbGFubywgVGV4YXMsIGNvbnRhY3QgVGhlIFJpY2UgR3JvdXAsIEluYy4gYW5kIEknbGwgaGVscCB5b3Ugd2l0aCBkZXNpZ25pbmcgdGhlIGJlc3QgaW1hZ2UgZm9yIHlvdXIgaG9tZS4gPC9URD4NCjxURCBzdHlsZT0iRklMVEVSOiBhbHBoYShvcGFjaXR5PTUwKTsgV0lEVEg6IDJweDsgb3BhY2l0eTogLjUwIiBjbGFzcz1Ob1R4dFBhZCBiZ0NvbG9yPSM5OTk5OTk+PC9URD4NCjxURCBzdHlsZT0iV0lEVEg6IDJweCIgY2xhc3M9Tm9UeHRQYWQgYmdDb2xvcj0jODA4MDgwIHJvd1NwYW49Mj48L1REPjwvVFI+DQo8VFI+DQo8VEQgc3R5bGU9IkZJTFRFUjogYWxwaGEob3BhY2l0eT01MCk7IEhFSUdIVDogMnB4OyBvcGFjaXR5OiAuNTAiIGNsYXNzPU5vVHh0UGFkIGJnQ29sb3I9Izk5OTk5OSBjb2xTcGFuPTM+PElNRyBhbHQ9IiIgc3JjPSIvZ3JhcGhpY3MvY2xpcGFydC9hcHByYWlzZXJzLzJ4MnRyYW5zLmdpZiI+PC9URD48L1RSPg0KPFRSPg0KPFREIHN0eWxlPSJIRUlHSFQ6IDJweCIgY2xhc3M9Tm9UeHRQYWQgYmdDb2xvcj0jODA4MDgwIGNvbFNwYW49ND48SU1HIGFsdD0iIiBzcmM9Ii9ncmFwaGljcy9jbGlwYXJ0L2FwcHJhaXNlcnMvMngyLmdpZiI+PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT4NCjxQPjxGT05UIGNsYXNzPXhzY29udGVudD5TdGFydCB3aXRoIHRoaXMgaG9tZSBzdGFnaW5nIGFkdmljZSBhbmQgeW91J2xsIHNlZSB0aGF0IHlvdXIgaG91c2Ugc2l0cyBmZXdlciBtb250aHMgb24gdGhlIG1hcmtldCA6PC9QPg0KPFRBQkxFIGNlbGxTcGFjaW5nPTEgYm9yZGVyQ29sb3I9I2NjY2NjYyBjZWxsUGFkZGluZz01IHdpZHRoPSIxMDAlIiBiZ0NvbG9yPSNmNWY1ZjU+DQo8VEJPRFk+DQo8VFI+DQo8VEQ+DQo8UCBjbGFzcz1YU0NvbnRlbnQ+PFNUUk9ORz5DdXJiIEFwcGVhbDwvU1RST05HPjxCUj4NCjxQPjxGT05UIGNsYXNzPXhzY29udGVudD5TdGFydCB3aXRoIHRoZSBleHRlcmlvciBvZiB5b3VyIGhvbWUsIG9yIHlvdXIgY3VyYiBhcHBlYWwuIFRha2UgYSBmcmVzaCBsb29rIGF0IHRoZSBvdXRzaWRlIG9mIHlvdXIgaG9tZSBmcm9tIGEgcXVpY2sgZ2xhbmNlIGZyb20gdGhlIHN0cmVldC4gV2hhdCBqdW1wcyBvdXQgYXQgeW91PyBXaGF0IGdyZWF0IGNoYXJhY3RlcmlzdGljcyBzZWVtIHdhaXRpbmcgdG8gYmUgbm90aWNlZD8gVW5kZXJzdGFuZGluZyB0aGlzIGhlbHBzIHVzIHRvIGRlY2lkZSB3aGF0IHBsYW4gb2YgYWN0aW9uIHdlIGNhbiB1c2UgdG8gYXR0cmFjdCBidXllcnMgZnJvbSB0aGUgc3RyZWV0IGFuZCBpbnRvIHlvdXIgaG9tZS4gSWYgeW91ciBob21lJ3MgZXh0ZXJpb3IgaXNuJ3QgaW52aXRpbmcgd2l0aCB0b3VjaGVkIHVwIHBhaW50IGFuZCBjb2xvcmZ1bCBncmVlbmVyeSBpdCdzIHRpbWUgdG8gZ2V0IHRob3NlIHRoaW5ncyBkb25lLiBGb2xsb3cgdGhlIEN1cmIgQXBwZWFsIENoZWNrbGlzdCBhbmQgYWRkIGRvbGxhcnMgdG8geW91ciBob21lJ3MgZmluYWwgc2VsbGluZyBwcmljZS48L1A+PC9GT05UPg0KPFAgY2xhc3M9WFNDb250ZW50IGFsaWduPXJpZ2h0PjxhIGhyZWY9Ii9DdXJiQXBwZWFsTGlzdCI+Q3VyYiBBcHBlYWwgQ2hlY2tsaXN0PC9BPiAmZ3Q7PC9QPg0KPERJViBzdHlsZT0iTUFSR0lOOiA0cHg7IEZMT0FUOiBsZWZ0Ij48SU1HIGhzcGFjZT04IGFsdD0iU2VsbCBxdWlja2x5IGluIFBsYW5vIHdpdGggaG9tZSBzdGFnaW5nIGFuZCB3aXRoIG1lIGFzIHlvdXIgcmVhbCBlc3RhdGUgYWdlbnQgLSAoMjE0KSA4MDgtMzEwMCIgc3JjPSIvZ3JhcGhpY3MvY2xpcGFydC9BZ2VudHMvU3RhZ2luZy0yLTIuanBnIj48L0RJVj4NCjxQPjxGT05UIGNsYXNzPXhzY29udGVudD48U1RST05HPldlbGNvbWUgSG9tZTwvU1RST05HPjxCUj4NCjxQPjxGT05UIGNsYXNzPXhzY29udGVudD5DYW4gYnV5ZXJzIHBpY3R1cmUgdGhlbXNlbHZlcyB3YXRjaGluZyBhIG1vdmllIGluIHlvdXIgbGl2aW5nIHNwYWNlLCB1bndpbmRpbmcgaW4geW91ciBtYXN0ZXIgYmVkcm9vbSBvciBnZXR0aW5nIHdvcmsgZG9uZSBpbiB5b3VyIGhvbWUgb2ZmaWNlPyBJIHdhbnQgeW91ciBob3VzZSB0byBwbGVhc2FudGx5IGFjY2VwdCBidXllcnMgYW5kIGdpdmUgdGhlbSBhIHNlbnNlIG9mIGNvbnRlbnRtZW50LiBJJ2xsIGhlbHAgeW91IGRvIHRoaXMgYnkgcmVjb21tZW5kaW5nIGNoYW5nZXMgdGhhdCBlbmhhbmNlIHRoZSBmZWF0dXJlcyBvZiB5b3VyIGhvbWUuIEknbGwgaGVscCB5b3UgdGFrZSBhd2F5IGl0ZW1zIHRoYXQgZ2l2ZSB0aGUgbG9vayBvZiBjbHV0dGVyLiBTdXJmYWNlIGFyZWFzIGxpa2UgdGFibGVzLCBkZXNrcyBhbmQgY291bnRlcnMgc2hvdWxkIGJlIGNsZWFyZWQgb2ZmLiBLbmlja2tuYWNrcywgc291dmVuaXJzLCBmYW1pbHkgcGhvdG9zLCBhbmQgcGxheSB0aW1lIGFydHdvcmsgc2hvdWxkIGdldCBzdG9yZWQgYXdheSB0b28uIEkgY2FuIGhlbHAgeW91IHNpbXBsaWZ5IHRoZSBkZWNvciBvZiBob3VzZS4gVW5hdHRyYWN0aXZlIG9yIGRpcnR5IHBsYWNlcyBtYWtlIHlvdXIgaG9tZSBsb29rIHVua2VtcHQgYW5kIGJ1eWVycyBoYXZlIGEgbW9yZSBkaWZmaWN1bHQgdGltZSBzZWVpbmcgdGhlbXNlbHZlcyBsaXZpbmcgdGhlcmUuPC9QPjwvRk9OVD4NCjxQPjxGT05UIGNsYXNzPXhzY29udGVudD5JIGtub3cgaW5zdGFudGx5IHdoYXQgYSByb29tJ3MgYmVzdCBjaGFyYWN0ZXJpc3RpY3MgYXJlIGFuZCBob3cgdG8gc2hvdyB0aGVtIG9mZi4gSSdsbCBub3RlIHRoZSBwaWVjZXMgb2YgZnVybml0dXJlIHRoYXQgc2hvdWxkIGJlIHB1dCBpbiBzdG9yYWdlLCByb29tcyB0aGF0IG5lZWQgbmV3IHBhaW50LCBydWdzIG5lZWRpbmcgdG8gZ2V0IGNoYW5nZWQsIGZpeHR1cmVzIHRoYXQgbmVlZCBzaGluaW5nLCBhbmQgYW55IG90aGVyIGltcHJvdmVtZW50IHRoYXQgY2FuIHF1aWNrbHkgYmUgbWFkZSB0byBwb3NpdGl2ZWx5IGFmZmVjdCB0aGUgc2FsZS4gPC9QPjwvRk9OVD4NCjxQIGNsYXNzPVhTQ29udGVudD5JJ2xsIGVuc3VyZSB5b3VyIGhvdXNlIGhhcyBtYXNzIGFwcGVhbCBhbmQgdGhhdCBpdCdzIGZyaWVuZGx5LCBzdGF5aW5nIGF3YXkgZnJvbSAib2ZmZW5zaXZlIiBvciAidG9vLWJyaWdodCIgY29sb3JzIG9uIHRoZSB3YWxscyBhbmQgZnVybml0dXJlLiBBbmQgaWYgbm9uZSBvZiB5b3VyIGJlbG9uZ2luZ3MgYXJlIHRoZXJlLCB5b3UgY2FuIGNvbnNpZGVyIGJvcnJvd2luZyBmdXJuaXNoaW5ncy4gWW91IHdhbnQgeW91ciBob21lIHRvIGxvb2sgcmVhZHkgdG8gbGl2ZSBpbiBhcyBvcHBvc2VkIHRvIGJhcnJlbi4gPC9QPg0KPFAgY2xhc3M9WFNDb250ZW50IGFsaWduPXJpZ2h0PjxhIGhyZWY9Ii9TdGFnaW5nQ2hlY2tsaXN0Ij5XZWxjb21lIEhvbWUgQ2hlY2tsaXN0PC9BPiAmZ3Q7PC9QPg0KPFAgY2xhc3M9WFNDb250ZW50PjxTVFJPTkc+U2V0dGluZyB0aGUgU3RhZ2U8L1NUUk9ORz48QlI+QXQgZXZlcnkgc2hvd2luZywgd2Ugd2FudCB0byBlbmdhZ2UgdGhlIGJ1eWVyJ3Mgc2Vuc2VzLiBTaGFkb3dzIGFyZSBpbXBvcnRhbnQgYW5kIHdlJ2xsIG9wZW4gY3VydGFpbnMsIGFuZCBjcmVhdGUgbGlnaHQgd2hlcmUgbmVlZGVkIHRvIHdlbGNvbWUgdGhlIGJ1eWVyLiBUb2dldGhlciB3ZSdsbCBlbmhhbmNlIHRoZSBtb29kIG9mIHRoZSBob3VzZSB3aXRoIGVuam95YWJsZSBtdXNpYyB0byBsaXN0ZW4gdG8gd2hpbGUgZ3Vlc3RzIGxvb2sgYXQgeW91ciBob21lIGFuZCBlbnN1cmUgYSBkZWxpZ2h0ZnVsIGZyYWdyYW5jZSBjaXJjdWxhdGVzIHRocm91Z2hvdXQgeW91ciBob3VzZS4gV2UnbGwgbWFrZSB1c2Ugb2YgY296eS1sb29raW5nIGJlZHNwcmVhZHMsIGFuZCB0aHJvdyBwaWxsb3dzIG9uIHlvdXIgc29mYSBhbmQgYmVkLiBXZSB3YW50IGJ1eWVycyB0byBmZWVsIGxpa2UgeW91ciBjdXJyZW50IGhvdXNlIGlzIHRoZWlyIGZ1dHVyZSBob21lLjwvUD48L0ZPTlQ+PC9URD48L1RSPjwvVEJPRFk+PC9UQUJMRT48L0ZPTlQ+PC9GT05UPjwvRk9OVD48L0ZPTlQ+ZAIJD2QWAmYPZBYEAgIPFgIfAAWRCTxkaXYgYWxpZ249Y2VudGVyIGNsYXNzPXRhYmxlVGV4dD48c3Bhbj5QaG9uZTogPHNjcmlwdCBsYW5ndWFnZT1qYXZhc2NyaXB0PiBkb2N1bWVudC53cml0ZSgnKDIxNCkgODA4LTMxMDAnKTs8L3NjcmlwdD48L3NwYW4+IDxzcGFuPkZheDogPHNjcmlwdCBsYW5ndWFnZT1qYXZhc2NyaXB0PiBkb2N1bWVudC53cml0ZSgnKDIxNCkgMjkxLTU3MDYnKTs8L3NjcmlwdD48L3NwYW4+IDxzcGFuPjxzY3JpcHQgbGFuZ3VhZ2U9amF2YXNjcmlwdD4gdmFyIHVzZXJuYW1lID0gJ2JyZW50JzsgdmFyIGhvc3RuYW1lID0gJ3JpY2Vncm91cGluYy5jb20nOyBkb2N1bWVudC53cml0ZSgnPHNwYW4+RS1tYWlsOiA8YSBocmVmPW1haWwnICsgJ3RvOicgKyB1c2VybmFtZSArICdAJyArIGhvc3RuYW1lICsgJz4nICsgdXNlcm5hbWUgKyAnQCcgKyBob3N0bmFtZSArICc8L2E+Jyk7PC9zY3JpcHQ+PHA+PGEgaHJlZj0iL0ZvckJ1eWVycyI+PHNwYW4gc3R5bGU9J3doaXRlLXNwYWNlOiBub3dyYXA7Jz5Gb3IgQnV5ZXJzPC9zcGFuPjwvYT4gfCA8YSBocmVmPSIvUHJlc3NSZWxlYXNlIj48c3BhbiBzdHlsZT0nd2hpdGUtc3BhY2U6IG5vd3JhcDsnPlByZXNzIFJlbGVhc2U8L3NwYW4+PC9hPiB8IDxhIGhyZWY9Ii9Ib21lIj48c3BhbiBzdHlsZT0nd2hpdGUtc3BhY2U6IG5vd3JhcDsnPkhvbWU8L3NwYW4+PC9hPjxwPkNvcHlyaWdodCAmY29weTsgMjAxMyZuYnNwO1RoZSBSaWNlIEdyb3VwLCBJbmMuPGJyPlBvcnRpb25zIENvcHlyaWdodCAmY29weTsgMjAxMyBhIGxhIG1vZGUsIGluYy48YnI+QW5vdGhlciBYU2l0ZSBieSA8YSBocmVmPSdodHRwOi8vd3d3LmFsYW1vZGUuY29tLycgdGFyZ2V0PSdfYmxhbmsnPmEgbGEgbW9kZSwgaW5jLjwvYT4mbmJzcDt8Jm5ic3A7PGEgaHJlZj0naHR0cHM6Ly9GYWlyd2F5SW5kZXBlbmRlbnRNb3J0Z2FnZUNvcnBvcmF0aW9uMi5hZ2VudHhzaXRlcy5jb20vYXBwcy9hbGFtb2RlbG9naW4vbG9naW4uYXNweCc+QWRtaW4gTG9naW48L2E+fCZuYnNwOzxhIGhyZWY9Jy9UZXJtc09mVXNlJz5UZXJtcyBvZiBVc2U8L2E+fCZuYnNwOzxhIGhyZWY9Jy9TaXRlTWFwJz5TaXRlIE1hcDwvYT48YnI+QWxsIHJhdGUsIHBheW1lbnQsIGFuZCBhcmVhIGluZm9ybWF0aW9uIGFyZSBlc3RpbWF0ZXMgYW5kIGFwcHJveGltYXRpb25zIG9ubHkuPC9kaXY+ZAIEDw8WAh4HVmlzaWJsZWhkZGTiItGf2LvhMXVhvuf023Cd2bSAGFvUfLggJLcoNb3+6Q==" />
+</div>
+
+
+<script src="/ScriptResource.axd?d=D8RGZCenNPA0wIeOYNeWgGNeTJR670jeIAfICEUmDPucXpgMeJdIWDzX0CmXH3rq0HZNwGQZYu-9ldEK3-o5YiTIRk4I-zaEWT6PnhoT3GCgwTJ-D--vwGRnHC-SGj4O0&amp;t=48e38e19" type="text/javascript"></script>
+
+
+
+<html>
+	<head>
+		<title>How to stage your home for sale checklist – The Rice Group, Inc. </title>
+		<meta name="keywords" content="Real Estate Agent, Plano, Texas, Denton, staging your house, sell your house fast, best way to sell your house, home staging, sell your house yourself, sell your house quick, home staging tips, staging your house to sell, short sell, staging to sell, home staging benefits, Brent Rice, SFR, house staging, sell your home fast, best way to sell your home, sell your home yourself, sell your home quick, house staging tips, staging your home to sell, home staging to sell, house staging benefits, how do i stage my house, how do i stage my home, who can help me stage my home in Plano, home staging in Plano Texas, home stagers, interior decorators, interior decorators in Plano, interior decorators in Denton County, how to sell my house fast in Plano, real estate staging, staging for real estate, free home staging tips, how to stage your home, how to stage your house">
+		<meta name="description" content="Need assistance when it comes to staging your home for buyers' agents?">
+		
+		
+		
+		<link href="/styles.css" rel="stylesheet" type="text/css" />
+
+		<link rel="stylesheet" href="/templates/ModularElements/wafers.css">
+		
+		<style type="text/css" media="screen">
+			/*
+				LEFTSIDE THEME
+				
+				Admin Label                 |   XSData.dbo.AWSThemeDefaultProperties    |   Color Output
+				--------------------------------------------------------------------------------------------------------------------------------------
+				Nav Background              |   Color1                                  |   #EEEEEE
+				Left Nav Background         |   Color2                                  |   #EEEEEE
+				Top Background              |   Color3                                  |   #FFFFFF
+				Top Navigation              |   Color4                                  |   #444444
+				Secondary Navigation        |   Color5                                  |   #0099E8
+				Not Used                    |   Color6                                  |   ?
+				Not Used                    |   Color7                                  |   ?
+				Customize Background Image  |   n/a                                     |   Color: #ABABAC , Image: 
+			*/
+			html {
+				background-color: #FFFFFF; /* "Top Background" to be the default background, overwritten if user specifies background */
+				background-color: #ABABAC;
+				background-image: url();
+				background-position:center center;
+				background-repeat: repeat;
+				min-height: 100%;
+			}
+			
+			body {
+				font-family: Verdana, Arial, sans-serif;
+				letter-spacing: 0;
+				font-size: 14px;
+			}
+
+			.wrapper {
+				background: #fff;
+				margin: auto;
+				width: 1008px;
+				transition: width .2s linear;
+			}
+
+			
+			.company-logo {
+				width: 100%;
+				padding: 0; margin-bottom: 10px;
+				box-sizing: border-box;
+				-moz-box-sizing:border-box;
+			}
+
+			.company-logo img {
+				margin: auto;
+				max-width: 100%;
+				height: auto;
+				display: inline-block;
+				text-align: center;
+				border: 0;
+			}
+			
+			.company-name {
+				padding: 0; marign-bottom: 10px;
+				text-shadow: 0 1px 0.1em rgba(0,0,0,.2);
+				font-weight: bold;
+				font-size: 2em;
+				text-align: center;
+			}
+			.company-name font, .company-motto font
+			{
+				display: none;
+			}
+			
+			.company-name a {
+				text-decoration: none;
+			}
+			
+			.company-motto {
+				text-align: left;
+				padding: 0;
+			}
+
+			.primary-navigation {
+				background: #EEEEEE;
+				border-bottom: 1px solid rgba(0,0,0,0.5);
+				padding-bottom: 1em;
+				margin-bottom: 1em;
+			}
+
+						
+			.primary-navigation a {
+				display: block;
+				text-align: right;
+				padding: .5em 1.5em .5em .5em;
+				color: #444444;
+				text-decoration: none;
+			}
+			
+			.primary-navigation a:hover {
+				background: rgba(255,255,255,0.2);
+			}
+
+			.main-body {}
+
+			.main-body hr {
+				border: none;
+				border-bottom: 1px solid rgba(0,0,0,0.5);
+				border-top: 1px solid rgba(255,255,255,0.1);
+			}
+
+			.side-bar 
+			{
+				box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+				float: left;
+				width: 176px;
+				background: #EEEEEE;
+				color: #444444;
+				transition: width .2s linear;
+			}
+			
+			.side-bar-top {padding:10px 20px;
+				background-color: #FFFFFF;
+				
+			}
+			
+			.side-bar .inner {
+				padding: 0 0 1em 0;
+			}
+
+			.side-bar hr {
+				border: none;
+				border-bottom: 1px solid rgba(255,255,255,0.1);
+				border-top: 1px solid rgba(0,0,0,0.5);
+			}
+
+			.side-bar a {
+				color: #0099E8;
+			}
+
+			.clear-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+
+			.nested-menu-navigation {}
+			
+			.nested-menu-navigation ul {
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+			}
+			
+			.nested-menu-navigation ul li {
+			    list-style-type: none;
+			}
+			
+			.js-top-nested-menu {
+				position: relative;
+			}
+			
+			.js-top-nested-menu:hover {
+				background: rgba(255,255,255,0.2);
+			}
+			
+			.nested-menu-navigation ul li a {
+				text-align: right;
+				text-shadow: 0 1px 0.1em rgba(0,0,0,.2);
+				display: block;
+				padding: .5em 1.5em .5em .5em;
+				position: relative;
+				text-decoration: none;
+				color: #0099E8;
+				font-size: .9em;
+			}
+
+			.nested-menu-navigation ul li a:hover {
+				background: rgba(255,255,255,0.2);
+			}
+
+			.js-nested-menu-more {
+				position: absolute;
+				top: .9em;
+				right: .5em;
+				font-size: .8em;
+			}
+			
+			.js-nested-menu {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 100%;
+				background: #EEEEEE;
+				width: 100%;
+				box-shadow: .1em .1em 0.3em rgba(0,0,0,1.0);
+				z-index: 1000;
+			}
+			
+			.js-nested-menu li {}
+			
+			.js-nested-menu li > a {
+				color: #4bb642;
+			}
+
+			.profile-picture {
+				padding: 10px 20px;
+				text-align: center;
+			}
+			
+			.profile-picture img {
+				max-width: 100%;
+				height: auto;
+				vertical-align: middle;
+				margin: auto;
+				text-align: center;
+			}
+									
+			.footer {
+				border-top: 1px solid rgba(0,0,0,0.5);
+				color: #fff;
+			}
+			
+			
+			a.button, .button, button {
+				-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+				-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+				box-shadow:inset 0px 1px 0px 0px #ffffff;
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+				background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+				background-color:#ededed;
+				-moz-border-radius:6px;
+				-webkit-border-radius:6px;
+				border-radius:6px;
+				border:1px solid #dcdcdc;
+				display:inline-block;
+				color:#777777;
+				color: #FFFFFF;
+				font-size:1em;
+				font-weight:bold;
+				padding:6px 24px;
+				text-decoration:none;
+				text-shadow:1px 1px 0px rgba(255,255,255,0.2);
+				cursor: pointer;
+			}a.button:hover, .button:hover, button:hover {
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+				background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+				background-color:#dfdfdf;
+			}a.button:active, .button:active, button:active {
+				position:relative;
+				top:1px;
+			}
+			input[type="text"], select, input[type="password"] {
+				border: 1px solid #bababa;
+				background: #f0f0f0;
+				font-size: inherit;
+				padding: .25em;
+			}
+			
+			
+			.action_btn a 
+			{
+				text-align: center;
+				display: block;
+				text-decoration: none;
+			}
+			
+			.language-options {
+				font-size: .7em;
+			}
+			
+			.language-options label {
+				text-transform: uppercase;
+			}
+			
+			.primary-button-separator {
+				visibility: hidden;
+			}
+			
+			.secondary-button-separator {
+				height: 2em;
+			}
+			
+			.testing {
+				background: purple;
+				border:4px solid purple;
+			}
+			
+			
+			.xs-page-content table {
+				margin: auto;
+			}
+			
+			.xs-default-aspx, .xs-content-aspx
+			{
+				width: 832px;
+				float: left;
+				transition: width .2s linear;
+			}
+			
+			.dynamic-area 
+			{
+				float: left;
+				width: 832px;
+			}
+			.xs-page-content-inner 
+			{
+				padding: 20px !important;
+			}
+		</style>
+		<link rel="Stylesheet" href="/templates/themes/common/LeftSide/adaptive.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="main-body">
+				<div class="side-bar">
+					<div class="side-bar-top">
+						
+
+						
+							<div class="company-logo">
+								<a href="/">
+									<img src="/xSites/Agents/FairwayIndependentMortgageCorporation2/logo68774.JPG" alt="Logo">
+								</a>
+							</div>
+						
+
+						<div class="company-motto">
+							<font color='#000000' size='16' face='Monotype Corsiva'>When Character Matters</font>
+						</div>
+					</div>
+					<div class="inner">
+						
+<div class="primary-navigation">
+
+	
+			
+
+			
+			
+			<a style="font-family:Tahoma; font-size: 14px;" href="/Home">
+                
+                    <b>
+                Home
+
+                
+                    </b>
+                
+                    
+				
+			</a>
+
+			
+			
+
+			
+			
+			<a style="font-family:Tahoma; font-size: 14px;" href="/SearchAreaHomes">
+                
+                    <b>
+                Search Area Homes
+
+                
+                    </b>
+                
+                    
+				
+			</a>
+
+			
+			
+
+			
+			
+			<a style="font-family:Tahoma; font-size: 14px;" href="/WhyChooseUs!">
+                
+                    <b>
+                Why Choose Us!
+
+                
+                    </b>
+                
+                    
+				
+			</a>
+
+			
+			
+
+			
+			
+			<a style="font-family:Tahoma; font-size: 14px;" href="/Testimonials">
+                
+                    <b>
+                Testimonials
+
+                
+                    </b>
+                
+                    
+				
+			</a>
+
+			
+			
+
+			
+			
+			<a style="font-family:Tahoma; font-size: 14px;" href="/StaffProfiles">
+                
+                    <b>
+                Staff Profiles
+
+                
+                    </b>
+                
+                    
+				
+			</a>
+
+			
+			
+
+			
+			
+			<a style="font-family:Tahoma; font-size: 14px;" href="/OurListings">
+                
+                    <b>
+                Our Listings
+
+                
+                    </b>
+                
+                    
+				
+			</a>
+
+			
+</div>
+
+						
+    
+    
+    <style type="text/css">
+        .language-choices-separator 
+        {
+            display: none;
+        }
+    </style>
+
+						<hr class="language-choices-separator">
+						
+<div class="nested-menu-navigation">
+	<ul>
+		
+						<li>
+							<a href="/EthicsinRealEstate" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                Ethics in Real Estate
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+						<li>
+							<a href="/smallbusiness" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                For Small Business
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+						<li>
+							<a href="/LeaseAnalysis" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                Lease Analysis
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+						<li>
+							<a href="/SiteSelectionServices" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                Site Selection Services
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+						<li>
+							<a href="/TenantRepresentation" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                Tenant Representation
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+							<li class="secondary-button-separator">&emsp;</li>
+							
+						<li>
+							<a href="/ForBuyers" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                For Buyers
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+							<li class="secondary-button-separator">&emsp;</li>
+							
+						<li>
+							<a href="/StagingYourHouse" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                Staging Your House
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+						<li>
+							<a href="/StagingChecklist" style="font-family: Tahoma; font-size: 14px;">
+								
+									&emsp;
+								
+                                    <b>
+                                Staging Checklist
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+							<li class="secondary-button-separator">&emsp;</li>
+							
+						<li>
+							<a href="/PressRelease" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                Press Release
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+						<li>
+							<a href="/ContactUs" style="font-family: Tahoma; font-size: 14px;">
+								
+                                    <b>
+                                Contact Us
+                                
+                                    </b>
+                                
+                                
+                                
+							</a>
+						</li>
+					
+		
+	</ul>
+</div>
+					</div> 
+				</div> 
+				<div class="dynamic-area">
+    
+    
+    
+    <div  id="divContent" class="xs-content-aspx">
+        
+	    
+        
+
+        <!-- contains the main content of the page and the dynamic content in the side bar -->
+    	
+<script type="text/javascript" src="/scripts/flashobject_fp8.js"></script>
+<style type="text/css">
+    .xs-dynamic-content-manager 
+    {
+        width: 100%;
+        border-spacing: 0;
+    }
+    .xs-page-content
+    {
+        vertical-align: top;
+    }
+    .xs-page-content-inner 
+    {
+        padding: 5px;
+    }
+    
+    .xs-dynamic-content
+    {
+        width: 192px;
+        vertical-align: top;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    
+    .xs-dynamic-content-inner
+    {
+        border-left: 1px solid;
+        white-space: normal;
+        padding: 5px;
+    }
+    
+    .xs-dynamic-content-inner table
+    {
+        margin: auto;
+    }
+    
+    .clearfix
+    {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+        zoom: 1;
+    }
+    
+    .dynamic-content-title
+    {
+        font-weight: bold;
+        margin: 1em;
+        text-align: center;
+    }
+    
+    .dynamic-content-separator
+    {
+        margin: 1em 0 1em 0;
+        border: none;
+        border-top: 1px solid;
+        height: 2px;
+        display: block;
+    }
+</style>
+<table class="xs-dynamic-content-manager">
+    <tr>
+        <td class="xs-page-content">
+            <div class="xs-page-content-inner">
+                 
+<H1>How To Stage Your Home for Sale</H1>
+<DIV style="MARGIN: 4px; FLOAT: left"><IMG hspace=8 alt="Sell quickly in Plano with home staging and with me as your agent - (214) 808-3100" src="/graphics/clipart/Agents/Staging-2-3.jpg"></DIV>
+<P><FONT class=xscontent>Prior to placing your house on the market, consider the best way to sell your house: expert home staging. Some advantages to home staging include fewer days on the market and higher bids. If you want to sell your house quickly, choose a thoroughly thought out home staging strategy. </P>
+<P><FONT class=xscontent>Home staging is part of preparing your home for an Open House. Staging centers on on your home's presentation to buyers and buyers' agents while showing off the characteristics of your home with strategically placed furniture and pictures so that your home appears more spacious and buyers can envision living in your home. </P>
+<P><FONT class=xscontent>If you've completely moved out already, consider renting furniture. The goal is for your house to seem livable as opposed to vacated. More days on the market are sure signs of homes that lacked being staged. As a top-producing agent in Denton County, I can give you home staging tips so that your home sells as quickly as possible. Prepping your home for an Open House shouldn't be thought of as another hurdle in getting your house sold. It can actually be a blast. Together, we'll strive for a high offer for your house. </P>
+<TABLE id=XSCallToActionAg align=center>
+<TBODY>
+<TR>
+<TD style="FILTER: alpha(opacity=50); HEIGHT: 2px; opacity: .80" class=NoTxtPad bgColor=#999999 colSpan=3><IMG alt="" src="/graphics/clipart/appraisers/2x2trans.gif"></TD>
+<TD style="FILTER: alpha(opacity=50); WIDTH: 2px; opacity: .50" class=NoTxtPad bgColor=#999999><IMG alt="" src="/graphics/clipart/appraisers/2x2.gif"></TD></TR>
+<TR>
+<TD style="FILTER: alpha(opacity=50); WIDTH: 18px; opacity: .50>" class=NoTxtPad bgColor=#999999><IMG src="/graphics/clipart/appraisers/Callout_Tab.gif"></TD>
+<TD bgColor=#f9f9f9>For additional information about home staging to sell your home quickly in Plano, Texas, contact The Rice Group, Inc. and I'll help you with designing the best image for your home. </TD>
+<TD style="FILTER: alpha(opacity=50); WIDTH: 2px; opacity: .50" class=NoTxtPad bgColor=#999999></TD>
+<TD style="WIDTH: 2px" class=NoTxtPad bgColor=#808080 rowSpan=2></TD></TR>
+<TR>
+<TD style="FILTER: alpha(opacity=50); HEIGHT: 2px; opacity: .50" class=NoTxtPad bgColor=#999999 colSpan=3><IMG alt="" src="/graphics/clipart/appraisers/2x2trans.gif"></TD></TR>
+<TR>
+<TD style="HEIGHT: 2px" class=NoTxtPad bgColor=#808080 colSpan=4><IMG alt="" src="/graphics/clipart/appraisers/2x2.gif"></TD></TR></TBODY></TABLE>
+<P><FONT class=xscontent>Start with this home staging advice and you'll see that your house sits fewer months on the market :</P>
+<TABLE cellSpacing=1 borderColor=#cccccc cellPadding=5 width="100%" bgColor=#f5f5f5>
+<TBODY>
+<TR>
+<TD>
+<P class=XSContent><STRONG>Curb Appeal</STRONG><BR>
+<P><FONT class=xscontent>Start with the exterior of your home, or your curb appeal. Take a fresh look at the outside of your home from a quick glance from the street. What jumps out at you? What great characteristics seem waiting to be noticed? Understanding this helps us to decide what plan of action we can use to attract buyers from the street and into your home. If your home's exterior isn't inviting with touched up paint and colorful greenery it's time to get those things done. Follow the Curb Appeal Checklist and add dollars to your home's final selling price.</P></FONT>
+<P class=XSContent align=right><a href="/CurbAppealList">Curb Appeal Checklist</A> &gt;</P>
+<DIV style="MARGIN: 4px; FLOAT: left"><IMG hspace=8 alt="Sell quickly in Plano with home staging and with me as your real estate agent - (214) 808-3100" src="/graphics/clipart/Agents/Staging-2-2.jpg"></DIV>
+<P><FONT class=xscontent><STRONG>Welcome Home</STRONG><BR>
+<P><FONT class=xscontent>Can buyers picture themselves watching a movie in your living space, unwinding in your master bedroom or getting work done in your home office? I want your house to pleasantly accept buyers and give them a sense of contentment. I'll help you do this by recommending changes that enhance the features of your home. I'll help you take away items that give the look of clutter. Surface areas like tables, desks and counters should be cleared off. Knickknacks, souvenirs, family photos, and play time artwork should get stored away too. I can help you simplify the decor of house. Unattractive or dirty places make your home look unkempt and buyers have a more difficult time seeing themselves living there.</P></FONT>
+<P><FONT class=xscontent>I know instantly what a room's best characteristics are and how to show them off. I'll note the pieces of furniture that should be put in storage, rooms that need new paint, rugs needing to get changed, fixtures that need shining, and any other improvement that can quickly be made to positively affect the sale. </P></FONT>
+<P class=XSContent>I'll ensure your house has mass appeal and that it's friendly, staying away from "offensive" or "too-bright" colors on the walls and furniture. And if none of your belongings are there, you can consider borrowing furnishings. You want your home to look ready to live in as opposed to barren. </P>
+<P class=XSContent align=right><a href="/StagingChecklist">Welcome Home Checklist</A> &gt;</P>
+<P class=XSContent><STRONG>Setting the Stage</STRONG><BR>At every showing, we want to engage the buyer's senses. Shadows are important and we'll open curtains, and create light where needed to welcome the buyer. Together we'll enhance the mood of the house with enjoyable music to listen to while guests look at your home and ensure a delightful fragrance circulates throughout your house. We'll make use of cozy-looking bedspreads, and throw pillows on your sofa and bed. We want buyers to feel like your current house is their future home.</P></FONT></TD></TR></TBODY></TABLE></FONT></FONT></FONT></FONT>
+                
+            </div>
+        </td>
+    
+        
+    </tr>
+</table><div style="width:100%;height:30px;"></div>
+
+        <div>
+	                    
+        </div>
+
+        <!-- contains footer, phone numbers, copyright etc... -->
+        
+    </div>
+
+    <!-- div to display IDX Quick Search Results -->
+    <div id="divIDXSearch" style="display:none;" >
+        <iframe id="frameIDXSearch" style="width:100%; height:1300px;" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+        
+
+        <!-- contains footer, phone numbers, copyright etc... -->
+               
+    </div> 
+
+    
+<div align=center class=tableText><span>Phone: <script language=javascript> document.write('(214) 808-3100');</script></span> <span>Fax: <script language=javascript> document.write('(214) 291-5706');</script></span> <span><script language=javascript> var username = 'brent'; var hostname = 'ricegroupinc.com'; document.write('<span>E-mail: <a href=mail' + 'to:' + username + '@' + hostname + '>' + username + '@' + hostname + '</a>');</script><p><a href="/ForBuyers"><span style='white-space: nowrap;'>For Buyers</span></a> | <a href="/PressRelease"><span style='white-space: nowrap;'>Press Release</span></a> | <a href="/Home"><span style='white-space: nowrap;'>Home</span></a><p>Copyright &copy; 2013&nbsp;The Rice Group, Inc.<br>Portions Copyright &copy; 2013 a la mode, inc.<br>Another XSite by <a href='http://www.alamode.com/' target='_blank'>a la mode, inc.</a>&nbsp;|&nbsp;<a href='https://FairwayIndependentMortgageCorporation2.agentxsites.com/apps/alamodelogin/login.aspx'>Admin Login</a>|&nbsp;<a href='/TermsOfUse'>Terms of Use</a>|&nbsp;<a href='/SiteMap'>Site Map</a><br>All rate, payment, and area information are estimates and approximations only.</div>
+
+
+
+<!-- close it all up -->
+
+                            <!-- placed after content and footer -->
+							
+						    <div class="clearfix" rel="dynamic-area"></div>
+					    </div> <!-- .dynamic-area -->
+                        <div class="clearfix" rel="main-body"></div>
+				    </div> <!-- .main-body -->
+                    <div class="clearfix" rel="wrapper"></div>
+			    </div> <!-- .wrapper -->
+               
+			
+			    <script src="/templates/ModularElements/jquery-1.9.1.min.js" type="text/javascript"></script>
+			    <script src="/templates/ModularElements/nested-menu-navigation.js" type="text/javascript"></script>
+            
+                <script type="text/javascript">
+                    $(".company-name font").css("font-size", $(".company-name font").attr("size") + "px").fadeIn();
+                    $(".company-motto font").css("font-size", $(".company-motto font").attr("size") + "px").fadeIn();
+                </script>
+		    </body>
+	    </html>
+
+<script language="javascript">
+	try {
+		    getFCMap();
+	    }
+    catch (ex) { }
+    function showPage(url) {
+        document.getElementById('divContent').style.display = "none";
+        document.getElementById('divIDXSearch').style.display = "block";
+        var frameVar = document.getElementById('frameIDXSearch')
+        frameVar.style.display = "block";
+        frameVar.src = url;
+    }
+//    function setNewPage() {
+//        var nMinPrice = 0;
+//        var nMaxPrice = 999999999;
+//        var strQueryString;
+
+//        var strCityStateZipMLS = document.getElementById('txtCityStateZipMLS');
+
+//        var strMinPrice = document.getElementById('txtMinPrice').value;
+//        var strMaxPrice = document.getElementById('txtMaxPrice').value;
+
+//        if (strCityStateZipMLS.value.length > 0) {
+//            var strAgentMLSID = '0395896';
+//            var strOfficeMLSID = 'RICE01C';
+//            var beds = document.getElementById('DDBeds');
+//            var baths = document.getElementById('DDBaths');
+//            var propertyType = document.getElementById('ddListType');
+//            var strXSIDXID = '17307';
+//            strQueryString = "XSIDXID=" + strXSIDXID;
+//            strQueryString += "&SearchMode=ALLMLS";
+//            strQueryString += "&MLSAgentID=" + strAgentMLSID;
+//            strQueryString += "&MLSOfficeID=" + strOfficeMLSID;
+//            strQueryString += "&PropertyType=" + propertyType.options[propertyType.selectedIndex].value;
+//            strQueryString += "&Beds=" + 0;
+//            strQueryString += "&Baths=" + 0;
+//            strQueryString += "&MinSalesPrice=" + nMinPrice;
+//            strQueryString += "&MaxSalesPrice=" + nMaxPrice;
+//            strQueryString += "&SearchAreaName=" + strCityStateZipMLS.value;
+//            var path = 'http://idx.xsitesidx.com/SearchRedirect.aspx?'; 
+//            var redirectPath = "http://" + window.location.host + "/IDXLoader.aspx?";
+//            showPage(path + strQueryString);
+//        }
+//        else {
+//            alert('Please enter a City, Zip or MLS Number');
+//        }
+//    }
+</script>
+</form>
+

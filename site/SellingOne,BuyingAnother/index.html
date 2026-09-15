@@ -1,0 +1,2190 @@
+
+<!doctype html>
+
+<html lang="en">
+	<head>
+		
+    
+    <title>
+        Selling one home and buying another – The Rice Group, Inc.</title>
+    <meta charset="utf-8" />
+    <meta name="headerInfo" content="NewContent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta id="head_head_metaDesc" name="description" content="Tips on juggling the sale of one home and purchase of another at the same time. The Rice Group, Inc."></meta>
+    <meta id="head_head_metaKey" name="keywords" content="Plano, TX, real estate, listings, home buying, home selling, Realtor, homes for sale, real estate agent, broker, relocation, land, residential, property, house, properties, multiple listing service, mls, moving"></meta>
+
+    <meta Property= 'og:image' content='/xSites/Agents/ricegroupinc/logo68164.jpg'>
+<meta Property= 'og:title' content='Selling one home and buying another – The Rice Group, Inc.'/>
+<meta Property= 'og:type' content='website'/>
+<meta Property= 'og:URL' content='/SellingOne,BuyingAnother'/>
+
+
+    <style type="text/css" media="screen">
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nopadding {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .xs-page-form {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="Stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link id="xsThemeCSS" href="/CSS/Provided_Themes/base/theme.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+
+    <script type="text/javascript">
+        var drawWidgets = function () {
+            $('[data-xswidget]').each(function () {
+                var loadTo = $(this);
+                var loading = $("<i/>", {
+                    "class": "xs-loading-dyn-content fa fa-spinner fa-spin"
+                }).appendTo(loadTo);
+
+                loadTo.addClass("");
+                var widg = loadTo.attr("data-xswidget");
+                var urlString = "/controls/controlviewer.aspx?control=" + widg;
+
+                $.ajax({
+                    url: urlString,
+                    type: "GET",
+                    dataType: "html",
+                    success: function (res) {
+                        if (loadTo.is("div")) {
+                            loadTo.html(res);
+                        } else {
+                            //not a div, possibly a ul or something that cant have the form.
+                            loadTo.html($(res).find("div.main-ajax-content").html());
+                        }
+                    },
+                    error: function () {
+                        loadTo.find("i.xs-loading-dyn-content").remove();
+                        loadTo.text("Error Loading..");
+                    }
+                });
+            });
+        }
+
+        function resizeMe(id, clearHeight) {
+            // listings pages such as "our homes" calls me
+            var theFrame = document.getElementById(id);
+            if (clearHeight) {
+                theFrame.height = 0;
+            }
+            var theBody = (theFrame.contentWindow.document.body || theFrame.contentDocument.body)
+            var newHeight = Math.max(theBody.scrollHeight, theBody.offsetHeight, theBody.clientHeight);
+            theFrame.height = (newHeight + "px");
+        }
+
+        $(document).ready(function () {
+            drawWidgets();
+            // this shows and hides the dropdown menus.
+            $("li.dropdown").mouseenter(function () {
+                clearTimeout($(this).data('timeoutId'));
+                $(this).addClass("open");
+            }).mouseleave(function () {
+                var theElement = $(this), timeoutId = setTimeout(function () {
+                    theElement.removeClass("open");
+                }, 250);
+                theElement.data("timeoutId", timeoutId);
+            });
+
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+<link rel='stylesheet' href='./css/font-awesome.min.css' />
+<link rel="shortcut icon" type="image/png" href="favicon.png" />
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--Notes for this Metro Properties 11 and Metro Mortgage 11 
+In TA use Full Screen and Base
+Color #1: Primary Shade: #0D5196 (Darker tone)
+Color #2: Primary Shade: #888 (Lighter tone or grey)
+Link Color: #0D5196, hover color: #888
+Complimentary Grey/Black: #333
+Header Font: Roboto
+Body Font: Fira Sans 
+ End of Notes-->
+
+<style>
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #fff;
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        padding-top: 68px !important;
+    }
+    
+    .xs-primary-content {
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 1200px;
+        margin: 0px auto;
+        background: #fff;
+        padding-top: 120px;
+    }
+    
+    .xs-site-container {
+        padding: 50px;
+        width: 100%;
+        clear: both;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /****************************************** Well Styles *******************************************/
+    .well {
+        background-color: #f8f8f8;
+        border: 1px solid #eee;
+        border-radius: 0;
+    }
+    
+    .wellcustom {
+        border: 0;
+        background: none transparent scroll repeat 0% 0%;
+        color: white;
+        text-align: center;
+        margin: 0px auto;
+        min-height: 180px;
+        width: 80%;
+    }
+
+    /****************************************** Button Styles *******************************************/
+    
+    .btn {
+        margin: 0px;
+        font-size: 15px;
+        border-radius: 0;
+        outline: none;
+    }
+    
+    .btn:hover {
+        transition: all .2s ease-in-out;
+    }
+    
+    .btn-xl {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+    
+    .btn-default {
+        margin: 0px;
+        font-size: 16px;
+        border-radius: 0;
+        outline: none;
+        padding: 12px;
+    }
+    
+    .btn.pull-right {
+        margin: 0 0 5px 5px;
+    }
+    
+    .btn-d,
+    .btn-d:hover,
+    .btn-d:focus {
+        color: #FFF;
+        background: rgba(0, 0, 0, .3);
+    }
+    
+    .btn-primary {
+        background: #0D5196;
+        border-color: #0D5196;
+        color: #FFFFFF;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    }
+    
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open .dropdown-toggle.btn-primary {
+        background-color: #888;
+        border-color: #888;
+    }
+    
+    .btn-info {
+        background: #888;
+        border-color: #888;
+        color: #FFFFFF;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    }
+    
+    .btn-info:hover,
+    .btn-info:focus,
+    .btn-info:active,
+    .btn-info.active,
+    .open .dropdown-toggle.btn-info {
+        background-color: #0D5196;
+        border-color: #0D5196;
+    }
+    
+    .btn-wire {
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    
+    .btn-wire:hover,
+    .btn-wire:focus {
+        background: #333;
+        border: 1px solid #333;
+        color: #fff;
+    }
+    
+    .btn-glossy {
+        border: 1px solid rgba(0, 0, 0, .09);
+        border-bottom-color: rgba(0, 0, 0, .2);
+        text-shadow: 0 1px 0 rgba(0, 0, 1, .2);
+        box-shadow: 0 1px 3px rgba(0, 0, 1, .35), inset 0 1px 0 0 rgba(255, 255, 255, .4), inset 0 1px 0 2px rgba(255, 255, 255, .08);
+        background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, .07) 100%);
+        background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, .07) 100%);
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, .07) 100%);
+        background-image: linear-gradient(bottom, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, .07) 100%);
+        color: #fff;
+    }
+    
+    .btn-glossy:hover,
+    .btn-glossy:active,
+    .btn-glossy:focus {
+        opacity: .8;
+        color: #fff;
+    } 
+
+    /****************************************** Icon Styles *******************************************/
+    .icon {
+        /*border: 1px solid #888;
+    font-size:30px;
+    padding: 25px;*/
+        margin: 0 auto;
+        min-width: 85px;
+    }
+    
+    .icon:hover {
+        opacity: .5;
+    }
+    
+    .icon-social {
+        border: none;
+        color: #fff;
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    
+    .icon-social:hover {
+        opacity: .5;
+    }
+    
+    .icon-circle {
+        border-radius: 50%;
+    }
+    
+    .icon-rounded {
+        border-radius: 10%;
+    }
+    
+    .icon-square {
+        border-radius: 0;
+    }
+    
+    .fa-3x {
+        font-size: 2em;
+    }
+    
+    .caret {
+        margin: 0 0 0 5px
+    } 
+
+    /****************************************** IFrame & Video Styles *******************************************/
+    iframe {
+        border: 0;
+    }
+    
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /****************************************** Panel Styles *******************************************/
+    .panel-primary {
+        border-color: #0D5196;
+    }
+    
+    .panel-primary > .panel-heading {
+        background-color: #0D5196;
+        border-color: #0D5196;
+    }
+    
+    .panel-primary > .panel-heading + .panel-collapse .panel-body {
+        border-top-color: #0D5196;
+    }
+    
+    .panel-primary > .panel-footer + .panel-collapse .panel-body {
+        border-bottom-color: #0D5196;
+    }
+    
+    .panel-info {
+        border-color: #888;
+    }
+    
+    .panel-info > .panel-heading {
+        color: #fff;
+        border-color: #888;
+        background-color: #888;
+    }
+    
+    .panel-info > .panel-heading + .panel-collapse .panel-body {
+        border-top-color: #888;
+    }
+    
+    .panel-info > .panel-footer + .panel-collapse .panel-body {
+        border-bottom-color: #888;
+    }
+
+/*IDX mobile style*/
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.panel-default>.panel-heading {
+    color: #0D5196;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.panel-default {
+    border-color: #fff;
+}
+    
+    /****************************************** @Media Adjustments *******************************************/
+    @media (max-width: 768px) {
+        .primary-content {
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .xs-site-container {
+            padding: 5px 20px;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            -webkit-background-size: auto 200%;
+            -moz-background-size: auto 200%;
+            -o-background-size: auto 200%;
+            background-size: auto 200%;
+            display: block;
+        }
+
+        .xs-site-container-lg {
+            padding: 0;
+        }
+
+        .navbar-brand {
+            padding: 0px;
+            height: 55px;
+        }
+
+        img.xs-company-logo {
+            height: 50px;
+            margin: 5px 10px;
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+            background-color: #0D5196;
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+            background-color: #888;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            color: #0D5196;
+            font-size: 14px;
+            height: 50px;
+            line-height: 25px;
+        }
+
+        .navbar-inverse .navbar-collapse,
+        .navbar-inverse .navbar-form {
+            border-color: transparent;
+            background: #fff;
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+            background-color: #888;
+            color: #fff;
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+            color: #888;
+        }
+
+        .col-xs-2,
+        .col-sm-2,
+        .col-md-2,
+        .col-lg-2,
+        .col-xs-3,
+        .col-sm-3,
+        .col-md-3,
+        .col-lg-3,
+        .col-xs-4,
+        .col-sm-4,
+        .col-md-4,
+        .col-lg-4,
+        .col-xs-5,
+        .col-sm-5,
+        .col-md-5,
+        .col-lg-5,
+        .col-xs-6,
+        .col-sm-6,
+        .col-md-6,
+        .col-lg-6,
+        .col-xs-7,
+        .col-sm-7,
+        .col-md-7,
+        .col-lg-7,
+        .col-xs-8,
+        .col-sm-8,
+        .col-md-8,
+        .col-lg-8,
+        .col-xs-9,
+        .col-sm-9,
+        .col-md-9,
+        .col-lg-9,
+        .col-xs-10,
+        .col-sm-10,
+        .col-md-10,
+        .col-lg-10,
+        .col-xs-11,
+        .col-sm-11,
+        .col-md-11,
+        .col-lg-11,
+        .col-xs-12,
+        .col-sm-12,
+        .col-md-12,
+        .col-lg-12 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .xs-site-footer {
+            padding: 40px 0px 40px 28px;
+            margin: -7px;
+        }
+
+        .navbar-inverse .navbar-toggle {
+            border-color: #333;
+            background: #fff;
+        }
+    }
+
+    @media (max-width:320px) {
+        .row {
+            padding: 0px 20px 0px 20px;
+        }
+        .img-square-heading {
+            padding: 35px 0px;
+            font-size: 2em;
+        }
+        .xs-site-footer {
+            padding: 40px 20px 40px 27px;
+            margin: -7px;
+        }
+    }
+    
+    @media (min-width: 769px) {
+        .navbar-brand {
+            padding: 0px;
+            height: 55px;
+        }
+        img.xs-company-logo {
+            height: 50px;
+            margin: 5px 10px;
+        }
+    }
+
+ /****************************************** Menu Styles *******************************************/ 
+    /* Menu Styles */
+
+    @media (max-width: 1199px) {
+        .navbar-header {
+            float: none;
+            background-color: #0D5196;
+        }
+        .navbar-left,.navbar-right {
+            float: none !important;
+        }
+        .navbar-toggle {
+            display: block;
+            background-color: #fff;
+        }
+        .navbar-collapse {
+            border-top: 0px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .navbar-fixed-top {
+            top: 0;
+            border-width: 0 0 1px;
+        }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .navbar-nav {
+            float: none!important;
+            margin-top: 0px;
+        }
+        .navbar-nav>li {
+            float: none;
+        }
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .collapse.in{
+            display:block !important;
+        }
+        .navbar-nav .open .dropdown-menu {
+            position: static;
+            float: none;
+            width: auto;
+            margin-top: 0;
+            background-color: #313339;
+            border: 0;
+            box-shadow: none;
+            color: #999;
+        }
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+            background-color: #313339 !important;
+            color: #FFF;
+        }
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #999;
+    }
+    }
+
+    .navbar-fixed-top {
+        border-width: 0 0 1px;
+        top: 80px;
+    }
+    @media only screen and (max-width: 769px) {
+        .navbar-brand {
+            padding: 0px;
+            height: 50px;
+        }
+        img.xs-company-logo {
+            height: 40px;
+            vertical-align: baseline;
+            margin-top: 5px;
+        }
+    }
+    
+    @media only screen and (min-width: 769px) {
+        .navbar-brand {
+            padding: 0px;
+            height: 60px;
+        }
+
+        img.xs-company-logo {
+            height: 65px;
+            margin: 5px;
+        }
+
+        .navbar-right {
+        float: none !important;
+        margin: 0 auto;
+        display: inline-block;
+        vertical-align: top;    
+    }
+
+         .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+    
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
+    
+    a.navbar-brand.visible-xs.xs-company-name {
+        display: none !important;
+    }
+    
+    a.navbar-brand.xs-company-name.xs-company-logo {
+        font-size: 0px;
+    }
+    
+    a.xs-company-name {
+        margin: 0px 10px;
+        line-height: 60px;
+    }
+    
+    .navbar-inverse {
+        background-color: #fff;
+        border-color: transparent;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .navbar-inverse .navbar-brand {
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .dropdown-menu {
+        background-color: #3f424a;
+        text-align: left;
+    }
+    
+    .dropdown-menu>li>a {
+        color: #FAF9F9;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .navbar-inverse .dropdown-menu > li > a:hover,
+    .navbar-inverse .dropdown-menu > .active > a,
+    .navbar-inverse .dropdown-menu > .active > a:hover {
+        background-color: #585858;
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        background-color: #585858;
+        color: #0D5196;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+        background-color: #585858;
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .dropdown-menu > li > a:hover,
+    .navbar-inverse .dropdown-menu > .active > a,
+    .navbar-inverse .dropdown-menu > .active > a:hover {
+        background-color: #0D5196;
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        background-color: #0D5196;
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #FAF9F9;
+        background-color: #888;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a {
+        color: #0D5196;
+        font-size: 18px;
+        height: 75px;
+        line-height: 55px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    @media(max-width:768px) {
+    .navbar-inverse .navbar-nav > li > a {
+        color: #0D5196;
+        font-size: 16px;
+        height: 50px;
+        line-height: 25px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #888;
+    }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #888;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a {
+        color: #FAF9F9;
+        font-size: 16px;
+        height: 50px;
+        line-height: 25px;
+    }
+    
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-color: transparent;
+        background: #313339;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #888;
+        color: #FAF9F9;
+    }
+    
+    a.xs-company-name {
+    margin: 0px 10px;
+    line-height: 50px;
+    }
+    }
+    /* Menu Style end */
+    #stickyheader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        line-height: 72px;
+        text-align: center;
+        background-color: #2a2e65;
+        background-image: none;
+        background-repeat: repeat-x;
+        border-top: none;
+        color: #FAF9F9;
+        font-size: 1.2em;
+        z-index: 99999999;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .stickyheader-text {
+        font-size: 30px;
+    }
+        #stickyheader>a {
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        #stickyheader>a:hover {
+            color: #efefef;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px){
+    .xs-primary-content {
+        margin: 0px 0px;
+        padding-top: 100px;
+    }
+    }
+
+    /* Footer Code */
+/****************************************** Footer Styles *******************************************/
+.center {
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    width: 300px;
+    padding: 10px;
+}
+
+.xs-site-footer {
+    min-height: 121px;
+    padding-bottom: 10px;
+    background: #2a2e65;
+    font-family: inherit;
+    border-top: 1px solid #888;
+    color: #FFF;
+    padding-top: 20px;
+}
+
+#stickyfooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #333;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-top: 1px solid #333;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 99999999;
+    font-family: inherit;
+}
+
+.xs-site-footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.xs-site-footer a:hover {
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.xs-site-footer-copyright {
+    color: #FFF;
+    font-size: 12px;
+    clear: both;
+}
+
+.xs-site-footer hr {
+    display: none;
+}
+/********SOCIAL MEDIA BUTTONS*************/
+
+.fa-stack-2x {
+    color: #FFF;
+}
+
+.fa-stack-2x:hover {
+    color: #333;
+}
+
+.fa-facebook {
+    color: #fff;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #fff;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-youtube {
+    color: #fff;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+.fa-linkedin {
+    color: #fff;
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;
+}
+
+.fa-instagram {
+    color: #fff;
+}
+
+.fa-instagram:hover {
+    color: #e95950;
+}
+
+.fa-pinterest {
+    color: #fff;
+}
+
+.fa-pinterest:hover {
+    color: #cb2027;
+}
+
+.fa-snapchat {
+    color: #fff;
+}
+
+.fa-snapchat:hover {
+    color: #fffc00;
+}
+
+.fa-dropbox {
+    color: #fff;
+}
+
+.fa-dropbox:hover {
+    color: #007ee5;
+}
+
+.fa-yelp {
+    color: #fff;
+}
+
+.fa-yelp:hover {
+    color: #c41200;
+}
+
+.fa-google-plus {
+    color: #fff;
+}
+
+.fa-google-plus:hover {
+    color: #dd4b39;
+}
+.xs-lead-form-viewer {
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+@media (max-width: 768px){
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+}
+</style>
+
+    <!-- uxThemeStylesLiteral | BEGIN -->
+    
+    <!-- uxThemeStylesLiteral | END -->
+
+    <style type="text/css">
+        body {
+            padding-top: 45px; /* later overwritten by js*/
+        }
+
+        .xs-dynamic-widget {
+            width: 31.33%;
+            margin: 1%;
+            float: left;
+        }
+
+        @media(max-width: 768px) {
+            .xs-dynamic-widget {
+                width: 98%;
+                float: none;
+            }
+        }
+
+        .navbar-brand.hidden-xs.xs-company-name.xs-company-logo {
+            padding: 1px;
+        }
+
+            .navbar-brand.hidden-xs.xs-company-name.xs-company-logo img.xs-company-logo {
+                max-height: 100%;
+                width: auto;
+            }
+    </style>
+    <script type="text/javascript">
+        var window_resize = false;
+        var abp = function () {
+            $("body").css("padding-top", $(".navbar-fixed-top").outerHeight());
+        };
+        $(document).ready(function () {
+            abp();
+        });
+        $(window).resize(function () {
+            if (window_resize) {
+                clearTimeout(window_resize);
+            }
+            window_resize = setTimeout(function () {
+                abp();
+            }, 600);
+        });
+    </script>
+
+	</head>
+	<body class="xs-body">
+		<form method="post" action="NewContent.aspx?FileName=SellingBuying.x&amp;" id="form1" class="xs-page-form">
+<input type="hidden" name="content_content_ToolkitScriptManager_HiddenField" id="content_content_ToolkitScriptManager_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTMzMjUxMTczD2QWAmYPZBYCZg9kFgQCAQ9kFgICAQ9kFgZmDxYCHgRUZXh0BTxTZWxsaW5nIG9uZSBob21lIGFuZCBidXlpbmcgYW5vdGhlciDigJMgVGhlIFJpY2UgR3JvdXAsIEluYy5kAgEPFgIeB2NvbnRlbnQFZFRpcHMgb24ganVnZ2xpbmcgdGhlIHNhbGUgb2Ygb25lIGhvbWUgYW5kIHB1cmNoYXNlIG9mIGFub3RoZXIgYXQgdGhlIHNhbWUgdGltZS4gVGhlIFJpY2UgR3JvdXAsIEluYy5kAgIPFgIfAQXSAVBsYW5vLCBUWCwgcmVhbCBlc3RhdGUsIGxpc3RpbmdzLCBob21lIGJ1eWluZywgaG9tZSBzZWxsaW5nLCBSZWFsdG9yLCBob21lcyBmb3Igc2FsZSwgcmVhbCBlc3RhdGUgYWdlbnQsIGJyb2tlciwgcmVsb2NhdGlvbiwgbGFuZCwgcmVzaWRlbnRpYWwsIHByb3BlcnR5LCBob3VzZSwgcHJvcGVydGllcywgbXVsdGlwbGUgbGlzdGluZyBzZXJ2aWNlLCBtbHMsIG1vdmluZ2QCAw9kFgICAQ9kFgICFw9kFgICAQ9kFgJmD2QWBAICDxYCHwAFwF08ZGl2IGNsYXNzPSd4cy1mb290ZXItdGV4dCc+PHN0eWxlPg0KICAgICAvKiBGb290ZXIgQ29kZSAqLw0KLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiBGb290ZXIgU3R5bGVzICoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKiovDQouY2VudGVyIHsNCiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQp9DQoNCi5yaWdodCB7DQogICAgZmxvYXQ6IHJpZ2h0Ow0KICAgIHdpZHRoOiAzMDBweDsNCiAgICBwYWRkaW5nOiAxMHB4Ow0KfQ0KDQoubGVmdCB7DQogICAgZmxvYXQ6IGxlZnQ7DQogICAgd2lkdGg6IDMwMHB4Ow0KICAgIHBhZGRpbmc6IDEwcHg7DQp9DQoNCi54cy1zaXRlLWZvb3RlciB7DQogICAgbWluLWhlaWdodDogMTIxcHg7DQogICAgcGFkZGluZy1ib3R0b206IDYwcHg7DQogICAgYmFja2dyb3VuZDogYmxhY2s7DQogICAgZm9udC1mYW1pbHk6IGluaGVyaXQ7DQogICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICM4ODg7DQogICAgY29sb3I6ICNGRkY7DQogICAgcGFkZGluZy10b3A6IDIwcHg7DQp9DQoNCiNzdGlja3loZWFkZXIgew0KICAgICAgICBwb3NpdGlvbjogZml4ZWQ7DQogICAgICAgIHRvcDogMDsNCiAgICAgICAgbGVmdDogMDsNCiAgICAgICAgd2lkdGg6IDEwMCU7DQogICAgICAgIGhlaWdodDogODBweDsNCiAgICAgICAgLyogbGluZS1oZWlnaHQ6IDcycHg7ICovDQogICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjsNCiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogIzBENTE5NjsNCiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogbm9uZTsNCiAgICAgICAgYmFja2dyb3VuZC1yZXBlYXQ6IHJlcGVhdC14Ow0KICAgICAgICBib3JkZXItdG9wOiBub25lOw0KICAgICAgICBjb2xvcjogI0ZBRjlGOTsNCiAgICAgICAgZm9udC1zaXplOiAxLjJlbTsNCiAgICAgICAgei1pbmRleDogOTk5OTk5OTk7DQogICAgICAgIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjsNCiAgICAgICAgZGlzcGxheTogZmxleDsNCiAgICBhbGlnbi1pdGVtczogY2VudGVyOw0KICAgIH0NCiAgICAuc3RpY2t5aGVhZGVyLXRleHQgew0KICAgICAgICBmb250LXNpemU6IDMwcHg7DQogICAgfQ0KICAgICAgICAjc3RpY2t5aGVhZGVyPmEgew0KICAgICAgICAgICAgY29sb3I6ICNmZmY7DQogICAgICAgICAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7DQogICAgICAgIH0NCiAgICAgICAgDQogICAgICAgICNzdGlja3loZWFkZXI+YTpob3ZlciB7DQogICAgICAgICAgICBjb2xvcjogI2VmZWZlZjsNCiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lOw0KICAgICAgICB9DQogICAgICAgIEBtZWRpYSBhbmQgc2NyZWVuIChtYXgtd2lkdGg6NzY5cHgpIHsNCiAgICAgICAgICAgIC5mYS0yeCB7DQogICAgZm9udC1zaXplOiAxZW07DQogICAgcGFkZGluZzogNXB4Ow0KfQ0KICAgICAgICB9IA0KDQoueHMtc2l0ZS1mb290ZXIgYSB7DQogICAgY29sb3I6ICNGRkY7DQogICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOw0KICAgIGZvbnQtd2VpZ2h0OiA0MDA7DQogICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmOw0KfQ0KDQoueHMtc2l0ZS1mb290ZXIgYTpob3ZlciB7DQogICAgY29sb3I6ICNGRkY7DQogICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7DQogICAgZm9udC13ZWlnaHQ6IDQwMDsNCn0NCg0KLnhzLXNpdGUtZm9vdGVyLWNvcHlyaWdodCB7DQogICAgY29sb3I6ICNGRkY7DQogICAgZm9udC1zaXplOiAxMnB4Ow0KICAgIGNsZWFyOiBib3RoOw0KfQ0KDQoueHMtc2l0ZS1mb290ZXIgaHIgew0KICAgIGRpc3BsYXk6IG5vbmU7DQp9DQovKioqKioqKipTT0NJQUwgTUVESUEgQlVUVE9OUyoqKioqKioqKioqKiovDQoNCi5mYS1zdGFjay0yeCB7DQogICAgY29sb3I6ICNGRkY7DQp9DQoNCi5mYS1zdGFjay0yeDpob3ZlciB7DQogICAgY29sb3I6ICMzMzM7DQp9DQoNCi5mYS1mYWNlYm9vayB7DQogICAgY29sb3I6ICNmZmY7DQp9DQoNCi5mYS1mYWNlYm9vazpob3ZlciB7DQogICAgY29sb3I6ICMzYjU5OTg7DQp9DQoNCi5mYS10d2l0dGVyIHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLXR3aXR0ZXI6aG92ZXIgew0KICAgIGNvbG9yOiAjNTVhY2VlOw0KfQ0KDQouZmEteW91dHViZSB7DQogICAgY29sb3I6ICNmZmY7DQp9DQoNCi5mYS15b3V0dWJlOmhvdmVyIHsNCiAgICBjb2xvcjogI2JiMDAwMDsNCn0NCg0KLmZhLWxpbmtlZGluIHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLWxpbmtlZGluOmhvdmVyIHsNCiAgICBjb2xvcjogIzAwN2JiNTsNCn0NCg0KLmZhLWluc3RhZ3JhbSB7DQogICAgY29sb3I6ICNmZmY7DQp9DQoNCi5mYS1pbnN0YWdyYW06aG92ZXIgew0KICAgIGNvbG9yOiAjZTk1OTUwOw0KfQ0KDQouZmEtcGludGVyZXN0IHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLXBpbnRlcmVzdDpob3ZlciB7DQogICAgY29sb3I6ICNjYjIwMjc7DQp9DQoNCi5mYS1zbmFwY2hhdCB7DQogICAgY29sb3I6ICNmZmY7DQp9DQoNCi5mYS1zbmFwY2hhdDpob3ZlciB7DQogICAgY29sb3I6ICNmZmZjMDA7DQp9DQoNCi5mYS1kcm9wYm94IHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLWRyb3Bib3g6aG92ZXIgew0KICAgIGNvbG9yOiAjMDA3ZWU1Ow0KfQ0KDQouZmEteWVscCB7DQogICAgY29sb3I6ICNmZmY7DQp9DQoNCi5mYS15ZWxwOmhvdmVyIHsNCiAgICBjb2xvcjogI2M0MTIwMDsNCn0NCg0KLmZhLWdvb2dsZS1wbHVzIHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLWdvb2dsZS1wbHVzOmhvdmVyIHsNCiAgICBjb2xvcjogI2RkNGIzOTsNCn0NCiAgICAvKiAuY29sLW1kLTUsDQogICAgLmNvbC1tZC03IHsNCiAgICAgICAgbWFyZ2luLXRvcDogOHB4Ow0KICAgICAgICBtYXJnaW4tYm90dG9tOiA4cHg7DQogICAgfQ0KICAgIA0KICAgIC50YWJsZVRleHQgew0KICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7DQogICAgICAgIHBhZGRpbmctdG9wOiAxOTVweDsNCiAgICB9DQogICAgICovDQogICAgICAgICAubmF2YmFyLXRvZ2dsZSBzdmcgew0KbWFyZ2luOiAtNnB4IDAgLTZweCA1cHg7DQpmaWxsOiAjMDAwOw0KfQ0KLyogQkFDSyBUTyBUT1AgKi8NCi8qICAgIEJhY2sgdG8gdG9wIGJ1dHRvbiovDQpib2R5IHsNCiAgICBtYXJnaW46IDA7DQogICAgcGFkZGluZzogMDsNCiAgICBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7DQogICAgZm9udC1zaXplOiAxNHB4Ow0KICAgIGxpbmUtaGVpZ2h0OiAxNTAlOw0KICAgIGJhY2tncm91bmQ6ICNlZWU7DQogICAgcG9zaXRpb246IHJlbGF0aXZlOw0KICAgIGhlaWdodDogMTAwJTsNCn0NCi5oZWFkZXJDb250YWluZXIsDQouYm9keUNvbnRhaW5lciwNCi5mb290ZXJDb250YWluZXIgew0KICAgIG1heC13aWR0aDogOTYwcHg7DQogICAgbWFyZ2luOiAwIGF1dG87DQogICAgYmFja2dyb3VuZDogI0ZGRjsNCn0NCi5wYWRkaW5nIHsNCiAgICBwYWRkaW5nOiAyMHB4Ow0KfQ0KLmJvZHlDb250YWluZXIgew0KICAgIG1pbi1oZWlnaHQ6IDUwMHB4Ow0KfQ0KYS5iYWNrLXRvLXRvcCB7DQogICAgZGlzcGxheTogbm9uZTsNCiAgICB3aWR0aDogNjBweDsNCiAgICBoZWlnaHQ6IDYwcHg7DQogICAgdGV4dC1pbmRlbnQ6IC05OTk5cHg7DQogICAgcG9zaXRpb246IGZpeGVkOw0KICAgIHotaW5kZXg6IDk5OTsNCiAgICBsZWZ0OiAyMHB4Ow0KICAgIGJvdHRvbTogMzZweDsNCiAgICBiYWNrZ3JvdW5kOiAjMjdBRTYxIHVybCgiL3hTaXRlcy9BZ2VudHMvYWdlbnQxMS1wcmVtaXVtLXJlZG8vQ29udGVudC9VcGxvYWRlZEZpbGVzL2NoZXZyb24tdXAucG5nIikgbm8tcmVwZWF0IGNlbnRlciA4MCU7DQogICAgLXdlYmtpdC1ib3JkZXItcmFkaXVzOiAzMHB4Ow0KICAgIC1tb3otYm9yZGVyLXJhZGl1czogMzBweDsNCiAgICBib3JkZXItcmFkaXVzOiAzMHB4Ow0KfQ0KYTpob3Zlci5iYWNrLXRvLXRvcCB7DQogICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjsNCmNvbG9yOiAjNTU1OyAvKiBBZGQgYSBkYXJrLWdyZXkgYmFja2dyb3VuZCBvbiBob3ZlciAqLw0KfQ0KLmFibGVUZXh0ew0KICAgIGhlaWdodDogNDAwcHg7DQp9DQo8L3N0eWxlPg0KPGRpdiBjbGFzcz0ieHMtc2l0ZS1jb250YWluZXIiPg0KICAgIDxkaXYgY2xhc3M9ImNvbC1zbS0xMiBjb2wtbWQtNCBjb2wtbGctNCB0ZXh0LWNlbnRlciI+DQogICAgICAgIDxoMz5XaGVuIENoYXJhY3RlciBNYXR0ZXJzPC9oMz4NCiAgICAgICAgPGkgY2xhc3M9ImZhIGZhLXBob25lIj48L2k+IDxhIGhyZWY9InRlbDooMjE0KSA4MDgtMzEwMCI+ICgyMTQpIDgwOC0zMTAwPC9hPg0KICAgICAgICA8YnI+PGkgY2xhc3M9ImZhIGZhLWVudmVsb3BlIj48L2k+IDxhIGhyZWY9Im1haWx0bzpicmVudEByaWNlZ3JvdXBpbmMuY29tIj4gYnJlbnRAcmljZWdyb3VwaW5jLmNvbTwvYT4NCiAgICAgICAgPGJyPjxicj4NCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL3JpY2Vncm91cGluYyI+PGkgY2xhc3M9ImZhIGZhLWZhY2Vib29rIGZhLTJ4Ij48L2k+PC9hPg0KICAgICAgICA8YSBocmVmPSJodHRwczovL3R3aXR0ZXIuY29tL3JpY2Vncm91cGluYyI+PGkgY2xhc3M9ImZhIGZhLXR3aXR0ZXIgZmEtMngiPjwvaT48L2E+DQogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LnllbHAuY29tL2Jpei90aGUtcmljZS1ncm91cC1wbGFuby02P29zcT10aGUrcmljZStncm91cCUyQytpbmMuIj48aSBjbGFzcz0iZmEgZmEteWVscCBmYS0yeCI+PC9pPjwvYT4NCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly93d3cubGlua2VkaW4uY29tL2luL2JyZW50cmljZS8iPjxpIGNsYXNzPSJmYSBmYS1saW5rZWRpbiBmYS0yeCI+PC9pPjwvYT4NCiAgICAgICAgDQogICAgPC9kaXY+DQogICAgPGRpdiBjbGFzcz0iY29sLXNtLTEyIGNvbC1tZC00IGNvbC1sZy00IHRleHQtY2VudGVyIj4NCiAgICAgICAgPCEtLSA8aW1nIGNsYXNzPSIiIHNyYz0iL3hzaXRlcy9hZ2VudHMvYWdlbnQxMS1wcmVtaXVtLXJlZG8vQ29udGVudC9VcGxvYWRlZEZpbGVzL21ldHJvX3Byb3BlcnRpZXNfd2hpdGUucG5nIiBzdHlsZT0id2lkdGg6IDIyMHB4OyBtYXJnaW4tcmlnaHQ6IDExcHg7Ij4gLS0+DQogICAgICAgIDxoMT5UaGUgUmljZSBHcm91cCwgSW5jLjwvaDE+DQogICAgICAgIDxoND5NTFPCriBESVNDTEFJTUVSPC9oND48cD5DbGljayBoZXJlIGZvcjxicj48YSBocmVmPSJodHRwOi8vd3d3LnRyZWMudGV4YXMuZ292L2Zvcm1zL2luZm9ybWF0aW9uLWFib3V0LWJyb2tlcmFnZS1zZXJ2aWNlcyIgdGFyZ2V0PSJfYmxhbmsiPklORk9STUFUSU9OIEFCT1VUIEJST0tFUkFHRSBTRVJWSUNFUzwvYT48YnI+PGJyPjxhIGhyZWY9IiNkZW1vIiBjbGFzcz0iYnRuIGJ0bi1pbmZvIiBkYXRhLXRvZ2dsZT0iY29sbGFwc2UiPlNob3cgTW9yZTwvYT48L3A+PGRpdiBpZD0iZGVtbyIgY2xhc3M9ImNvbGxhcHNlIj4NCiAgICAgICAgICAgICAgICDCqSAyMDE3IE5vcnRoIFRleGFzIFJlYWwgRXN0YXRlIEluZm9ybWF0aW9uIFN5c3RlbXMsIEluYy4gQWxsIHJpZ2h0cyByZXNlcnZlZC4gRGlzY2xhaW1lcjogQWxsIGluZm9ybWF0aW9uIGRlZW1lZCByZWxpYWJsZSBidXQgbm90IGd1YXJhbnRlZWQgYW5kIHNob3VsZCBiZSBpbmRlcGVuZGVudGx5IHZlcmlmaWVkLiBBbGwgcHJvcGVydGllcyBhcmUgc3ViamVjdCB0byBwcmlvciBzYWxlLCBjaGFuZ2Ugb3Igd2l0aGRyYXdhbC4gTmVpdGhlciBsaXN0aW5nIGJyb2tlcihzKSBub3IgVGhlIFJpY2UgR3JvdXAsIEluYy4gc2hhbGwgYmUgcmVzcG9uc2libGUgZm9yIGFueSB0eXBvZ3JhcGhpY2FsIGVycm9ycywgbWlzaW5mb3JtYXRpb24sIG1pc3ByaW50cyBhbmQgc2hhbGwgYmUgaGVsZCB0b3RhbGx5IGhhcm1sZXNzLiBUaGUgZGF0YWJhc2UgaW5mb3JtYXRpb24gaGVyZWluIGlzIHByb3ZpZGVkIGZyb20gYW5kIGNvcHlyaWdodGVkIGJ5IHRoZSBOb3J0aCBUZXhhcyBSZWFsIEVzdGF0ZSBJbmZvcm1hdGlvbiBTeXN0ZW1zLCBJbmMuIE5UUkVJUyBkYXRhIG1heSBub3QgYmUgcmVwcm9kdWNlZCBvciByZWRpc3RyaWJ1dGVkIGFuZCBpcyBvbmx5IGZvciBwZW9wbGUgdmlld2luZyB0aGlzIHNpdGUuIEFsbCBpbmZvcm1hdGlvbiBwcm92aWRlZCBpcyBkZWVtZWQgcmVsaWFibGUgYnV0IGlzIG5vdCBndWFyYW50ZWVkIGFuZCBzaG91bGQgYmUgaW5kZXBlbmRlbnRseSB2ZXJpZmllZC4gVGhlIGFkdmVydGlzZW1lbnRzIGhlcmVpbiBhcmUgbWVyZWx5IGluZGljYXRpb25zIHRvIGJpZCBhbmQgYXJlIG5vdCBvZmZlcnMgdG8gc2VsbCB3aGljaCBtYXkgYmUgYWNjZXB0ZWQuIEFsbCBwcm9wZXJ0aWVzIGFyZSBzdWJqZWN0IHRvIHByaW9yIHNhbGUgb3Igd2l0aGRyYXdhbC4gQWxsIHJpZ2h0cyBhcmUgcmVzZXJ2ZWQgYnkgY29weXJpZ2h0Lg0KICAgICAgICAgICAgICA8L2Rpdj4NCiAgICA8L2Rpdj4NCiAgICA8ZGl2IGNsYXNzPSJjb2wtc20tMTIgY29sLW1kLTQgY29sLWxnLTQgdGV4dC1jZW50ZXIiPg0KICAgICAgICA8YWRkcmVzcz43MDEzIE1pbGxzIEJyYW5jaCBDaXJjbGUNCiAgICAgICAgICAgICAgICA8YnI+IFBsYW5vLCBUWCA3NTAyNC03NDgyPC9hZGRyZXNzPg0KICAgICAgICAgICAgICAgIDwhLS0gPGltZyBzcmM9Ii94c2l0ZXMvYWdlbnRzL2FnZW50MTEtcHJlbWl1bS1yZWRvL2NvbnRlbnQvdXBsb2FkZWRmaWxlcy9yZWFsdG9yLW1scy13aGl0ZS5wbmciIHdpZHRoPSIxNTAiIGFsdD0iRXF1YWwgSG91c2luZyBMZW5kZXIiPiAtLT4NCiAgICAgICAgICAgICAgICA8aW1nIHNyYz0iL3hzaXRlcy9hZ2VudHMvRmFpcndheUluZGVwZW5kZW50TW9ydGdhZ2VDb3Jwb3JhdGlvbjIvY29udGVudC91cGxvYWRlZGZpbGVzL0VITy13aGl0ZS5wbmciIHdpZHRoPSI1MCIgYWx0PSJFcXVhbCBIb3VzaW5nIE9wcG9ydHVuaXR5Ij4NCiAgICA8L2Rpdj4NCjwvZGl2Pg0KPCEtLVN0aWNreSBIZWFkZXIgQ29udGVudC0tPg0KPGRpdiBjbGFzcz0iaGlkZGVuLXhzIiBpZD0ic3RpY2t5aGVhZGVyIj4NCiAgICA8ZGl2IGNsYXNzPSJjb2wtc20tMyBzdGlja3loZWFkZXItdGV4dCIgc3R5bGU9ImZvbnQtc2l6ZToxNHB0OyI+PGkgY2xhc3M9ImZhIGZhLXBob25lIj48L2k+IDxhIGhyZWY9InRlbDooMjE0KSA4MDgtMzEwMCI+ICgyMTQpIDgwOC0zMTAwPC9hPg0KICAgIDwvZGl2Pg0KICAgIDxkaXYgY2xhc3M9ImNvbC1zbS02Ij4NCiAgICAgICAgICAgIDxhIGhyZWY9Ii9ob21lIj4NCiAgICAgICAgPCEtLSA8aW1nIHNyYz0iL3hzaXRlcy9hZ2VudHMvYWdlbnQxMS1wcmVtaXVtLXJlZG8vQ29udGVudC9VcGxvYWRlZEZpbGVzL21ldHJvX3Byb3BlcnRpZXNfd2hpdGUucG5nIiBzdHlsZT0id2lkdGg6IDE0MHB4OyI+IC0tPg0KICAgICAgICA8aDE+VGhlIFJpY2UgR3JvdXAsIEluYy48L2gxPg0KICAgICAgICANCiAgICAgICAgPC9hPg0KICAgIDwvZGl2Pg0KDQogICAgPGRpdiBjbGFzcz0iY29sLXNtLTMiPg0KICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5mYWNlYm9vay5jb20vcmljZWdyb3VwaW5jIj48aSBjbGFzcz0iZmEgZmEtZmFjZWJvb2sgZmEtMngiPjwvaT48L2E+DQogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vdHdpdHRlci5jb20vcmljZWdyb3VwaW5jIj48aSBjbGFzcz0iZmEgZmEtdHdpdHRlciBmYS0yeCI+PC9pPjwvYT4NCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly93d3cueWVscC5jb20vYml6L3RoZS1yaWNlLWdyb3VwLXBsYW5vLTY/b3NxPXRoZStyaWNlK2dyb3VwJTJDK2luYy4iPjxpIGNsYXNzPSJmYSBmYS15ZWxwIGZhLTJ4Ij48L2k+PC9hPg0KICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vYnJlbnRyaWNlLyI+PGkgY2xhc3M9ImZhIGZhLWxpbmtlZGluIGZhLTJ4Ij48L2k+PC9hPiAgICA8L2Rpdj4NCjwvZGl2Pg0KPGRpdiBjbGFzcz0idmlzaWJsZS14cyIgaWQ9InN0aWNreWhlYWRlciI+DQogICAgICAgIDxhIGhyZWY9Ii9ob21lIj4NCiAgICA8IS0tIDxpbWcgc3JjPSIveHNpdGVzL2FnZW50cy9hZ2VudDExLXByZW1pdW0tcmVkby9Db250ZW50L1VwbG9hZGVkRmlsZXMvbWV0cm9fcHJvcGVydGllc193aGl0ZS5wbmciIHN0eWxlPSJ3aWR0aDogMTMwcHg7IG1hcmdpbi1yaWdodDogNXB4OyI+PC9hPiZuYnNwOyAtLT4NCiAgICA8c3BhbiBzdHlsZT0id2lkdGg6IDEzMHB4OyBmb250LXNpemU6IDI1cHg7Ij5UaGUgUmljZSBHcm91cCwgSW5jLjwvc3Bhbj4NCg0KICAgICZuYnNwOw0KICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5mYWNlYm9vay5jb20vcmljZWdyb3VwaW5jIj48aSBjbGFzcz0iZmEgZmEtZmFjZWJvb2sgZmEtMngiPjwvaT48L2E+DQogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vdHdpdHRlci5jb20vcmljZWdyb3VwaW5jIj48aSBjbGFzcz0iZmEgZmEtdHdpdHRlciBmYS0yeCI+PC9pPjwvYT4NCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly93d3cueWVscC5jb20vYml6L3RoZS1yaWNlLWdyb3VwLXBsYW5vLTY/b3NxPXRoZStyaWNlK2dyb3VwJTJDK2luYy4iPjxpIGNsYXNzPSJmYSBmYS15ZWxwIGZhLTJ4Ij48L2k+PC9hPg0KICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vYnJlbnRyaWNlLyI+PGkgY2xhc3M9ImZhIGZhLWxpbmtlZGluIGZhLTJ4Ij48L2k+PC9hPg0KICAgIDxicj4NCiAgICAgICAgPGEgY2xhc3M9ImJ0biBidG4tcHJpbWFyeSIgc3R5bGU9ImRpc3BsYXk6aW5saW5lLWJsb2NrO2NvbG9yOiNmZmY7IGZsb2F0OiBsZWZ0OyBtYXJnaW4tdG9wOiAxNHB4OyBtYXJnaW4tbGVmdDogMTNweDsiIGhyZWY9InRlbDooMjE0KSA4MDgtMzEwMCI+DQogICAgICAgICAgICAgICAgQ2FsbA0KICAgICAgICAgICAgPC9hPg0KICAgIA0KICAgIDwvZGl2Pg0KPHNjcmlwdD4gICAgJCgiYS5uYXZiYXItYnJhbmQuaGlkZGVuLXhzLnhzLWNvbXBhbnktbmFtZS54cy1jb21wYW55LWxvZ28iKS5yZW1vdmVDbGFzcygiaGlkZGVuLXhzIikNCjwvc2NyaXB0Pg0KPCEtLU1lbnUgdGV4dCBvbiBtb2JpbGUtLT4NCjxzY3JpcHQ+DQogICAgKGZ1bmN0aW9uKCkgew0KDQogICAgICAgIHZhciB0ZW1wbGF0ZSA9ICc8c3Bhbj5NZW51PC9zcGFuPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIjsgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48cGF0aCBkPSJNMyAxOGgxOHYtMkgzdjJ6bTAtNWgxOHYtMkgzdjJ6bTAtN3YyaDE4VjZIM3oiLz48L3N2Zz4nOw0KDQogICAgICAgIHZhciBuZXdNZW51ID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSgnbmF2YmFyLXRvZ2dsZScpOw0KICAgICAgICBuZXdNZW51WzBdLmlubmVySFRNTCA9IHRlbXBsYXRlOw0KDQogICAgfSkoKTsNCjwvc2NyaXB0Pg0KPCEtLUVuZCBNZW51IHRleHQgb24gbW9iaWxlLS0+DQo8IS0tIEZpeCBGb3IgSU9TIFNhZmFyaSBkb3VibGUgY2xpY2sgb24gbW9iaWxlIG1lbnUgLS0+DQo8c2NyaXB0Pg0KICAgIChmdW5jdGlvbigpIHsNCiAgICAgICAgaWYgKHdpbmRvdy5pbm5lcldpZHRoIDwgNzY4KSB7DQogICAgICAgICAgICB2YXIgcGFyZW50ID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeUNsYXNzTmFtZSgnZHJvcGRvd24tbWVudScpOw0KICAgICAgICBmb3IgKHZhciBpID0gMDsgaSA8IHBhcmVudC5sZW5ndGg7IGkrKykgew0KICAgICAgICAgICAgcGFyZW50W2ldLmNoaWxkTm9kZXMuZm9yRWFjaChmdW5jdGlvbihpdGVtKSB7DQogICAgICAgICAgICAgICAgaWYgKGl0ZW0ubm9kZU5hbWUgPT09ICdMSScpIHsNCiAgICAgICAgICAgICAgICBpdGVtLmNoaWxkTm9kZXMuZm9yRWFjaChmdW5jdGlvbihzdWJJdGVtKSB7DQogICAgICAgICAgICAgICAgICAgIGlmIChzdWJJdGVtLm5vZGVOYW1lID09PSAnQScpIHsNCiAgICAgICAgICAgICAgICAgICAgICAgIHN1Ykl0ZW0uYWRkRXZlbnRMaXN0ZW5lcignY2xpY2snLCBmdW5jdGlvbigpIHsNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB3aW5kb3cubG9jYXRpb24gPSB0aGlzLmhyZWY7DQogICAgICAgICAgICAgICAgICAgICAgICB9KQ0KICAgICAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgfSkNCiAgICAgICAgICAgICB9DQogICAgICAgICAgICB9KQ0KICAgICAgICB9DQoNCiAgICAgICAgfQ0KICAgIH0pKCk7DQogICAgPC9zY3JpcHQ+DQogICAgPCEtLSBFbmQgb2YgSU9TIFNhZmFyaSBkb3VibGUgY2xpY2sgb24gbW9iaWxlIG1lbnUgLS0+DQogICAgPCEtLSBCQUNLIFRPIFRPUCBTQ1JJUFQgLS0+DQogICAgPCEtLSA8c2NyaXB0Pg0KICAgICQoJ2JvZHknKS5wcmVwZW5kKCc8YSBocmVmPSIjIiBjbGFzcz0iYmFjay10by10b3AiPkJhY2sgdG8gVG9wPC9hPicpOw0KIA0KIHZhciBhbW91bnRTY3JvbGxlZCA9IDMwMDsNCiAgDQogJCh3aW5kb3cpLnNjcm9sbChmdW5jdGlvbigpIHsNCiAgICAgaWYgKCAkKHdpbmRvdykuc2Nyb2xsVG9wKCkgPiBhbW91bnRTY3JvbGxlZCApIHsNCiAgICAgICAgICQoJ2EuYmFjay10by10b3AnKS5mYWRlSW4oJ3Nsb3cnKTsNCiAgICAgfSBlbHNlIHsNCiAgICAgICAgICQoJ2EuYmFjay10by10b3AnKS5mYWRlT3V0KCdzbG93Jyk7DQogICAgIH0NCiB9KTsNCiAgDQogJCgnYS5iYWNrLXRvLXRvcCwgYS5zaW1wbGUtYmFjay10by10b3AnKS5jbGljayhmdW5jdGlvbigpIHsNCiAgICAgJCgnaHRtbCwgYm9keScpLmFuaW1hdGUoew0KICAgICAgICAgc2Nyb2xsVG9wOiAwDQogICAgIH0sIDcwMCk7DQogICAgIHJldHVybiBmYWxzZTsNCiB9KTsNCiA8L3NjcmlwdD4gLS0+DQoNCjwvZGl2Pjxici8+PGRpdiBjbGFzcz0ndGFibGVUZXh0JyBzdHlsZT0ndGV4dC1hbGlnbjogY2VudGVyOyc+PGRpdiBjbGFzcz0neHMtc2l0ZS1mb290ZXItY29udGFjdC1pbmZvJz48L2Rpdj48YnI+PGRpdiBjbGFzcz0neHMtc2l0ZS1mb290ZXItY29weXJpZ2h0Jz5Qb3J0aW9ucyBDb3B5cmlnaHQgJmNvcHk7IDIwMTkgIFBpcGVsaW5lIFJPSSwgTExDPGJyPkFub3RoZXIgd2Vic2l0ZSBieSA8YSBocmVmPSdodHRwOi8vd3d3LnBpcGVsaW5lcm9pLmNvbS8nIHRhcmdldD0nX2JsYW5rJz5QaXBlbGluZSBST0kuPC9hPiZuYnNwOyB8IDxhIGhyZWY9J2h0dHBzOi8vcmljZWdyb3VwaW5jLnByb2l3ZWJzaXRlcy5jb20vYXBwcy9hbGFtb2RlbG9naW4vbG9naW4uYXNweCc+QWRtaW4gTG9naW48L2E+IHwgPGEgaHJlZj0nL1Rlcm1zT2ZVc2UnPlRlcm1zIG9mIFVzZTwvYT4gfCA8YSBocmVmPScvU2l0ZU1hcCc+U2l0ZSBNYXA8L2E+IHwgPGEgaHJlZj0nL0xpc3RpbmdQcm9wZXJ0aWVzL2RlZmF1bHQuYXNweCc+QXJlYSBMaXN0aW5nczwvYT48YnI+QWxsIHJhdGUsIHBheW1lbnQsIGFuZCBhcmVhIGluZm9ybWF0aW9uIGFyZSBlc3RpbWF0ZXMgYW5kIGFwcHJveGltYXRpb25zIG9ubHkuPC9kaXY+PC9kaXY+PG1ldGEgaWQ9J2N5MDEnIGRhdGEta2V5PSI4UTRMIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MDInIGRhdGEta2V5PSI2SUdVIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MDMnIGRhdGEta2V5PSJXVzRLIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MDQnIGRhdGEta2V5PSJPTVdFIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MDUnIGRhdGEta2V5PSIxUFIwIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MDYnIGRhdGEta2V5PSJHM1AxIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MDcnIGRhdGEta2V5PSJLQ0RBIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MDgnIGRhdGEta2V5PSJHTUxFIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MDknIGRhdGEta2V5PSJNUlFWIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9J2N5MTAnIGRhdGEta2V5PSJYSzVGIiBjbGFzcz0iQ3J5cHRvIi8+PG1ldGEgaWQ9ImN5a2V5IiBkYXRhLWtleT0iIi8+ZAIGDw8WAh4HVmlzaWJsZWhkZGQg/V9z9QKRd5ZCXO90BDy2hcrUbXzBosYy3Ef4hBwGfw==" />
+
+
+<script src="/ScriptResource.axd?d=FYJD99S4CapDaVzOAV6lLj1wLx39NMMvTeIzEghaZ0s512hXb7Iyb5l6gWj9jSP3C2P8GHqShxCcz1kZ8_XPQtW2cV6OovQ7xRkt9X_-OSXnw7TkQX2xMCrPpKOHeTKH0&amp;t=23c9c237" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="03F52E9C" />
+			
+    <div class="ta-layout-fullscreen">
+        <header>
+            <div class="xs-header">
+                <div class="xs-company-motto hidden">
+                    <font color='#000000' size='26' face='Monotype Corsiva'>When Character Matters</font>
+
+                </div>
+            </div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#xs-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    
+                    <a href="/" class="navbar-brand hidden-xs xs-company-name xs-company-logo">
+                        
+                        
+                    </a>
+                    <a href="/" class="navbar-brand visible-xs xs-company-name">
+                        
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="xs-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                <!-- button separator <li>
+                    <a class="primary-button-separator">&emsp;</a>
+                </li>-->
+					
+				
+                <!-- button separator <li>
+                    <a class="primary-button-separator">&emsp;</a>
+                </li>-->
+					
+				
+                <!-- button separator <li>
+                    <a class="primary-button-separator">&emsp;</a>
+                </li>-->
+					
+				
+                <!-- button separator <li>
+                    <a class="primary-button-separator">&emsp;</a>
+                </li>-->
+					
+				
+			
+
+		
+		<li>
+            <a href="/MyHomeValue">
+                My Home Value
+			</a>
+        </li>
+			
+		
+                        
+				<li>
+					<a href="/Reviews">
+						Reviews
+					</a>
+				</li>
+			
+				<li class="has-children dropdown">
+					
+					<a href="/ForBuyers">
+						<span class="pull-left">
+							Buyers
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/OurListings">
+										
+											&emsp;
+										Our Listings
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SearchAreaHomes">
+										
+											&emsp;
+										Search Area Homes
+									</a>
+								</li>
+							
+								<li>
+									<a href="/FirstTimeHomeBuyers">
+										First Time Home Buyers
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HomeBuyerChecklist">
+										
+											&emsp;
+										Home Buyer Checklist
+									</a>
+								</li>
+							
+								<li>
+									<a href="/YourBuyingPower">
+										
+											&emsp;
+										Your Buying Power
+									</a>
+								</li>
+							
+								<li>
+									<a href="/GetPre-qualified">
+										
+											&emsp;
+										Get Pre-qualified
+									</a>
+								</li>
+							
+								<li>
+									<a href="/YourDownPayment">
+										
+											&emsp;
+										Your Down Payment
+									</a>
+								</li>
+							
+								<li>
+									<a href="/YourFICOscore">
+										
+											&emsp;
+										Your FICO score
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StayingApproved">
+										
+											&emsp;
+										Staying Approved
+									</a>
+								</li>
+							
+								<li>
+									<a href="/NewConstruction">
+										
+											&emsp;
+										New Construction
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HowEscrowWorks">
+										
+											&emsp;
+										How Escrow Works
+									</a>
+								</li>
+							
+								<li>
+									<a href="/WritingtheOffer">
+										
+											&emsp;
+										Writing the Offer
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TheListingContract">
+										
+											&emsp;
+										The Listing Contract
+									</a>
+								</li>
+							
+								<li>
+									<a href="/What'sEarnestMoney">
+										
+											&emsp;
+										What's Earnest Money?
+									</a>
+								</li>
+							
+								<li>
+									<a href="/Whyaninspection">
+										
+											&emsp;
+										Why an inspection?
+									</a>
+								</li>
+							
+								<li>
+									<a href="/WhyTitleInsurance">
+										
+											&emsp;
+										Why Title Insurance?
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TitleInformation">
+										
+											&emsp;
+										Title Information
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SellerPaidClosing">
+										
+											&emsp;
+										Seller Paid Closing
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TaxClosingCosts">
+										
+											&emsp;
+										Tax Closing Costs
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+					<li class="secondary-button-separator">&emsp;</li>
+					
+				<li class="has-children dropdown">
+					
+					<a href="/SellingYourHome">
+						<span class="pull-left">
+							Sellers
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/selling-one-home-buying-another">
+										
+											&emsp;
+										Selling and Buying eBook
+									</a>
+								</li>
+							
+								<li>
+									<a href="/7-reasons-your-home-isnt-selling">
+										
+											&emsp;
+										Marketing Mistakes eBook
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StagingServices">
+										
+											&emsp;
+										Staging Services
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StagingChecklist">
+										
+											&emsp;
+										Staging Checklist
+									</a>
+								</li>
+							
+								<li>
+									<a href="/CurbAppealList">
+										
+											&emsp;
+										Curb Appeal List
+									</a>
+								</li>
+							
+								<li>
+									<a href="/3-ways-to-improve-curb-appeal">
+										
+											&emsp;
+										Curb Appeal eBook
+									</a>
+								</li>
+							
+								<li>
+									<a href="/NeighborhoodPrices">
+										Neighborhood Prices
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ImprovementsThatPay">
+										Improvements That Pay
+									</a>
+								</li>
+							
+								<li>
+									<a href="/GettheHighestPrice">
+										Get the Highest Price
+									</a>
+								</li>
+							
+								<li>
+									<a href="/FreeHomeValuation">
+										Free Home Valuation
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HomeAppreciation">
+										Home Appreciation
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ListingCommissions">
+										Listing Commissions
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TypesofListingContracts">
+										Types of Listing Contracts
+									</a>
+								</li>
+							
+								<li>
+									<a href="/RoleoftheMLS">
+										Role of the MLS
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SellingOne,BuyingAnother">
+										Selling One, Buying Another
+									</a>
+								</li>
+							
+								<li>
+									<a href="/Sellingyourownhome">
+										Selling your own home
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SettingtheSalesPrice">
+										Setting the Sales Price
+									</a>
+								</li>
+							
+								<li>
+									<a href="/Shouldyoupaint">
+										Should you paint?
+									</a>
+								</li>
+							
+								<li>
+									<a href="/FlowersAddCurbAppeal!">
+										Flowers Add Curb Appeal!
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ContingenciesinContracts">
+										Contingencies in Contracts
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ReasonsHomesDon'tSell">
+										Reasons Homes Don't Sell
+									</a>
+								</li>
+							
+								<li>
+									<a href="/Realvs.PersonalProperty">
+										Real vs. Personal Property
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HomeownerWarranties">
+										Homeowner Warranties
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+				<li class="has-children dropdown">
+					
+					<a href="/resources">
+						<span class="pull-left">
+							FREE Resources
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/ComingSoon">
+										COMING SOON Listings
+									</a>
+								</li>
+							
+								<li>
+									<a href="/KingsRidgeCMA">
+										Kings Ridge CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/CastleHIllsCMA">
+										Castle Hills CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ParkerEstatesCMA">
+										Parker Estates CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HeritageLakesCMA">
+										Heritage Lakes CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HeritageGreenCMA">
+										Heritage Green CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StonebriarVillageCMA">
+										Stonebriar Village CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/NorthColonyCMA">
+										North Colony CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StewartPeninsulaCMA">
+										Stewart Peninsula CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SouthColonyCMA">
+										South Colony CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TheCascadesCMA">
+										The Cascades CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TheLegendsCMA">
+										The Legends CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/LegendTrailsCMA">
+										Legend Trails CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/NorthpointeCMA">
+										Northpointe CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/RidgepointeCMA">
+										Ridgepointe CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/MeridianLewisvilleCMA">
+										Meridian Lewisville CMA
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+				<li class="has-children dropdown">
+					
+					<a href="/Commercial">
+						<span class="pull-left">
+							Commercial
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/smallbusiness">
+										For Small Business
+									</a>
+								</li>
+							
+								<li>
+									<a href="/LeaseAnalysis">
+										Lease Analysis
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SiteSelectionServices">
+										Site Selection Services
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+				<li class="has-children dropdown">
+					
+					<a href="/Home">
+						<span class="pull-left">
+							Home
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/pressrelease2019">
+										Press Release Jan. 2019
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StaffProfiles">
+										Staff Profiles
+									</a>
+								</li>
+							
+								<li>
+									<a href="/WhyChooseUs!">
+										Why Choose Us!
+									</a>
+								</li>
+							
+								<li>
+									<a href="/EthicsinRealEstate">
+										Ethics in Real Estate
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ContactUs">
+										Contact Us
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+                        <li>&emsp;</li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="xs-primary-content">
+                <div class="col-sm-12">
+                    
+    
+    <!-- phPage: BEGIN -->
+    <div><STYLE>
+    .xs-legacy .well {
+        border-width: .15em;
+        border-style: solid;
+        padding: 1em;
+        margin: 1em;
+        background: #ededed;
+        font-weight: normal;
+        text-decoration: none;
+        text-shadow: 1px 1px 0px #fff;
+    }
+</STYLE>
+<IMG style="float:right; margin:1em; width:250px" src="/proiimages/agent/growing-family.jpg" />
+<h3>Selling One, Buying Another</h3>
+<p>In a perfect world, you sell your old home and buy the new one on the same day. Given that things rarely turn out perfectly, here are some things to keep in mind as you negotiate the sale of one house with the purchase of another.</P>
+<h4>Time it right</h4>
+<p>Fall and spring are the best times for homes to move and you want to consider the season of the year when buying and selling. And if the closing dates aren’t going to coincide, a gap – rather than two mortgages – is the better. It’s easier and usually cheaper to find temporary housing than juggle two mortgages.></P>
+<h4>Selling First</h4>
+<UL>
+    <LI>Selling your home before buying a new one minimizes financial hazards. Even if you have to find temporary housing, it’s generally cheaper than two mortgages.</li>
+    <LI>Get an appraisal first thing off the bat. That way you’ll have a good idea how the sale of your home will effect your purchasing power on the new one. This will help keep you from over extending your mortgage abilities.</li>
+    <LI>Get pre-approved on a loan for the new home.</li>
+    <LI>Until most of your contingencies have been met, wait to put an offer on a new house. You don’t want to be left holding the bag, or in this case, the house.</li>
+    <LI>If you’re ready to accept an offer on your home, but haven’t found the right new home, negotiate a long escrow or a sale/lease back. This will give you more time to look for the new home. Otherwise, look for temporary housing.</li>
+</ul>
+<h4>Buying First</h4>
+<p>It happens. You’re only
+    <I>thinking</I> of buying, and suddenly the right home shows up. Now you have to sell your old home quickly. Here are some tips on making things work in your favor:</p>
+<UL>
+    <LI>Negotiating a long escrow on this side of the sale works, too. You can also make the purchase contingent on your house selling. This will work better in a slow market, but it’s worth a try in any market. You never know what may also work best for the seller of your new home.</li>
+    <LI>Try and schedule the closing date of your current home
+        <I>prior </I>to the closing on your new home. Temporary housing is generally a better situation than two mortgages.</li>
+    <LI>Take a close look at what price you’re going to ask for your home. Make sure it’s realistic in the current market.</li>
+    <LI>When you get an acceptable offer, check the buyer’s credit history. You don’t want any surprises that are going to delay things. If you’ve closed on the new home, but haven’t sold the old one, consider renting it out, or taking it off the market until the next season (or until the market improves).</li>
+</ul>
+<h4>Same Market or Across Country</h4>
+<p>Generally, if you’re buying and selling in the same market, you can negotiate closing dates to work for you. But when you’re dealing with a cross country move, it’s a lot harder. A real estate professional really comes in handy at this point. Legal documents can be faxed or sent via overnight courier and your focus won’t be stretched to the limit. You may end up renting one home or the other, or have to consider a bridge loan. But with someone local in the market on your side, it will hopefully be less stressful.</P>
+<h4>Show Me the Money</h4>
+<p>Make sure you have a tight hold on, and a clear understanding of, your financial situation. Cash reserves are always helpful, but never more so than during the purchase of a home. Two to three months is the recommended reserve, but if you don’t have it, this is where the bridge loan comes in handy. Some lenders are more inclined to make a loan if it’s for the purchase of a home. If you’re a smart shopper/seller, you’ll accept an offer from someone who’s flexible about move-in dates. It can save you money in the long run. Too many moves with storage costs can quickly eat up any profit you may have made in the transaction.</P></div>
+    <!-- phPage: END -->
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="xs-dynamic-content">
+                
+    
+
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <footer class="xs-site-footer panel-footer">
+            <div class="xs-profile-picture hidden">
+                
+            </div>
+            <div class="xs-language-choices text-center">
+                
+    <div class="xs-language-options text-center">
+	    <label>Choose your language:</label> <br>
+	    
+		    <a href="?ChosenLanguage=English" title="English">English</a> 
+	    
+		    <a href="?ChosenLanguage=French" title="French">French</a> 
+	    
+		    <a href="?ChosenLanguage=German" title="German">German</a> 
+	    
+		    <a href="?ChosenLanguage=Portuguese" title="Portuguese">Portuguese</a> 
+	    
+		    <a href="?ChosenLanguage=Spanish" title="Spanish">Spanish</a> 
+	    
+    </div>
+
+            </div>
+            <hr>
+            <!-- footer | BEGIN -->
+            
+    
+
+<div class='xs-footer-text'><style>
+     /* Footer Code */
+/****************************************** Footer Styles *******************************************/
+.center {
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    width: 300px;
+    padding: 10px;
+}
+
+.xs-site-footer {
+    min-height: 121px;
+    padding-bottom: 60px;
+    background: black;
+    font-family: inherit;
+    border-top: 1px solid #888;
+    color: #FFF;
+    padding-top: 20px;
+}
+
+#stickyheader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        /* line-height: 72px; */
+        text-align: center;
+        background-color: #0D5196;
+        background-image: none;
+        background-repeat: repeat-x;
+        border-top: none;
+        color: #FAF9F9;
+        font-size: 1.2em;
+        z-index: 99999999;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+    align-items: center;
+    }
+    .stickyheader-text {
+        font-size: 30px;
+    }
+        #stickyheader>a {
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        #stickyheader>a:hover {
+            color: #efefef;
+            text-decoration: underline;
+        }
+        @media and screen (max-width:769px) {
+            .fa-2x {
+    font-size: 1em;
+    padding: 5px;
+}
+        } 
+
+.xs-site-footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.xs-site-footer a:hover {
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.xs-site-footer-copyright {
+    color: #FFF;
+    font-size: 12px;
+    clear: both;
+}
+
+.xs-site-footer hr {
+    display: none;
+}
+/********SOCIAL MEDIA BUTTONS*************/
+
+.fa-stack-2x {
+    color: #FFF;
+}
+
+.fa-stack-2x:hover {
+    color: #333;
+}
+
+.fa-facebook {
+    color: #fff;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #fff;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-youtube {
+    color: #fff;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+.fa-linkedin {
+    color: #fff;
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;
+}
+
+.fa-instagram {
+    color: #fff;
+}
+
+.fa-instagram:hover {
+    color: #e95950;
+}
+
+.fa-pinterest {
+    color: #fff;
+}
+
+.fa-pinterest:hover {
+    color: #cb2027;
+}
+
+.fa-snapchat {
+    color: #fff;
+}
+
+.fa-snapchat:hover {
+    color: #fffc00;
+}
+
+.fa-dropbox {
+    color: #fff;
+}
+
+.fa-dropbox:hover {
+    color: #007ee5;
+}
+
+.fa-yelp {
+    color: #fff;
+}
+
+.fa-yelp:hover {
+    color: #c41200;
+}
+
+.fa-google-plus {
+    color: #fff;
+}
+
+.fa-google-plus:hover {
+    color: #dd4b39;
+}
+    /* .col-md-5,
+    .col-md-7 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .tableText {
+        text-align: center;
+        padding-top: 195px;
+    }
+     */
+         .navbar-toggle svg {
+margin: -6px 0 -6px 5px;
+fill: #000;
+}
+/* BACK TO TOP */
+/*    Back to top button*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    background: #eee;
+    position: relative;
+    height: 100%;
+}
+.headerContainer,
+.bodyContainer,
+.footerContainer {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #FFF;
+}
+.padding {
+    padding: 20px;
+}
+.bodyContainer {
+    min-height: 500px;
+}
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    left: 20px;
+    bottom: 36px;
+    background: #27AE61 url("/xSites/Agents/agent11-premium-redo/Content/UploadedFiles/chevron-up.png") no-repeat center 80%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+a:hover.back-to-top {
+    background-color: #fff;
+color: #555; /* Add a dark-grey background on hover */
+}
+.ableText{
+    height: 400px;
+}
+</style>
+<div class="xs-site-container">
+    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+        <h3>When Character Matters</h3>
+        <i class="fa fa-phone"></i> <a href="tel:(214) 808-3100"> (214) 808-3100</a>
+        <br><i class="fa fa-envelope"></i> <a href="mailto:brent@ricegroupinc.com"> brent@ricegroupinc.com</a>
+        <br><br>
+        <a href="https://www.facebook.com/ricegroupinc"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ricegroupinc"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.yelp.com/biz/the-rice-group-plano-6?osq=the+rice+group%2C+inc."><i class="fa fa-yelp fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/brentrice/"><i class="fa fa-linkedin fa-2x"></i></a>
+        
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+        <!-- <img class="" src="/xsites/agents/agent11-premium-redo/Content/UploadedFiles/metro_properties_white.png" style="width: 220px; margin-right: 11px;"> -->
+        <h1>The Rice Group, Inc.</h1>
+        <h4>MLS® DISCLAIMER</h4><p>Click here for<br><a href="http://www.trec.texas.gov/forms/information-about-brokerage-services" target="_blank">INFORMATION ABOUT BROKERAGE SERVICES</a><br><br><a href="#demo" class="btn btn-info" data-toggle="collapse">Show More</a></p><div id="demo" class="collapse">
+                © 2017 North Texas Real Estate Information Systems, Inc. All rights reserved. Disclaimer: All information deemed reliable but not guaranteed and should be independently verified. All properties are subject to prior sale, change or withdrawal. Neither listing broker(s) nor The Rice Group, Inc. shall be responsible for any typographical errors, misinformation, misprints and shall be held totally harmless. The database information herein is provided from and copyrighted by the North Texas Real Estate Information Systems, Inc. NTREIS data may not be reproduced or redistributed and is only for people viewing this site. All information provided is deemed reliable but is not guaranteed and should be independently verified. The advertisements herein are merely indications to bid and are not offers to sell which may be accepted. All properties are subject to prior sale or withdrawal. All rights are reserved by copyright.
+              </div>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+        <address>7013 Mills Branch Circle
+                <br> Plano, TX 75024-7482</address>
+                <!-- <img src="/xsites/agents/agent11-premium-redo/content/uploadedfiles/realtor-mls-white.png" width="150" alt="Equal Housing Lender"> -->
+                <img src="/xsites/agents/FairwayIndependentMortgageCorporation2/content/uploadedfiles/EHO-white.png" width="50" alt="Equal Housing Opportunity">
+    </div>
+</div>
+<!--Sticky Header Content-->
+<div class="hidden-xs" id="stickyheader">
+    <div class="col-sm-3 stickyheader-text" style="font-size:14pt;"><i class="fa fa-phone"></i> <a href="tel:(214) 808-3100"> (214) 808-3100</a>
+    </div>
+    <div class="col-sm-6">
+            <a href="/home">
+        <!-- <img src="/xsites/agents/agent11-premium-redo/Content/UploadedFiles/metro_properties_white.png" style="width: 140px;"> -->
+        <h1>The Rice Group, Inc.</h1>
+        
+        </a>
+    </div>
+
+    <div class="col-sm-3">
+        <a href="https://www.facebook.com/ricegroupinc"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ricegroupinc"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.yelp.com/biz/the-rice-group-plano-6?osq=the+rice+group%2C+inc."><i class="fa fa-yelp fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/brentrice/"><i class="fa fa-linkedin fa-2x"></i></a>    </div>
+</div>
+<div class="visible-xs" id="stickyheader">
+        <a href="/home">
+    <!-- <img src="/xsites/agents/agent11-premium-redo/Content/UploadedFiles/metro_properties_white.png" style="width: 130px; margin-right: 5px;"></a>&nbsp; -->
+    <span style="width: 130px; font-size: 25px;">The Rice Group, Inc.</span>
+
+    &nbsp;
+        <a href="https://www.facebook.com/ricegroupinc"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ricegroupinc"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.yelp.com/biz/the-rice-group-plano-6?osq=the+rice+group%2C+inc."><i class="fa fa-yelp fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/brentrice/"><i class="fa fa-linkedin fa-2x"></i></a>
+    <br>
+        <a class="btn btn-primary" style="display:inline-block;color:#fff; float: left; margin-top: 14px; margin-left: 13px;" href="tel:(214) 808-3100">
+                Call
+            </a>
+    
+    </div>
+<script>    $("a.navbar-brand.hidden-xs.xs-company-name.xs-company-logo").removeClass("hidden-xs")
+</script>
+<!--Menu text on mobile-->
+<script>
+    (function() {
+
+        var template = '<span>Menu</span><svg xmlns="http://www.w3.org/2000/svg"; width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>';
+
+        var newMenu = document.getElementsByClassName('navbar-toggle');
+        newMenu[0].innerHTML = template;
+
+    })();
+</script>
+<!--End Menu text on mobile-->
+<!-- Fix For IOS Safari double click on mobile menu -->
+<script>
+    (function() {
+        if (window.innerWidth < 768) {
+            var parent = document.getElementsByClassName('dropdown-menu');
+        for (var i = 0; i < parent.length; i++) {
+            parent[i].childNodes.forEach(function(item) {
+                if (item.nodeName === 'LI') {
+                item.childNodes.forEach(function(subItem) {
+                    if (subItem.nodeName === 'A') {
+                        subItem.addEventListener('click', function() {
+                            window.location = this.href;
+                        })
+                    }
+                })
+             }
+            })
+        }
+
+        }
+    })();
+    </script>
+    <!-- End of IOS Safari double click on mobile menu -->
+    <!-- BACK TO TOP SCRIPT -->
+    <!-- <script>
+    $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+ 
+ var amountScrolled = 300;
+  
+ $(window).scroll(function() {
+     if ( $(window).scrollTop() > amountScrolled ) {
+         $('a.back-to-top').fadeIn('slow');
+     } else {
+         $('a.back-to-top').fadeOut('slow');
+     }
+ });
+  
+ $('a.back-to-top, a.simple-back-to-top').click(function() {
+     $('html, body').animate({
+         scrollTop: 0
+     }, 700);
+     return false;
+ });
+ </script> -->
+
+</div><br/><div class='tableText' style='text-align: center;'><div class='xs-site-footer-contact-info'></div><br><div class='xs-site-footer-copyright'>Portions Copyright &copy; 2019  Pipeline ROI, LLC<br>Another website by <a href='http://www.pipelineroi.com/' target='_blank'>Pipeline ROI.</a>&nbsp; | <a href='https://ricegroupinc.proiwebsites.com/apps/alamodelogin/login.aspx'>Admin Login</a> | <a href='/TermsOfUse'>Terms of Use</a> | <a href='/SiteMap'>Site Map</a> | <a href='/ListingProperties/default.aspx'>Area Listings</a><br>All rate, payment, and area information are estimates and approximations only.</div></div><meta id='cy01' data-key="8Q4L" class="Crypto"/><meta id='cy02' data-key="6IGU" class="Crypto"/><meta id='cy03' data-key="WW4K" class="Crypto"/><meta id='cy04' data-key="OMWE" class="Crypto"/><meta id='cy05' data-key="1PR0" class="Crypto"/><meta id='cy06' data-key="G3P1" class="Crypto"/><meta id='cy07' data-key="KCDA" class="Crypto"/><meta id='cy08' data-key="GMLE" class="Crypto"/><meta id='cy09' data-key="MRQV" class="Crypto"/><meta id='cy10' data-key="XK5F" class="Crypto"/><meta id="cykey" data-key=""/>
+
+
+<script src="/scripts/decrypt.min.js" type="text/javascript"></script>
+            <script type="text/javascript">
+
+                // Check to see this is a page with encryption
+
+
+                function validateEmail(email) {
+                    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                    return re.test(email); 
+                }
+
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    CheckForJquery();
+                    function CheckForJquery() {
+                        if (!window.jQuery) {
+                            var jq = document.createElement('script');
+                            jq.type = 'text/javascript';
+                            jq.src = '/scripts/jquery-1.8.3.min.js';
+                            document.getElementsByTagName('head')[0].appendChild(jq);
+                            window.setTimeout(CheckForJquery,1000);
+                            
+                        } else {
+
+
+                            $.ajax({
+                                type: "POST",
+                                url: "/scripts/key.aspx",
+                                data: "",
+                                dataType: "text",
+                                success: function(data) {
+                                    if (document.getElementById("cykey") != null) {
+
+                                        var Correctkeys = data.split(','),
+                                            MetaKeys = document.querySelectorAll('.crypto'),
+                                            ValidKey = document.getElementById("cykey"),
+                                            TempKey = "",
+                                            s = "",
+                                            keyname = "";
+
+                                        // iterate through the meta tags containing the randomized encrypted key pieces
+                                        for (var i = 0; i < Correctkeys.length; i++) {
+
+                                            keyname = Correctkeys[i];
+                                            TempKey = document.getElementById(keyname);
+                                            s = ValidKey.getAttribute("data-key");
+                                            if (TempKey != null) {
+                                                var newkey = s.concat(TempKey.getAttribute('data-key'));
+                                                ValidKey.setAttribute('data-key', newkey);
+                                            }
+                                        }
+                                        decrypt();
+
+                                    }
+                                }
+                            })
+                        }
+                    }
+
+                });
+
+            </script>
+
+
+
+            <!-- footer | END -->
+        </footer>
+        <script>
+            (() => {
+                let a = window.localStorage.getItem("cookieAck");
+                if (!a) {
+                    let d = document.createElement("div");
+                    d.style = "position: fixed; bottom: 0;left: 0;width: 100vw;z-index:2000;";
+                    d.id = "cookieAck";
+                    d.innerHTML = `<div style="display:flex;flex-wrap: wrap;align-items: center;justify-content: space-between;padding: 14px 20px;box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);background: rgba(255, 255, 255, 0.9);"><div>This website uses cookies to ensure you get the best experience on our website</div><div style="flex: 1;display: flex;justify-content: flex-end;"><div style="background: #3F51B5;padding: 6px 20px;color: white;cursor: pointer;border-radius: 6px;" onclick="acceptCookies()">Got it</div></div></div>`;
+                    document.body.appendChild(d);
+                }
+            })();
+            function acceptCookies() {
+                window.localStorage.setItem("cookieAck", true);
+                let dv = document.getElementById("cookieAck");
+                dv.parentNode.removeChild(dv);
+            }
+        </script>
+    </div>
+
+			
+		</form>
+
+		
+		<script src="/scripts/doubletaptogo.min.js"></script>
+		<script>
+			$('li.dropdown').doubleTapToGo();
+		</script>
+	</body>
+</html>

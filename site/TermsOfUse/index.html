@@ -1,0 +1,2202 @@
+
+<!doctype html>
+
+<html lang="en">
+	<head>
+		
+    
+    <title>
+        Terms of Use</title>
+    <meta charset="utf-8" />
+    <meta name="headerInfo" content="NewContent">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta id="head_head_metaDesc" name="description" content=""></meta>
+    <meta id="head_head_metaKey" name="keywords" content=""></meta>
+
+    <meta Property= 'og:image' content='/xSites/Agents/ricegroupinc/logo68164.jpg'>
+<meta Property= 'og:title' content='Terms of Use'/>
+<meta Property= 'og:type' content='website'/>
+<meta Property= 'og:URL' content='/TermsOfUse'/>
+
+
+    <style type="text/css" media="screen">
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .nopadding {
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .xs-page-form {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="Stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link id="xsThemeCSS" href="/CSS/Provided_Themes/base/theme.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/global.js"></script>
+
+    <script type="text/javascript">
+        var drawWidgets = function () {
+            $('[data-xswidget]').each(function () {
+                var loadTo = $(this);
+                var loading = $("<i/>", {
+                    "class": "xs-loading-dyn-content fa fa-spinner fa-spin"
+                }).appendTo(loadTo);
+
+                loadTo.addClass("");
+                var widg = loadTo.attr("data-xswidget");
+                var urlString = "/controls/controlviewer.aspx?control=" + widg;
+
+                $.ajax({
+                    url: urlString,
+                    type: "GET",
+                    dataType: "html",
+                    success: function (res) {
+                        if (loadTo.is("div")) {
+                            loadTo.html(res);
+                        } else {
+                            //not a div, possibly a ul or something that cant have the form.
+                            loadTo.html($(res).find("div.main-ajax-content").html());
+                        }
+                    },
+                    error: function () {
+                        loadTo.find("i.xs-loading-dyn-content").remove();
+                        loadTo.text("Error Loading..");
+                    }
+                });
+            });
+        }
+
+        function resizeMe(id, clearHeight) {
+            // listings pages such as "our homes" calls me
+            var theFrame = document.getElementById(id);
+            if (clearHeight) {
+                theFrame.height = 0;
+            }
+            var theBody = (theFrame.contentWindow.document.body || theFrame.contentDocument.body)
+            var newHeight = Math.max(theBody.scrollHeight, theBody.offsetHeight, theBody.clientHeight);
+            theFrame.height = (newHeight + "px");
+        }
+
+        $(document).ready(function () {
+            drawWidgets();
+            // this shows and hides the dropdown menus.
+            $("li.dropdown").mouseenter(function () {
+                clearTimeout($(this).data('timeoutId'));
+                $(this).addClass("open");
+            }).mouseleave(function () {
+                var theElement = $(this), timeoutId = setTimeout(function () {
+                    theElement.removeClass("open");
+                }, 250);
+                theElement.data("timeoutId", timeoutId);
+            });
+
+        });
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto:400,700" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+<link rel='stylesheet' href='./css/font-awesome.min.css' />
+<link rel="shortcut icon" type="image/png" href="favicon.png" />
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--Notes for this Metro Properties 11 and Metro Mortgage 11 
+In TA use Full Screen and Base
+Color #1: Primary Shade: #0D5196 (Darker tone)
+Color #2: Primary Shade: #888 (Lighter tone or grey)
+Link Color: #0D5196, hover color: #888
+Complimentary Grey/Black: #333
+Header Font: Roboto
+Body Font: Fira Sans 
+ End of Notes-->
+
+<style>
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: #fff;
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        padding-top: 68px !important;
+    }
+    
+    .xs-primary-content {
+        padding-left: 0px;
+        padding-right: 0px;
+        max-width: 1200px;
+        margin: 0px auto;
+        background: #fff;
+        padding-top: 120px;
+    }
+    
+    .xs-site-container {
+        padding: 50px;
+        width: 100%;
+        clear: both;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        position: relative;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /****************************************** Well Styles *******************************************/
+    .well {
+        background-color: #f8f8f8;
+        border: 1px solid #eee;
+        border-radius: 0;
+    }
+    
+    .wellcustom {
+        border: 0;
+        background: none transparent scroll repeat 0% 0%;
+        color: white;
+        text-align: center;
+        margin: 0px auto;
+        min-height: 180px;
+        width: 80%;
+    }
+
+    /****************************************** Button Styles *******************************************/
+    
+    .btn {
+        margin: 0px;
+        font-size: 15px;
+        border-radius: 0;
+        outline: none;
+    }
+    
+    .btn:hover {
+        transition: all .2s ease-in-out;
+    }
+    
+    .btn-xl {
+        font-size: 20px;
+        padding: 15px 25px;
+    }
+    
+    .btn-default {
+        margin: 0px;
+        font-size: 16px;
+        border-radius: 0;
+        outline: none;
+        padding: 12px;
+    }
+    
+    .btn.pull-right {
+        margin: 0 0 5px 5px;
+    }
+    
+    .btn-d,
+    .btn-d:hover,
+    .btn-d:focus {
+        color: #FFF;
+        background: rgba(0, 0, 0, .3);
+    }
+    
+    .btn-primary {
+        background: #0D5196;
+        border-color: #0D5196;
+        color: #FFFFFF;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    }
+    
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary.active,
+    .open .dropdown-toggle.btn-primary {
+        background-color: #888;
+        border-color: #888;
+    }
+    
+    .btn-info {
+        background: #888;
+        border-color: #888;
+        color: #FFFFFF;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    }
+    
+    .btn-info:hover,
+    .btn-info:focus,
+    .btn-info:active,
+    .btn-info.active,
+    .open .dropdown-toggle.btn-info {
+        background-color: #0D5196;
+        border-color: #0D5196;
+    }
+    
+    .btn-wire {
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+    }
+    
+    .btn-wire:hover,
+    .btn-wire:focus {
+        background: #333;
+        border: 1px solid #333;
+        color: #fff;
+    }
+    
+    .btn-glossy {
+        border: 1px solid rgba(0, 0, 0, .09);
+        border-bottom-color: rgba(0, 0, 0, .2);
+        text-shadow: 0 1px 0 rgba(0, 0, 1, .2);
+        box-shadow: 0 1px 3px rgba(0, 0, 1, .35), inset 0 1px 0 0 rgba(255, 255, 255, .4), inset 0 1px 0 2px rgba(255, 255, 255, .08);
+        background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, .07) 100%);
+        background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, .07) 100%);
+        background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, .07) 100%);
+        background-image: linear-gradient(bottom, rgba(0, 0, 0, .07) 0%, rgba(255, 255, 255, .07) 100%);
+        color: #fff;
+    }
+    
+    .btn-glossy:hover,
+    .btn-glossy:active,
+    .btn-glossy:focus {
+        opacity: .8;
+        color: #fff;
+    } 
+
+    /****************************************** Icon Styles *******************************************/
+    .icon {
+        /*border: 1px solid #888;
+    font-size:30px;
+    padding: 25px;*/
+        margin: 0 auto;
+        min-width: 85px;
+    }
+    
+    .icon:hover {
+        opacity: .5;
+    }
+    
+    .icon-social {
+        border: none;
+        color: #fff;
+        font-size: 25px;
+        margin: 0 auto;
+        padding: 0px;
+    }
+    
+    .icon-social:hover {
+        opacity: .5;
+    }
+    
+    .icon-circle {
+        border-radius: 50%;
+    }
+    
+    .icon-rounded {
+        border-radius: 10%;
+    }
+    
+    .icon-square {
+        border-radius: 0;
+    }
+    
+    .fa-3x {
+        font-size: 2em;
+    }
+    
+    .caret {
+        margin: 0 0 0 5px
+    } 
+
+    /****************************************** IFrame & Video Styles *******************************************/
+    iframe {
+        border: 0;
+    }
+    
+    video {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /****************************************** Panel Styles *******************************************/
+    .panel-primary {
+        border-color: #0D5196;
+    }
+    
+    .panel-primary > .panel-heading {
+        background-color: #0D5196;
+        border-color: #0D5196;
+    }
+    
+    .panel-primary > .panel-heading + .panel-collapse .panel-body {
+        border-top-color: #0D5196;
+    }
+    
+    .panel-primary > .panel-footer + .panel-collapse .panel-body {
+        border-bottom-color: #0D5196;
+    }
+    
+    .panel-info {
+        border-color: #888;
+    }
+    
+    .panel-info > .panel-heading {
+        color: #fff;
+        border-color: #888;
+        background-color: #888;
+    }
+    
+    .panel-info > .panel-heading + .panel-collapse .panel-body {
+        border-top-color: #888;
+    }
+    
+    .panel-info > .panel-footer + .panel-collapse .panel-body {
+        border-bottom-color: #888;
+    }
+
+/*IDX mobile style*/
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+.panel-default>.panel-heading {
+    color: #0D5196;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.panel-default {
+    border-color: #fff;
+}
+    
+    /****************************************** @Media Adjustments *******************************************/
+    @media (max-width: 768px) {
+        .primary-content {
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .xs-site-container {
+            padding: 5px 20px;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            -webkit-background-size: auto 200%;
+            -moz-background-size: auto 200%;
+            -o-background-size: auto 200%;
+            background-size: auto 200%;
+            display: block;
+        }
+
+        .xs-site-container-lg {
+            padding: 0;
+        }
+
+        .navbar-brand {
+            padding: 0px;
+            height: 55px;
+        }
+
+        img.xs-company-logo {
+            height: 50px;
+            margin: 5px 10px;
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+            background-color: #0D5196;
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+            background-color: #888;
+        }
+
+        .navbar-inverse .navbar-nav > li > a {
+            color: #0D5196;
+            font-size: 14px;
+            height: 50px;
+            line-height: 25px;
+        }
+
+        .navbar-inverse .navbar-collapse,
+        .navbar-inverse .navbar-form {
+            border-color: transparent;
+            background: #fff;
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+            background-color: #888;
+            color: #fff;
+        }
+
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+            color: #888;
+        }
+
+        .col-xs-2,
+        .col-sm-2,
+        .col-md-2,
+        .col-lg-2,
+        .col-xs-3,
+        .col-sm-3,
+        .col-md-3,
+        .col-lg-3,
+        .col-xs-4,
+        .col-sm-4,
+        .col-md-4,
+        .col-lg-4,
+        .col-xs-5,
+        .col-sm-5,
+        .col-md-5,
+        .col-lg-5,
+        .col-xs-6,
+        .col-sm-6,
+        .col-md-6,
+        .col-lg-6,
+        .col-xs-7,
+        .col-sm-7,
+        .col-md-7,
+        .col-lg-7,
+        .col-xs-8,
+        .col-sm-8,
+        .col-md-8,
+        .col-lg-8,
+        .col-xs-9,
+        .col-sm-9,
+        .col-md-9,
+        .col-lg-9,
+        .col-xs-10,
+        .col-sm-10,
+        .col-md-10,
+        .col-lg-10,
+        .col-xs-11,
+        .col-sm-11,
+        .col-md-11,
+        .col-lg-11,
+        .col-xs-12,
+        .col-sm-12,
+        .col-md-12,
+        .col-lg-12 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .xs-site-footer {
+            padding: 40px 0px 40px 28px;
+            margin: -7px;
+        }
+
+        .navbar-inverse .navbar-toggle {
+            border-color: #333;
+            background: #fff;
+        }
+    }
+
+    @media (max-width:320px) {
+        .row {
+            padding: 0px 20px 0px 20px;
+        }
+        .img-square-heading {
+            padding: 35px 0px;
+            font-size: 2em;
+        }
+        .xs-site-footer {
+            padding: 40px 20px 40px 27px;
+            margin: -7px;
+        }
+    }
+    
+    @media (min-width: 769px) {
+        .navbar-brand {
+            padding: 0px;
+            height: 55px;
+        }
+        img.xs-company-logo {
+            height: 50px;
+            margin: 5px 10px;
+        }
+    }
+
+ /****************************************** Menu Styles *******************************************/ 
+    /* Menu Styles */
+
+    @media (max-width: 1199px) {
+        .navbar-header {
+            float: none;
+            background-color: #0D5196;
+        }
+        .navbar-left,.navbar-right {
+            float: none !important;
+        }
+        .navbar-toggle {
+            display: block;
+            background-color: #fff;
+        }
+        .navbar-collapse {
+            border-top: 0px solid transparent;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+        .navbar-fixed-top {
+            top: 0;
+            border-width: 0 0 1px;
+        }
+        .navbar-collapse.collapse {
+            display: none!important;
+        }
+        .navbar-nav {
+            float: none!important;
+            margin-top: 0px;
+        }
+        .navbar-nav>li {
+            float: none;
+        }
+        .navbar-nav>li>a {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .collapse.in{
+            display:block !important;
+        }
+        .navbar-nav .open .dropdown-menu {
+            position: static;
+            float: none;
+            width: auto;
+            margin-top: 0;
+            background-color: #313339;
+            border: 0;
+            box-shadow: none;
+            color: #999;
+        }
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+            background-color: #313339 !important;
+            color: #FFF;
+        }
+        .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: #999;
+    }
+    }
+
+    .navbar-fixed-top {
+        border-width: 0 0 1px;
+        top: 80px;
+    }
+    @media only screen and (max-width: 769px) {
+        .navbar-brand {
+            padding: 0px;
+            height: 50px;
+        }
+        img.xs-company-logo {
+            height: 40px;
+            vertical-align: baseline;
+            margin-top: 5px;
+        }
+    }
+    
+    @media only screen and (min-width: 769px) {
+        .navbar-brand {
+            padding: 0px;
+            height: 60px;
+        }
+
+        img.xs-company-logo {
+            height: 65px;
+            margin: 5px;
+        }
+
+        .navbar-right {
+        float: none !important;
+        margin: 0 auto;
+        display: inline-block;
+        vertical-align: top;    
+    }
+
+         .navbar .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+    
+        .navbar .navbar-collapse {
+            text-align: center;
+        }
+    }
+    
+    a.navbar-brand.visible-xs.xs-company-name {
+        display: none !important;
+    }
+    
+    a.navbar-brand.xs-company-name.xs-company-logo {
+        font-size: 0px;
+    }
+    
+    a.xs-company-name {
+        margin: 0px 10px;
+        line-height: 60px;
+    }
+    
+    .navbar-inverse {
+        background-color: #fff;
+        border-color: transparent;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .navbar-inverse .navbar-brand {
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .dropdown-menu {
+        background-color: #3f424a;
+        text-align: left;
+    }
+    
+    .dropdown-menu>li>a {
+        color: #FAF9F9;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .navbar-inverse .dropdown-menu > li > a:hover,
+    .navbar-inverse .dropdown-menu > .active > a,
+    .navbar-inverse .dropdown-menu > .active > a:hover {
+        background-color: #585858;
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a:hover,
+    .navbar-inverse .navbar-nav > li > a:focus {
+        background-color: #585858;
+        color: #0D5196;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+        background-color: #585858;
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .dropdown-menu > li > a:hover,
+    .navbar-inverse .dropdown-menu > .active > a,
+    .navbar-inverse .dropdown-menu > .active > a:hover {
+        background-color: #0D5196;
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        background-color: #0D5196;
+        color: #FAF9F9;
+    }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #FAF9F9;
+        background-color: #888;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a {
+        color: #0D5196;
+        font-size: 18px;
+        height: 75px;
+        line-height: 55px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    @media(max-width:768px) {
+    .navbar-inverse .navbar-nav > li > a {
+        color: #0D5196;
+        font-size: 16px;
+        height: 50px;
+        line-height: 25px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #888;
+    }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #888;
+    }
+    
+    .navbar-inverse .navbar-nav > li > a {
+        color: #FAF9F9;
+        font-size: 16px;
+        height: 50px;
+        line-height: 25px;
+    }
+    
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-color: transparent;
+        background: #313339;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        background-color: #888;
+        color: #FAF9F9;
+    }
+    
+    a.xs-company-name {
+    margin: 0px 10px;
+    line-height: 50px;
+    }
+    }
+    /* Menu Style end */
+    #stickyheader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        line-height: 72px;
+        text-align: center;
+        background-color: #2a2e65;
+        background-image: none;
+        background-repeat: repeat-x;
+        border-top: none;
+        color: #FAF9F9;
+        font-size: 1.2em;
+        z-index: 99999999;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .stickyheader-text {
+        font-size: 30px;
+    }
+        #stickyheader>a {
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        #stickyheader>a:hover {
+            color: #efefef;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px){
+    .xs-primary-content {
+        margin: 0px 0px;
+        padding-top: 100px;
+    }
+    }
+
+    /* Footer Code */
+/****************************************** Footer Styles *******************************************/
+.center {
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    width: 300px;
+    padding: 10px;
+}
+
+.xs-site-footer {
+    min-height: 121px;
+    padding-bottom: 10px;
+    background: #2a2e65;
+    font-family: inherit;
+    border-top: 1px solid #888;
+    color: #FFF;
+    padding-top: 20px;
+}
+
+#stickyfooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #333;
+    background-image: none;
+    background-repeat: repeat-x;
+    border-top: 1px solid #333;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    z-index: 99999999;
+    font-family: inherit;
+}
+
+.xs-site-footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.xs-site-footer a:hover {
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.xs-site-footer-copyright {
+    color: #FFF;
+    font-size: 12px;
+    clear: both;
+}
+
+.xs-site-footer hr {
+    display: none;
+}
+/********SOCIAL MEDIA BUTTONS*************/
+
+.fa-stack-2x {
+    color: #FFF;
+}
+
+.fa-stack-2x:hover {
+    color: #333;
+}
+
+.fa-facebook {
+    color: #fff;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #fff;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-youtube {
+    color: #fff;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+.fa-linkedin {
+    color: #fff;
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;
+}
+
+.fa-instagram {
+    color: #fff;
+}
+
+.fa-instagram:hover {
+    color: #e95950;
+}
+
+.fa-pinterest {
+    color: #fff;
+}
+
+.fa-pinterest:hover {
+    color: #cb2027;
+}
+
+.fa-snapchat {
+    color: #fff;
+}
+
+.fa-snapchat:hover {
+    color: #fffc00;
+}
+
+.fa-dropbox {
+    color: #fff;
+}
+
+.fa-dropbox:hover {
+    color: #007ee5;
+}
+
+.fa-yelp {
+    color: #fff;
+}
+
+.fa-yelp:hover {
+    color: #c41200;
+}
+
+.fa-google-plus {
+    color: #fff;
+}
+
+.fa-google-plus:hover {
+    color: #dd4b39;
+}
+.xs-lead-form-viewer {
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+@media (max-width: 768px){
+.col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+}
+}
+</style>
+
+    <!-- uxThemeStylesLiteral | BEGIN -->
+    
+    <!-- uxThemeStylesLiteral | END -->
+
+    <style type="text/css">
+        body {
+            padding-top: 45px; /* later overwritten by js*/
+        }
+
+        .xs-dynamic-widget {
+            width: 31.33%;
+            margin: 1%;
+            float: left;
+        }
+
+        @media(max-width: 768px) {
+            .xs-dynamic-widget {
+                width: 98%;
+                float: none;
+            }
+        }
+
+        .navbar-brand.hidden-xs.xs-company-name.xs-company-logo {
+            padding: 1px;
+        }
+
+            .navbar-brand.hidden-xs.xs-company-name.xs-company-logo img.xs-company-logo {
+                max-height: 100%;
+                width: auto;
+            }
+    </style>
+    <script type="text/javascript">
+        var window_resize = false;
+        var abp = function () {
+            $("body").css("padding-top", $(".navbar-fixed-top").outerHeight());
+        };
+        $(document).ready(function () {
+            abp();
+        });
+        $(window).resize(function () {
+            if (window_resize) {
+                clearTimeout(window_resize);
+            }
+            window_resize = setTimeout(function () {
+                abp();
+            }, 600);
+        });
+    </script>
+
+	</head>
+	<body class="xs-body">
+		<form method="post" action="NewContent.aspx?FileName=TOU.x&amp;" id="form1" class="xs-page-form">
+<input type="hidden" name="content_content_ToolkitScriptManager_HiddenField" id="content_content_ToolkitScriptManager_HiddenField" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJLTMzMjUxMTczD2QWAmYPZBYCZg9kFgQCAQ9kFgICAQ9kFgZmDxYCHgRUZXh0BQxUZXJtcyBvZiBVc2VkAgEPFgIeB2NvbnRlbnRlZAICDxYCHwFlZAIDD2QWAgIBD2QWAgIXD2QWAgIBD2QWAmYPZBYEAgIPFgIfAAXAXTxkaXYgY2xhc3M9J3hzLWZvb3Rlci10ZXh0Jz48c3R5bGU+DQogICAgIC8qIEZvb3RlciBDb2RlICovDQovKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqIEZvb3RlciBTdHlsZXMgKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8NCi5jZW50ZXIgew0KICAgIHRleHQtYWxpZ246IGNlbnRlcjsNCn0NCg0KLnJpZ2h0IHsNCiAgICBmbG9hdDogcmlnaHQ7DQogICAgd2lkdGg6IDMwMHB4Ow0KICAgIHBhZGRpbmc6IDEwcHg7DQp9DQoNCi5sZWZ0IHsNCiAgICBmbG9hdDogbGVmdDsNCiAgICB3aWR0aDogMzAwcHg7DQogICAgcGFkZGluZzogMTBweDsNCn0NCg0KLnhzLXNpdGUtZm9vdGVyIHsNCiAgICBtaW4taGVpZ2h0OiAxMjFweDsNCiAgICBwYWRkaW5nLWJvdHRvbTogNjBweDsNCiAgICBiYWNrZ3JvdW5kOiBibGFjazsNCiAgICBmb250LWZhbWlseTogaW5oZXJpdDsNCiAgICBib3JkZXItdG9wOiAxcHggc29saWQgIzg4ODsNCiAgICBjb2xvcjogI0ZGRjsNCiAgICBwYWRkaW5nLXRvcDogMjBweDsNCn0NCg0KI3N0aWNreWhlYWRlciB7DQogICAgICAgIHBvc2l0aW9uOiBmaXhlZDsNCiAgICAgICAgdG9wOiAwOw0KICAgICAgICBsZWZ0OiAwOw0KICAgICAgICB3aWR0aDogMTAwJTsNCiAgICAgICAgaGVpZ2h0OiA4MHB4Ow0KICAgICAgICAvKiBsaW5lLWhlaWdodDogNzJweDsgKi8NCiAgICAgICAgdGV4dC1hbGlnbjogY2VudGVyOw0KICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMEQ1MTk2Ow0KICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiBub25lOw0KICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogcmVwZWF0LXg7DQogICAgICAgIGJvcmRlci10b3A6IG5vbmU7DQogICAgICAgIGNvbG9yOiAjRkFGOUY5Ow0KICAgICAgICBmb250LXNpemU6IDEuMmVtOw0KICAgICAgICB6LWluZGV4OiA5OTk5OTk5OTsNCiAgICAgICAgZm9udC1mYW1pbHk6ICdPcGVuIFNhbnMnLCBzYW5zLXNlcmlmOw0KICAgICAgICBkaXNwbGF5OiBmbGV4Ow0KICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7DQogICAgfQ0KICAgIC5zdGlja3loZWFkZXItdGV4dCB7DQogICAgICAgIGZvbnQtc2l6ZTogMzBweDsNCiAgICB9DQogICAgICAgICNzdGlja3loZWFkZXI+YSB7DQogICAgICAgICAgICBjb2xvcjogI2ZmZjsNCiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiAnT3BlbiBTYW5zJywgc2Fucy1zZXJpZjsNCiAgICAgICAgfQ0KICAgICAgICANCiAgICAgICAgI3N0aWNreWhlYWRlcj5hOmhvdmVyIHsNCiAgICAgICAgICAgIGNvbG9yOiAjZWZlZmVmOw0KICAgICAgICAgICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7DQogICAgICAgIH0NCiAgICAgICAgQG1lZGlhIGFuZCBzY3JlZW4gKG1heC13aWR0aDo3NjlweCkgew0KICAgICAgICAgICAgLmZhLTJ4IHsNCiAgICBmb250LXNpemU6IDFlbTsNCiAgICBwYWRkaW5nOiA1cHg7DQp9DQogICAgICAgIH0gDQoNCi54cy1zaXRlLWZvb3RlciBhIHsNCiAgICBjb2xvcjogI0ZGRjsNCiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7DQogICAgZm9udC13ZWlnaHQ6IDQwMDsNCiAgICBmb250LWZhbWlseTogJ09wZW4gU2FucycsIHNhbnMtc2VyaWY7DQp9DQoNCi54cy1zaXRlLWZvb3RlciBhOmhvdmVyIHsNCiAgICBjb2xvcjogI0ZGRjsNCiAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTsNCiAgICBmb250LXdlaWdodDogNDAwOw0KfQ0KDQoueHMtc2l0ZS1mb290ZXItY29weXJpZ2h0IHsNCiAgICBjb2xvcjogI0ZGRjsNCiAgICBmb250LXNpemU6IDEycHg7DQogICAgY2xlYXI6IGJvdGg7DQp9DQoNCi54cy1zaXRlLWZvb3RlciBociB7DQogICAgZGlzcGxheTogbm9uZTsNCn0NCi8qKioqKioqKlNPQ0lBTCBNRURJQSBCVVRUT05TKioqKioqKioqKioqKi8NCg0KLmZhLXN0YWNrLTJ4IHsNCiAgICBjb2xvcjogI0ZGRjsNCn0NCg0KLmZhLXN0YWNrLTJ4OmhvdmVyIHsNCiAgICBjb2xvcjogIzMzMzsNCn0NCg0KLmZhLWZhY2Vib29rIHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLWZhY2Vib29rOmhvdmVyIHsNCiAgICBjb2xvcjogIzNiNTk5ODsNCn0NCg0KLmZhLXR3aXR0ZXIgew0KICAgIGNvbG9yOiAjZmZmOw0KfQ0KDQouZmEtdHdpdHRlcjpob3ZlciB7DQogICAgY29sb3I6ICM1NWFjZWU7DQp9DQoNCi5mYS15b3V0dWJlIHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLXlvdXR1YmU6aG92ZXIgew0KICAgIGNvbG9yOiAjYmIwMDAwOw0KfQ0KDQouZmEtbGlua2VkaW4gew0KICAgIGNvbG9yOiAjZmZmOw0KfQ0KDQouZmEtbGlua2VkaW46aG92ZXIgew0KICAgIGNvbG9yOiAjMDA3YmI1Ow0KfQ0KDQouZmEtaW5zdGFncmFtIHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLWluc3RhZ3JhbTpob3ZlciB7DQogICAgY29sb3I6ICNlOTU5NTA7DQp9DQoNCi5mYS1waW50ZXJlc3Qgew0KICAgIGNvbG9yOiAjZmZmOw0KfQ0KDQouZmEtcGludGVyZXN0OmhvdmVyIHsNCiAgICBjb2xvcjogI2NiMjAyNzsNCn0NCg0KLmZhLXNuYXBjaGF0IHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLXNuYXBjaGF0OmhvdmVyIHsNCiAgICBjb2xvcjogI2ZmZmMwMDsNCn0NCg0KLmZhLWRyb3Bib3ggew0KICAgIGNvbG9yOiAjZmZmOw0KfQ0KDQouZmEtZHJvcGJveDpob3ZlciB7DQogICAgY29sb3I6ICMwMDdlZTU7DQp9DQoNCi5mYS15ZWxwIHsNCiAgICBjb2xvcjogI2ZmZjsNCn0NCg0KLmZhLXllbHA6aG92ZXIgew0KICAgIGNvbG9yOiAjYzQxMjAwOw0KfQ0KDQouZmEtZ29vZ2xlLXBsdXMgew0KICAgIGNvbG9yOiAjZmZmOw0KfQ0KDQouZmEtZ29vZ2xlLXBsdXM6aG92ZXIgew0KICAgIGNvbG9yOiAjZGQ0YjM5Ow0KfQ0KICAgIC8qIC5jb2wtbWQtNSwNCiAgICAuY29sLW1kLTcgew0KICAgICAgICBtYXJnaW4tdG9wOiA4cHg7DQogICAgICAgIG1hcmdpbi1ib3R0b206IDhweDsNCiAgICB9DQogICAgDQogICAgLnRhYmxlVGV4dCB7DQogICAgICAgIHRleHQtYWxpZ246IGNlbnRlcjsNCiAgICAgICAgcGFkZGluZy10b3A6IDE5NXB4Ow0KICAgIH0NCiAgICAgKi8NCiAgICAgICAgIC5uYXZiYXItdG9nZ2xlIHN2ZyB7DQptYXJnaW46IC02cHggMCAtNnB4IDVweDsNCmZpbGw6ICMwMDA7DQp9DQovKiBCQUNLIFRPIFRPUCAqLw0KLyogICAgQmFjayB0byB0b3AgYnV0dG9uKi8NCmJvZHkgew0KICAgIG1hcmdpbjogMDsNCiAgICBwYWRkaW5nOiAwOw0KICAgIGZvbnQtZmFtaWx5OiBBcmlhbCwgc2Fucy1zZXJpZjsNCiAgICBmb250LXNpemU6IDE0cHg7DQogICAgbGluZS1oZWlnaHQ6IDE1MCU7DQogICAgYmFja2dyb3VuZDogI2VlZTsNCiAgICBwb3NpdGlvbjogcmVsYXRpdmU7DQogICAgaGVpZ2h0OiAxMDAlOw0KfQ0KLmhlYWRlckNvbnRhaW5lciwNCi5ib2R5Q29udGFpbmVyLA0KLmZvb3RlckNvbnRhaW5lciB7DQogICAgbWF4LXdpZHRoOiA5NjBweDsNCiAgICBtYXJnaW46IDAgYXV0bzsNCiAgICBiYWNrZ3JvdW5kOiAjRkZGOw0KfQ0KLnBhZGRpbmcgew0KICAgIHBhZGRpbmc6IDIwcHg7DQp9DQouYm9keUNvbnRhaW5lciB7DQogICAgbWluLWhlaWdodDogNTAwcHg7DQp9DQphLmJhY2stdG8tdG9wIHsNCiAgICBkaXNwbGF5OiBub25lOw0KICAgIHdpZHRoOiA2MHB4Ow0KICAgIGhlaWdodDogNjBweDsNCiAgICB0ZXh0LWluZGVudDogLTk5OTlweDsNCiAgICBwb3NpdGlvbjogZml4ZWQ7DQogICAgei1pbmRleDogOTk5Ow0KICAgIGxlZnQ6IDIwcHg7DQogICAgYm90dG9tOiAzNnB4Ow0KICAgIGJhY2tncm91bmQ6ICMyN0FFNjEgdXJsKCIveFNpdGVzL0FnZW50cy9hZ2VudDExLXByZW1pdW0tcmVkby9Db250ZW50L1VwbG9hZGVkRmlsZXMvY2hldnJvbi11cC5wbmciKSBuby1yZXBlYXQgY2VudGVyIDgwJTsNCiAgICAtd2Via2l0LWJvcmRlci1yYWRpdXM6IDMwcHg7DQogICAgLW1vei1ib3JkZXItcmFkaXVzOiAzMHB4Ow0KICAgIGJvcmRlci1yYWRpdXM6IDMwcHg7DQp9DQphOmhvdmVyLmJhY2stdG8tdG9wIHsNCiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmOw0KY29sb3I6ICM1NTU7IC8qIEFkZCBhIGRhcmstZ3JleSBiYWNrZ3JvdW5kIG9uIGhvdmVyICovDQp9DQouYWJsZVRleHR7DQogICAgaGVpZ2h0OiA0MDBweDsNCn0NCjwvc3R5bGU+DQo8ZGl2IGNsYXNzPSJ4cy1zaXRlLWNvbnRhaW5lciI+DQogICAgPGRpdiBjbGFzcz0iY29sLXNtLTEyIGNvbC1tZC00IGNvbC1sZy00IHRleHQtY2VudGVyIj4NCiAgICAgICAgPGgzPldoZW4gQ2hhcmFjdGVyIE1hdHRlcnM8L2gzPg0KICAgICAgICA8aSBjbGFzcz0iZmEgZmEtcGhvbmUiPjwvaT4gPGEgaHJlZj0idGVsOigyMTQpIDgwOC0zMTAwIj4gKDIxNCkgODA4LTMxMDA8L2E+DQogICAgICAgIDxicj48aSBjbGFzcz0iZmEgZmEtZW52ZWxvcGUiPjwvaT4gPGEgaHJlZj0ibWFpbHRvOmJyZW50QHJpY2Vncm91cGluYy5jb20iPiBicmVudEByaWNlZ3JvdXBpbmMuY29tPC9hPg0KICAgICAgICA8YnI+PGJyPg0KICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5mYWNlYm9vay5jb20vcmljZWdyb3VwaW5jIj48aSBjbGFzcz0iZmEgZmEtZmFjZWJvb2sgZmEtMngiPjwvaT48L2E+DQogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vdHdpdHRlci5jb20vcmljZWdyb3VwaW5jIj48aSBjbGFzcz0iZmEgZmEtdHdpdHRlciBmYS0yeCI+PC9pPjwvYT4NCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly93d3cueWVscC5jb20vYml6L3RoZS1yaWNlLWdyb3VwLXBsYW5vLTY/b3NxPXRoZStyaWNlK2dyb3VwJTJDK2luYy4iPjxpIGNsYXNzPSJmYSBmYS15ZWxwIGZhLTJ4Ij48L2k+PC9hPg0KICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy5saW5rZWRpbi5jb20vaW4vYnJlbnRyaWNlLyI+PGkgY2xhc3M9ImZhIGZhLWxpbmtlZGluIGZhLTJ4Ij48L2k+PC9hPg0KICAgICAgICANCiAgICA8L2Rpdj4NCiAgICA8ZGl2IGNsYXNzPSJjb2wtc20tMTIgY29sLW1kLTQgY29sLWxnLTQgdGV4dC1jZW50ZXIiPg0KICAgICAgICA8IS0tIDxpbWcgY2xhc3M9IiIgc3JjPSIveHNpdGVzL2FnZW50cy9hZ2VudDExLXByZW1pdW0tcmVkby9Db250ZW50L1VwbG9hZGVkRmlsZXMvbWV0cm9fcHJvcGVydGllc193aGl0ZS5wbmciIHN0eWxlPSJ3aWR0aDogMjIwcHg7IG1hcmdpbi1yaWdodDogMTFweDsiPiAtLT4NCiAgICAgICAgPGgxPlRoZSBSaWNlIEdyb3VwLCBJbmMuPC9oMT4NCiAgICAgICAgPGg0Pk1MU8KuIERJU0NMQUlNRVI8L2g0PjxwPkNsaWNrIGhlcmUgZm9yPGJyPjxhIGhyZWY9Imh0dHA6Ly93d3cudHJlYy50ZXhhcy5nb3YvZm9ybXMvaW5mb3JtYXRpb24tYWJvdXQtYnJva2VyYWdlLXNlcnZpY2VzIiB0YXJnZXQ9Il9ibGFuayI+SU5GT1JNQVRJT04gQUJPVVQgQlJPS0VSQUdFIFNFUlZJQ0VTPC9hPjxicj48YnI+PGEgaHJlZj0iI2RlbW8iIGNsYXNzPSJidG4gYnRuLWluZm8iIGRhdGEtdG9nZ2xlPSJjb2xsYXBzZSI+U2hvdyBNb3JlPC9hPjwvcD48ZGl2IGlkPSJkZW1vIiBjbGFzcz0iY29sbGFwc2UiPg0KICAgICAgICAgICAgICAgIMKpIDIwMTcgTm9ydGggVGV4YXMgUmVhbCBFc3RhdGUgSW5mb3JtYXRpb24gU3lzdGVtcywgSW5jLiBBbGwgcmlnaHRzIHJlc2VydmVkLiBEaXNjbGFpbWVyOiBBbGwgaW5mb3JtYXRpb24gZGVlbWVkIHJlbGlhYmxlIGJ1dCBub3QgZ3VhcmFudGVlZCBhbmQgc2hvdWxkIGJlIGluZGVwZW5kZW50bHkgdmVyaWZpZWQuIEFsbCBwcm9wZXJ0aWVzIGFyZSBzdWJqZWN0IHRvIHByaW9yIHNhbGUsIGNoYW5nZSBvciB3aXRoZHJhd2FsLiBOZWl0aGVyIGxpc3RpbmcgYnJva2VyKHMpIG5vciBUaGUgUmljZSBHcm91cCwgSW5jLiBzaGFsbCBiZSByZXNwb25zaWJsZSBmb3IgYW55IHR5cG9ncmFwaGljYWwgZXJyb3JzLCBtaXNpbmZvcm1hdGlvbiwgbWlzcHJpbnRzIGFuZCBzaGFsbCBiZSBoZWxkIHRvdGFsbHkgaGFybWxlc3MuIFRoZSBkYXRhYmFzZSBpbmZvcm1hdGlvbiBoZXJlaW4gaXMgcHJvdmlkZWQgZnJvbSBhbmQgY29weXJpZ2h0ZWQgYnkgdGhlIE5vcnRoIFRleGFzIFJlYWwgRXN0YXRlIEluZm9ybWF0aW9uIFN5c3RlbXMsIEluYy4gTlRSRUlTIGRhdGEgbWF5IG5vdCBiZSByZXByb2R1Y2VkIG9yIHJlZGlzdHJpYnV0ZWQgYW5kIGlzIG9ubHkgZm9yIHBlb3BsZSB2aWV3aW5nIHRoaXMgc2l0ZS4gQWxsIGluZm9ybWF0aW9uIHByb3ZpZGVkIGlzIGRlZW1lZCByZWxpYWJsZSBidXQgaXMgbm90IGd1YXJhbnRlZWQgYW5kIHNob3VsZCBiZSBpbmRlcGVuZGVudGx5IHZlcmlmaWVkLiBUaGUgYWR2ZXJ0aXNlbWVudHMgaGVyZWluIGFyZSBtZXJlbHkgaW5kaWNhdGlvbnMgdG8gYmlkIGFuZCBhcmUgbm90IG9mZmVycyB0byBzZWxsIHdoaWNoIG1heSBiZSBhY2NlcHRlZC4gQWxsIHByb3BlcnRpZXMgYXJlIHN1YmplY3QgdG8gcHJpb3Igc2FsZSBvciB3aXRoZHJhd2FsLiBBbGwgcmlnaHRzIGFyZSByZXNlcnZlZCBieSBjb3B5cmlnaHQuDQogICAgICAgICAgICAgIDwvZGl2Pg0KICAgIDwvZGl2Pg0KICAgIDxkaXYgY2xhc3M9ImNvbC1zbS0xMiBjb2wtbWQtNCBjb2wtbGctNCB0ZXh0LWNlbnRlciI+DQogICAgICAgIDxhZGRyZXNzPjcwMTMgTWlsbHMgQnJhbmNoIENpcmNsZQ0KICAgICAgICAgICAgICAgIDxicj4gUGxhbm8sIFRYIDc1MDI0LTc0ODI8L2FkZHJlc3M+DQogICAgICAgICAgICAgICAgPCEtLSA8aW1nIHNyYz0iL3hzaXRlcy9hZ2VudHMvYWdlbnQxMS1wcmVtaXVtLXJlZG8vY29udGVudC91cGxvYWRlZGZpbGVzL3JlYWx0b3ItbWxzLXdoaXRlLnBuZyIgd2lkdGg9IjE1MCIgYWx0PSJFcXVhbCBIb3VzaW5nIExlbmRlciI+IC0tPg0KICAgICAgICAgICAgICAgIDxpbWcgc3JjPSIveHNpdGVzL2FnZW50cy9GYWlyd2F5SW5kZXBlbmRlbnRNb3J0Z2FnZUNvcnBvcmF0aW9uMi9jb250ZW50L3VwbG9hZGVkZmlsZXMvRUhPLXdoaXRlLnBuZyIgd2lkdGg9IjUwIiBhbHQ9IkVxdWFsIEhvdXNpbmcgT3Bwb3J0dW5pdHkiPg0KICAgIDwvZGl2Pg0KPC9kaXY+DQo8IS0tU3RpY2t5IEhlYWRlciBDb250ZW50LS0+DQo8ZGl2IGNsYXNzPSJoaWRkZW4teHMiIGlkPSJzdGlja3loZWFkZXIiPg0KICAgIDxkaXYgY2xhc3M9ImNvbC1zbS0zIHN0aWNreWhlYWRlci10ZXh0IiBzdHlsZT0iZm9udC1zaXplOjE0cHQ7Ij48aSBjbGFzcz0iZmEgZmEtcGhvbmUiPjwvaT4gPGEgaHJlZj0idGVsOigyMTQpIDgwOC0zMTAwIj4gKDIxNCkgODA4LTMxMDA8L2E+DQogICAgPC9kaXY+DQogICAgPGRpdiBjbGFzcz0iY29sLXNtLTYiPg0KICAgICAgICAgICAgPGEgaHJlZj0iL2hvbWUiPg0KICAgICAgICA8IS0tIDxpbWcgc3JjPSIveHNpdGVzL2FnZW50cy9hZ2VudDExLXByZW1pdW0tcmVkby9Db250ZW50L1VwbG9hZGVkRmlsZXMvbWV0cm9fcHJvcGVydGllc193aGl0ZS5wbmciIHN0eWxlPSJ3aWR0aDogMTQwcHg7Ij4gLS0+DQogICAgICAgIDxoMT5UaGUgUmljZSBHcm91cCwgSW5jLjwvaDE+DQogICAgICAgIA0KICAgICAgICA8L2E+DQogICAgPC9kaXY+DQoNCiAgICA8ZGl2IGNsYXNzPSJjb2wtc20tMyI+DQogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmZhY2Vib29rLmNvbS9yaWNlZ3JvdXBpbmMiPjxpIGNsYXNzPSJmYSBmYS1mYWNlYm9vayBmYS0yeCI+PC9pPjwvYT4NCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly90d2l0dGVyLmNvbS9yaWNlZ3JvdXBpbmMiPjxpIGNsYXNzPSJmYSBmYS10d2l0dGVyIGZhLTJ4Ij48L2k+PC9hPg0KICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy55ZWxwLmNvbS9iaXovdGhlLXJpY2UtZ3JvdXAtcGxhbm8tNj9vc3E9dGhlK3JpY2UrZ3JvdXAlMkMraW5jLiI+PGkgY2xhc3M9ImZhIGZhLXllbHAgZmEtMngiPjwvaT48L2E+DQogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9icmVudHJpY2UvIj48aSBjbGFzcz0iZmEgZmEtbGlua2VkaW4gZmEtMngiPjwvaT48L2E+ICAgIDwvZGl2Pg0KPC9kaXY+DQo8ZGl2IGNsYXNzPSJ2aXNpYmxlLXhzIiBpZD0ic3RpY2t5aGVhZGVyIj4NCiAgICAgICAgPGEgaHJlZj0iL2hvbWUiPg0KICAgIDwhLS0gPGltZyBzcmM9Ii94c2l0ZXMvYWdlbnRzL2FnZW50MTEtcHJlbWl1bS1yZWRvL0NvbnRlbnQvVXBsb2FkZWRGaWxlcy9tZXRyb19wcm9wZXJ0aWVzX3doaXRlLnBuZyIgc3R5bGU9IndpZHRoOiAxMzBweDsgbWFyZ2luLXJpZ2h0OiA1cHg7Ij48L2E+Jm5ic3A7IC0tPg0KICAgIDxzcGFuIHN0eWxlPSJ3aWR0aDogMTMwcHg7IGZvbnQtc2l6ZTogMjVweDsiPlRoZSBSaWNlIEdyb3VwLCBJbmMuPC9zcGFuPg0KDQogICAgJm5ic3A7DQogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmZhY2Vib29rLmNvbS9yaWNlZ3JvdXBpbmMiPjxpIGNsYXNzPSJmYSBmYS1mYWNlYm9vayBmYS0yeCI+PC9pPjwvYT4NCiAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly90d2l0dGVyLmNvbS9yaWNlZ3JvdXBpbmMiPjxpIGNsYXNzPSJmYSBmYS10d2l0dGVyIGZhLTJ4Ij48L2k+PC9hPg0KICAgICAgICA8YSBocmVmPSJodHRwczovL3d3dy55ZWxwLmNvbS9iaXovdGhlLXJpY2UtZ3JvdXAtcGxhbm8tNj9vc3E9dGhlK3JpY2UrZ3JvdXAlMkMraW5jLiI+PGkgY2xhc3M9ImZhIGZhLXllbHAgZmEtMngiPjwvaT48L2E+DQogICAgICAgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LmxpbmtlZGluLmNvbS9pbi9icmVudHJpY2UvIj48aSBjbGFzcz0iZmEgZmEtbGlua2VkaW4gZmEtMngiPjwvaT48L2E+DQogICAgPGJyPg0KICAgICAgICA8YSBjbGFzcz0iYnRuIGJ0bi1wcmltYXJ5IiBzdHlsZT0iZGlzcGxheTppbmxpbmUtYmxvY2s7Y29sb3I6I2ZmZjsgZmxvYXQ6IGxlZnQ7IG1hcmdpbi10b3A6IDE0cHg7IG1hcmdpbi1sZWZ0OiAxM3B4OyIgaHJlZj0idGVsOigyMTQpIDgwOC0zMTAwIj4NCiAgICAgICAgICAgICAgICBDYWxsDQogICAgICAgICAgICA8L2E+DQogICAgDQogICAgPC9kaXY+DQo8c2NyaXB0PiAgICAkKCJhLm5hdmJhci1icmFuZC5oaWRkZW4teHMueHMtY29tcGFueS1uYW1lLnhzLWNvbXBhbnktbG9nbyIpLnJlbW92ZUNsYXNzKCJoaWRkZW4teHMiKQ0KPC9zY3JpcHQ+DQo8IS0tTWVudSB0ZXh0IG9uIG1vYmlsZS0tPg0KPHNjcmlwdD4NCiAgICAoZnVuY3Rpb24oKSB7DQoNCiAgICAgICAgdmFyIHRlbXBsYXRlID0gJzxzcGFuPk1lbnU8L3NwYW4+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciOyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik0zIDE4aDE4di0ySDN2MnptMC01aDE4di0ySDN2MnptMC03djJoMThWNkgzeiIvPjwvc3ZnPic7DQoNCiAgICAgICAgdmFyIG5ld01lbnUgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5Q2xhc3NOYW1lKCduYXZiYXItdG9nZ2xlJyk7DQogICAgICAgIG5ld01lbnVbMF0uaW5uZXJIVE1MID0gdGVtcGxhdGU7DQoNCiAgICB9KSgpOw0KPC9zY3JpcHQ+DQo8IS0tRW5kIE1lbnUgdGV4dCBvbiBtb2JpbGUtLT4NCjwhLS0gRml4IEZvciBJT1MgU2FmYXJpIGRvdWJsZSBjbGljayBvbiBtb2JpbGUgbWVudSAtLT4NCjxzY3JpcHQ+DQogICAgKGZ1bmN0aW9uKCkgew0KICAgICAgICBpZiAod2luZG93LmlubmVyV2lkdGggPCA3NjgpIHsNCiAgICAgICAgICAgIHZhciBwYXJlbnQgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5Q2xhc3NOYW1lKCdkcm9wZG93bi1tZW51Jyk7DQogICAgICAgIGZvciAodmFyIGkgPSAwOyBpIDwgcGFyZW50Lmxlbmd0aDsgaSsrKSB7DQogICAgICAgICAgICBwYXJlbnRbaV0uY2hpbGROb2Rlcy5mb3JFYWNoKGZ1bmN0aW9uKGl0ZW0pIHsNCiAgICAgICAgICAgICAgICBpZiAoaXRlbS5ub2RlTmFtZSA9PT0gJ0xJJykgew0KICAgICAgICAgICAgICAgIGl0ZW0uY2hpbGROb2Rlcy5mb3JFYWNoKGZ1bmN0aW9uKHN1Ykl0ZW0pIHsNCiAgICAgICAgICAgICAgICAgICAgaWYgKHN1Ykl0ZW0ubm9kZU5hbWUgPT09ICdBJykgew0KICAgICAgICAgICAgICAgICAgICAgICAgc3ViSXRlbS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIGZ1bmN0aW9uKCkgew0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdpbmRvdy5sb2NhdGlvbiA9IHRoaXMuaHJlZjsNCiAgICAgICAgICAgICAgICAgICAgICAgIH0pDQogICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICB9KQ0KICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0pDQogICAgICAgIH0NCg0KICAgICAgICB9DQogICAgfSkoKTsNCiAgICA8L3NjcmlwdD4NCiAgICA8IS0tIEVuZCBvZiBJT1MgU2FmYXJpIGRvdWJsZSBjbGljayBvbiBtb2JpbGUgbWVudSAtLT4NCiAgICA8IS0tIEJBQ0sgVE8gVE9QIFNDUklQVCAtLT4NCiAgICA8IS0tIDxzY3JpcHQ+DQogICAgJCgnYm9keScpLnByZXBlbmQoJzxhIGhyZWY9IiMiIGNsYXNzPSJiYWNrLXRvLXRvcCI+QmFjayB0byBUb3A8L2E+Jyk7DQogDQogdmFyIGFtb3VudFNjcm9sbGVkID0gMzAwOw0KICANCiAkKHdpbmRvdykuc2Nyb2xsKGZ1bmN0aW9uKCkgew0KICAgICBpZiAoICQod2luZG93KS5zY3JvbGxUb3AoKSA+IGFtb3VudFNjcm9sbGVkICkgew0KICAgICAgICAgJCgnYS5iYWNrLXRvLXRvcCcpLmZhZGVJbignc2xvdycpOw0KICAgICB9IGVsc2Ugew0KICAgICAgICAgJCgnYS5iYWNrLXRvLXRvcCcpLmZhZGVPdXQoJ3Nsb3cnKTsNCiAgICAgfQ0KIH0pOw0KICANCiAkKCdhLmJhY2stdG8tdG9wLCBhLnNpbXBsZS1iYWNrLXRvLXRvcCcpLmNsaWNrKGZ1bmN0aW9uKCkgew0KICAgICAkKCdodG1sLCBib2R5JykuYW5pbWF0ZSh7DQogICAgICAgICBzY3JvbGxUb3A6IDANCiAgICAgfSwgNzAwKTsNCiAgICAgcmV0dXJuIGZhbHNlOw0KIH0pOw0KIDwvc2NyaXB0PiAtLT4NCg0KPC9kaXY+PGJyLz48ZGl2IGNsYXNzPSd0YWJsZVRleHQnIHN0eWxlPSd0ZXh0LWFsaWduOiBjZW50ZXI7Jz48ZGl2IGNsYXNzPSd4cy1zaXRlLWZvb3Rlci1jb250YWN0LWluZm8nPjwvZGl2Pjxicj48ZGl2IGNsYXNzPSd4cy1zaXRlLWZvb3Rlci1jb3B5cmlnaHQnPlBvcnRpb25zIENvcHlyaWdodCAmY29weTsgMjAxOSAgUGlwZWxpbmUgUk9JLCBMTEM8YnI+QW5vdGhlciB3ZWJzaXRlIGJ5IDxhIGhyZWY9J2h0dHA6Ly93d3cucGlwZWxpbmVyb2kuY29tLycgdGFyZ2V0PSdfYmxhbmsnPlBpcGVsaW5lIFJPSS48L2E+Jm5ic3A7IHwgPGEgaHJlZj0naHR0cHM6Ly9yaWNlZ3JvdXBpbmMucHJvaXdlYnNpdGVzLmNvbS9hcHBzL2FsYW1vZGVsb2dpbi9sb2dpbi5hc3B4Jz5BZG1pbiBMb2dpbjwvYT4gfCA8YSBocmVmPScvVGVybXNPZlVzZSc+VGVybXMgb2YgVXNlPC9hPiB8IDxhIGhyZWY9Jy9TaXRlTWFwJz5TaXRlIE1hcDwvYT4gfCA8YSBocmVmPScvTGlzdGluZ1Byb3BlcnRpZXMvZGVmYXVsdC5hc3B4Jz5BcmVhIExpc3RpbmdzPC9hPjxicj5BbGwgcmF0ZSwgcGF5bWVudCwgYW5kIGFyZWEgaW5mb3JtYXRpb24gYXJlIGVzdGltYXRlcyBhbmQgYXBwcm94aW1hdGlvbnMgb25seS48L2Rpdj48L2Rpdj48bWV0YSBpZD0nY3kwMScgZGF0YS1rZXk9IjhRNEwiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kwMicgZGF0YS1rZXk9IkczUDEiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kwMycgZGF0YS1rZXk9IldXNEsiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kwNCcgZGF0YS1rZXk9IlhLNUYiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kwNScgZGF0YS1rZXk9IktDREEiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kwNicgZGF0YS1rZXk9Ik1SUVYiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kwNycgZGF0YS1rZXk9IkdNTEUiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kwOCcgZGF0YS1rZXk9IjZJR1UiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kwOScgZGF0YS1rZXk9IjFQUjAiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0nY3kxMCcgZGF0YS1rZXk9Ik9NV0UiIGNsYXNzPSJDcnlwdG8iLz48bWV0YSBpZD0iY3lrZXkiIGRhdGEta2V5PSIiLz5kAgYPDxYCHgdWaXNpYmxlaGRkZHCsb+Q6VLaR/an1q2tlGxkPxCByxltq+ckXzj/N4Xbs" />
+
+
+<script src="/ScriptResource.axd?d=FYJD99S4CapDaVzOAV6lLj1wLx39NMMvTeIzEghaZ0s512hXb7Iyb5l6gWj9jSP3C2P8GHqShxCcz1kZ8_XPQtW2cV6OovQ7xRkt9X_-OSXnw7TkQX2xMCrPpKOHeTKH0&amp;t=23c9c237" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="03F52E9C" />
+			
+    <div class="ta-layout-fullscreen">
+        <header>
+            <div class="xs-header">
+                <div class="xs-company-motto hidden">
+                    <font color='#000000' size='26' face='Monotype Corsiva'>When Character Matters</font>
+
+                </div>
+            </div>
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#xs-navbar-collapse">
+                        <span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    
+                    <a href="/" class="navbar-brand hidden-xs xs-company-name xs-company-logo">
+                        
+                        
+                    </a>
+                    <a href="/" class="navbar-brand visible-xs xs-company-name">
+                        
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="xs-navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        
+                <!-- button separator <li>
+                    <a class="primary-button-separator">&emsp;</a>
+                </li>-->
+					
+				
+                <!-- button separator <li>
+                    <a class="primary-button-separator">&emsp;</a>
+                </li>-->
+					
+				
+                <!-- button separator <li>
+                    <a class="primary-button-separator">&emsp;</a>
+                </li>-->
+					
+				
+                <!-- button separator <li>
+                    <a class="primary-button-separator">&emsp;</a>
+                </li>-->
+					
+				
+			
+
+		
+		<li>
+            <a href="/MyHomeValue">
+                My Home Value
+			</a>
+        </li>
+			
+		
+                        
+				<li>
+					<a href="/Reviews">
+						Reviews
+					</a>
+				</li>
+			
+				<li class="has-children dropdown">
+					
+					<a href="/ForBuyers">
+						<span class="pull-left">
+							Buyers
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/OurListings">
+										
+											&emsp;
+										Our Listings
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SearchAreaHomes">
+										
+											&emsp;
+										Search Area Homes
+									</a>
+								</li>
+							
+								<li>
+									<a href="/FirstTimeHomeBuyers">
+										First Time Home Buyers
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HomeBuyerChecklist">
+										
+											&emsp;
+										Home Buyer Checklist
+									</a>
+								</li>
+							
+								<li>
+									<a href="/YourBuyingPower">
+										
+											&emsp;
+										Your Buying Power
+									</a>
+								</li>
+							
+								<li>
+									<a href="/GetPre-qualified">
+										
+											&emsp;
+										Get Pre-qualified
+									</a>
+								</li>
+							
+								<li>
+									<a href="/YourDownPayment">
+										
+											&emsp;
+										Your Down Payment
+									</a>
+								</li>
+							
+								<li>
+									<a href="/YourFICOscore">
+										
+											&emsp;
+										Your FICO score
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StayingApproved">
+										
+											&emsp;
+										Staying Approved
+									</a>
+								</li>
+							
+								<li>
+									<a href="/NewConstruction">
+										
+											&emsp;
+										New Construction
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HowEscrowWorks">
+										
+											&emsp;
+										How Escrow Works
+									</a>
+								</li>
+							
+								<li>
+									<a href="/WritingtheOffer">
+										
+											&emsp;
+										Writing the Offer
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TheListingContract">
+										
+											&emsp;
+										The Listing Contract
+									</a>
+								</li>
+							
+								<li>
+									<a href="/What'sEarnestMoney">
+										
+											&emsp;
+										What's Earnest Money?
+									</a>
+								</li>
+							
+								<li>
+									<a href="/Whyaninspection">
+										
+											&emsp;
+										Why an inspection?
+									</a>
+								</li>
+							
+								<li>
+									<a href="/WhyTitleInsurance">
+										
+											&emsp;
+										Why Title Insurance?
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TitleInformation">
+										
+											&emsp;
+										Title Information
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SellerPaidClosing">
+										
+											&emsp;
+										Seller Paid Closing
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TaxClosingCosts">
+										
+											&emsp;
+										Tax Closing Costs
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+					<li class="secondary-button-separator">&emsp;</li>
+					
+				<li class="has-children dropdown">
+					
+					<a href="/SellingYourHome">
+						<span class="pull-left">
+							Sellers
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/selling-one-home-buying-another">
+										
+											&emsp;
+										Selling and Buying eBook
+									</a>
+								</li>
+							
+								<li>
+									<a href="/7-reasons-your-home-isnt-selling">
+										
+											&emsp;
+										Marketing Mistakes eBook
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StagingServices">
+										
+											&emsp;
+										Staging Services
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StagingChecklist">
+										
+											&emsp;
+										Staging Checklist
+									</a>
+								</li>
+							
+								<li>
+									<a href="/CurbAppealList">
+										
+											&emsp;
+										Curb Appeal List
+									</a>
+								</li>
+							
+								<li>
+									<a href="/3-ways-to-improve-curb-appeal">
+										
+											&emsp;
+										Curb Appeal eBook
+									</a>
+								</li>
+							
+								<li>
+									<a href="/NeighborhoodPrices">
+										Neighborhood Prices
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ImprovementsThatPay">
+										Improvements That Pay
+									</a>
+								</li>
+							
+								<li>
+									<a href="/GettheHighestPrice">
+										Get the Highest Price
+									</a>
+								</li>
+							
+								<li>
+									<a href="/FreeHomeValuation">
+										Free Home Valuation
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HomeAppreciation">
+										Home Appreciation
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ListingCommissions">
+										Listing Commissions
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TypesofListingContracts">
+										Types of Listing Contracts
+									</a>
+								</li>
+							
+								<li>
+									<a href="/RoleoftheMLS">
+										Role of the MLS
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SellingOne,BuyingAnother">
+										Selling One, Buying Another
+									</a>
+								</li>
+							
+								<li>
+									<a href="/Sellingyourownhome">
+										Selling your own home
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SettingtheSalesPrice">
+										Setting the Sales Price
+									</a>
+								</li>
+							
+								<li>
+									<a href="/Shouldyoupaint">
+										Should you paint?
+									</a>
+								</li>
+							
+								<li>
+									<a href="/FlowersAddCurbAppeal!">
+										Flowers Add Curb Appeal!
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ContingenciesinContracts">
+										Contingencies in Contracts
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ReasonsHomesDon'tSell">
+										Reasons Homes Don't Sell
+									</a>
+								</li>
+							
+								<li>
+									<a href="/Realvs.PersonalProperty">
+										Real vs. Personal Property
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HomeownerWarranties">
+										Homeowner Warranties
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+				<li class="has-children dropdown">
+					
+					<a href="/resources">
+						<span class="pull-left">
+							FREE Resources
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/ComingSoon">
+										COMING SOON Listings
+									</a>
+								</li>
+							
+								<li>
+									<a href="/KingsRidgeCMA">
+										Kings Ridge CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/CastleHIllsCMA">
+										Castle Hills CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ParkerEstatesCMA">
+										Parker Estates CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HeritageLakesCMA">
+										Heritage Lakes CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/HeritageGreenCMA">
+										Heritage Green CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StonebriarVillageCMA">
+										Stonebriar Village CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/NorthColonyCMA">
+										North Colony CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StewartPeninsulaCMA">
+										Stewart Peninsula CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SouthColonyCMA">
+										South Colony CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TheCascadesCMA">
+										The Cascades CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/TheLegendsCMA">
+										The Legends CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/LegendTrailsCMA">
+										Legend Trails CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/NorthpointeCMA">
+										Northpointe CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/RidgepointeCMA">
+										Ridgepointe CMA
+									</a>
+								</li>
+							
+								<li>
+									<a href="/MeridianLewisvilleCMA">
+										Meridian Lewisville CMA
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+				<li class="has-children dropdown">
+					
+					<a href="/Commercial">
+						<span class="pull-left">
+							Commercial
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/smallbusiness">
+										For Small Business
+									</a>
+								</li>
+							
+								<li>
+									<a href="/LeaseAnalysis">
+										Lease Analysis
+									</a>
+								</li>
+							
+								<li>
+									<a href="/SiteSelectionServices">
+										Site Selection Services
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+				<li class="has-children dropdown">
+					
+					<a href="/Home">
+						<span class="pull-left">
+							Home
+						</span>
+						<span class="pull-right">&nbsp; <i class="fa fa-caret-down"></i></span>
+						<div class="clearfix"></div>
+					</a>
+
+					<ul class="dropdown-menu">
+						
+								<li>
+									<a href="/pressrelease2019">
+										Press Release Jan. 2019
+									</a>
+								</li>
+							
+								<li>
+									<a href="/StaffProfiles">
+										Staff Profiles
+									</a>
+								</li>
+							
+								<li>
+									<a href="/WhyChooseUs!">
+										Why Choose Us!
+									</a>
+								</li>
+							
+								<li>
+									<a href="/EthicsinRealEstate">
+										Ethics in Real Estate
+									</a>
+								</li>
+							
+								<li>
+									<a href="/ContactUs">
+										Contact Us
+									</a>
+								</li>
+							
+					</ul>
+				</li>
+			
+                        <li>&emsp;</li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="xs-primary-content">
+                <div class="col-sm-12">
+                    
+    
+    <!-- phPage: BEGIN -->
+    <div><p style="text-align: center"><b>TERMS OF USE FOR SITE</b></p>
+<p style="text-align: left">The use of the web site (the &quot;Web Site&quot;) is subject to the terms and conditions stated herein and to the terms set by the Site Owner ([#SITEOWNER#]) located at [#SITENAME#].  Use of the Web Site constitutes an agreement by you, the user, that your use is governed by these terms and conditions.  In addition, when using particular Pipeline ROI, LLC. (&quot;PROI&quot;) services, you will be subject to any guidelines or rules applicable to such services that may be posted from time to time.  The full suite of PROI products can be found at <a href="www.pipelineroi.com">www.pipelineroi.com</a>.</p>
+<p style="text-align: left">You are responsible for regularly reviewing this Agreement.</p>
+<p style="text-align: center"><b>Ownership of Intellectual Property</b></p>
+<p style="text-align: left">The works of authorship contained in this Web Site, including but not limited to all design, text and images, are owned, except as otherwise expressly stated, by PROI or its licensors.  United States and worldwide copyright laws and treaty provisions protect the contents of this Web Site.  In accordance with these terms, except as stated above,</p>
+<p style="text-align: center"><b>Appropriate Conduct and Prohibited Uses</b></p>
+<p style="text-align: left">You agree that You are responsible for your own conduct and content while using the Service and for any consequences thereof.  You agree to use the Service only for purposes that are legal, proper and in accordance with these Terms of Use and any applicable policies or guidelines.  By way of example, and not as a limitation, You agree that when using the Service, You will not:</p>
+<ul type="disc">
+    <li>Copy, reproduce, modify, use, republish, upload, post, publish, license, create derivative works from, transmit or distribute in any way material from the Web Site without express written permission;</li>
+    <li>defame, abuse, harass, stalk, threaten or otherwise violate the legal rights (such as rights of privacy and publicity) of others;</li>
+    <li>upload, post, email or transmit or otherwise make available any inappropriate, defamatory, infringing, obscene, or unlawful Content;</li>
+    <li>upload, post, email or transmit or otherwise make available any Content that infringes any patent, trademark, copyright, trade secret or other proprietary right of any party, unless You are the owner of the Rights or have the permission of the owner to post such Content;</li>
+    <li>upload, post, email or transmit or otherwise make available messages that promote pyramid schemes, chain letters or disruptive commercial messages or advertisements, or anything else prohibited by law, these Terms of Service or any applicable policies or guidelines.</li>
+    <li>download any file posted by another that You know, or reasonably should know, that cannot be legally distributed in such manner;</li>
+    <li>impersonate another person or entity, or falsify or delete any author attributions, legal or other proper notices or proprietary designations or labels of the origin or source of software or other material;</li>
+    <li>restrict or inhibit any other user from using and enjoying Site Owner’s and/or PROI services;</li>
+    <li>use services for any illegal or unauthorized purpose;</li>
+    <li>interfere with or disrupt services or servers or networks connected to Site Owner’s and/or PROI services, or disobey any requirements, procedures, policies or regulations of networks connected to Site Owner’s and/or PROI services;</li>
+    <li>use any robot, spider, site search/retrieval application, or other device to retrieve or index any portion of services or collect information about users for any unauthorized purpose;</li>
+    <li>submit Content that falsely expresses or implies that such Content is sponsored or endorsed by PROI and/or Site Owner;</li>
+    <li>create user accounts by automated means or under false or fraudulent pretenses;</li>
+    <li>promote or provide instructional information about illegal activities or promote physical harm or injury against any group or individual; or</li>
+    <li>transmit any viruses, worms, defects, Trojan horses, or any items of a destructive nature.</li>
+    <li>Redeliver, transfer, or sell any information, software, lists of users, databases or other lists, products, or services provided through or obtained from the Site Owner and/or PROI Web Sites.  This includes among other activities, using &quot;framing&quot;, &quot;scraping&quot;, &quot;screen scraping,&quot; &quot;database scraping&quot;, or any other activity with the purpose of obtaining lists of users or other information and includes any of the pages, text, images or other content of this Web Site technology without express written permission.</li>
+    <li>Soliciting any of the individuals or companies listed on this web site for purposes of selling products or services is prohibited.</li>
+    <li>International users agree to comply with their own local rules regarding online conduct and acceptable content, including laws regulating the export of data to the United States or your country of residence.</li>
+</ul>
+<p style="text-align: center"><b>Listings</b></p>
+<p style="text-align: left">Site Owner does not guarantee the availability of the listings.  Site Owner does not make guarantees as to the time it takes for a listing to sell, the likelihood, or duration for a listing to sell.</p>
+<p style="text-align: center"><b>Market Volatility</b></p>
+<p style="text-align: left">Site owner is not liable for changes in the market that change buyer/seller conditions.</p>
+<p style="text-align: center"><b>Activity Restriction</b></p>
+<p style="text-align: left">Site use is restricted to buyer/seller activities only.</p>
+<p style="text-align: center"><b>Web Site Security</b></p>
+<p style="text-align: left">You are prohibited from violating or attempting to violate the security of the Web Site, including, without limitation, (a) accessing data not intended for your viewing or logging into a server or account which you are not authorized to access, (b) attempting to probe, scan or test the vulnerability of a system or network or to breach security or authentication measures without proper authorization or (c) attempting to interfere with service to any user, host or network.  Violations of system or network security may result in civil or criminal liability.  PROI and/or Site Owner will investigate occurrences that may involve such violations and may involve, and cooperate with, law enforcement authorities in prosecuting users who are involved in such violations.</p>
+<p style="text-align: center"><b>Privacy</b></p>
+<p style="text-align: left">This site does not collect personally identifiable information about individual consumers who use or visit it via the storage and retrieval of browser ‘cookies.’ You may be asked to voluntarily submit personal information for business purposes, and we will only use the information you submit for such purposes.</p>
+<p style="text-align: left">Where requested we may allow third-party companies, including ListTrac, to collect certain anonymous information when you visit our website. These companies may use non-personally identifiable information during your visits to this and other websites in order to provide advertisements about goods and services likely to be of greater interest to you. These companies typically use a cookie or a third party web beacon to collect this information. To learn more about this behavioral advertising practice, you can visit <a href="www.networkadvertising.org">www.networkadvertising.org</a>.</p>
+<p style="text-align: center"><b>DISCLAIMER OF WARRANTY</b></p>
+<p style="text-align: left">THE WEB SITES ARE PROVIDED &quot;AS-IS&quot; AND &quot;WITH ALL FAULTS&quot; AND, TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, PROI AND SITE OWNER DISCLAIMS ALL OTHER REPRESENTATIONS AND WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, REGARDING THE WEB SITES, INCLUDING WITHOUT LIMITATION ITS FITNESS FOR A PARTICULAR PURPOSE, ITS QUALITY, ITS MERCHANTABILITY, ITS PERFORMANCE, ITS NON-INFRINGEMENT OF THIRD PARTY RIGHTS, TITLE, OR THE RESULTS OBTAINED BY USING THE WEB SITES.  THE COMPANY DOES NOT WARRANT THAT THE WEB SITES ARE FREE FROM BUGS, VIRUSES, ERRORS OR OTHER PROGRAM LIMITATIONS.</p>
+<p style="text-align: left">PROI AND SITE OWNER MAKES NO WARRANTY THAT (i) THE SERVICE WILL MEET YOUR REQUIREMENTS, (ii) THE SERVICE WILL BE UNINTERRUPTED, TIMELY, SECURE, OR ERROR-FREE, (iii) THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE SERVICE WILL BE ACCURATE OR RELIABLE, (iv) THE QUALITY OF ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIAL PURCHASED OR OBTAINED BY YOU THROUGH THE SERVICE WILL MEET YOUR EXPECTATIONS, AND (V) ANY ERRORS IN THE SOFTWARE WILL BE CORRECTED.</p>
+<p style="text-align: left">ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE SERVICE IS DONE AT YOUR OWN DISCRETION AND RISK AND THAT YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIAL.</p>
+<p style="text-align: left">NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY YOU FROM SITE OWNER, PROI OR THROUGH OR FROM PROI SERVICES SHALL CREATE ANY WARRANTY NOT EXPRESSLY STATED IN THE TERMS OF USE.</p>
+<p style="text-align: center"><b>LIMITATION OF LIABILITY</b></p>
+<p style="text-align: left">SITE OWNER AND PROI SHALL HAVE NO LIABILITY TO YOU OR ANY OTHER USER OF SUCH INFORMATION OR TO ANY THIRD PARTY FOR ANY LOSS, EXPENSE, OR DAMAGE, INCLUDING CONSEQUENTIAL, INCIDENTAL, SPECIAL OR PUNITIVE DAMAGES AND INCLUDING LOST PROFITS OR LOST REVENUE, CAUSED DIRECTLY OR INDIRECTLY BY THE USE OR RELIANCE UPON SUCH INFORMATION, ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE WEB SITES.  USE OF SITE OWNER AND PROI WEB SITES IS AT YOUR OWN DISCRETION AND RISK AND YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIAL.  BECAUSE SOME STATES/JURISDICTIONS DO NOT ALLOW THE EXCLUSION OR LIMITATION OF LIABILITY FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES, THE ABOVE LIMITATION MAY NOT APPLY TO YOU.  IF YOU ARE DISSATISFIED WITH ANY PORTION OF THE PROI WEB SITES, OR WITH ANY OF THESE TERMS OF USE, YOUR SOLE AND EXCLUSIVE REMEDY IS TO DISCONTINUE USING THE WEB SITES.</p>
+<p style="text-align: center"><b>Indemnity</b></p>
+<p style="text-align: left">You will indemnify, defend and hold harmless Site Owner and PROI and its officers, directors, employees and agents (each, an &quot;Indemnified Party&quot;) from and against any and all claims, demands, losses, costs, expenses, liabilities and damages of any kind or nature whatsoever (collectively, &quot;Damages&quot;) incurred by any Indemnified Party arising out of, in connection with or resulting from (i) your use of the Web Sites or (ii) your breach of this Agreement.</p>
+<p style="text-align: center"><b>Governing Law</b></p>
+<p style="text-align: left">This Agreement shall be construed and governed by the State of Florida, U.S.A.  You hereby consent to the exclusive jurisdiction and venue of courts sitting in Florida in all disputes arising out of or relating to the use of the Web Sites.  Use of the Web Sites is unauthorized in any jurisdiction that does not give the effect to all provisions of these terms and conditions, including without limitation this paragraph.</p>
+<p style="text-align: center"><b>Security Standards</b></p>
+<p style="text-align: left">PCI Data Security Standards are technical and operational requirements set by the PCI Security Standards Council (PCI SSC) to protect cardholder data.  The standards apply to all entities that store, process or transmit cardholder data. In order to attest PCI compliance, PROI does not store, process, or transmit any cardholder data on its own servers or networks and must provide a written AOC (attestation of compliance).  Pursuant to this AOC Pipeline ROI cannot allow Customers using our products to store, process, or transmit any cardholder data using PROI Products and Services.  You agree that in your use of the Products and Services, you will not include, or allow to be included, any cardholder data in documents and/or data being processed, transmitted, and/or stored by Products and Services.  Once such example of Customers responsibilities includes, but is not limited to, redacting credit card numbers to the last 4 digits if they are included on the 1003 form or any other documents before printing them to the SureDocs printer.</p></div>
+    <!-- phPage: END -->
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="xs-dynamic-content">
+                
+    
+
+                <div class="clearfix"></div>
+            </div>
+        </section>
+        <footer class="xs-site-footer panel-footer">
+            <div class="xs-profile-picture hidden">
+                
+            </div>
+            <div class="xs-language-choices text-center">
+                
+    <div class="xs-language-options text-center">
+	    <label>Choose your language:</label> <br>
+	    
+		    <a href="?ChosenLanguage=English" title="English">English</a> 
+	    
+		    <a href="?ChosenLanguage=French" title="French">French</a> 
+	    
+		    <a href="?ChosenLanguage=German" title="German">German</a> 
+	    
+		    <a href="?ChosenLanguage=Portuguese" title="Portuguese">Portuguese</a> 
+	    
+		    <a href="?ChosenLanguage=Spanish" title="Spanish">Spanish</a> 
+	    
+    </div>
+
+            </div>
+            <hr>
+            <!-- footer | BEGIN -->
+            
+    
+
+<div class='xs-footer-text'><style>
+     /* Footer Code */
+/****************************************** Footer Styles *******************************************/
+.center {
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 300px;
+    padding: 10px;
+}
+
+.left {
+    float: left;
+    width: 300px;
+    padding: 10px;
+}
+
+.xs-site-footer {
+    min-height: 121px;
+    padding-bottom: 60px;
+    background: black;
+    font-family: inherit;
+    border-top: 1px solid #888;
+    color: #FFF;
+    padding-top: 20px;
+}
+
+#stickyheader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        /* line-height: 72px; */
+        text-align: center;
+        background-color: #0D5196;
+        background-image: none;
+        background-repeat: repeat-x;
+        border-top: none;
+        color: #FAF9F9;
+        font-size: 1.2em;
+        z-index: 99999999;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+    align-items: center;
+    }
+    .stickyheader-text {
+        font-size: 30px;
+    }
+        #stickyheader>a {
+            color: #fff;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        #stickyheader>a:hover {
+            color: #efefef;
+            text-decoration: underline;
+        }
+        @media and screen (max-width:769px) {
+            .fa-2x {
+    font-size: 1em;
+    padding: 5px;
+}
+        } 
+
+.xs-site-footer a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.xs-site-footer a:hover {
+    color: #FFF;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.xs-site-footer-copyright {
+    color: #FFF;
+    font-size: 12px;
+    clear: both;
+}
+
+.xs-site-footer hr {
+    display: none;
+}
+/********SOCIAL MEDIA BUTTONS*************/
+
+.fa-stack-2x {
+    color: #FFF;
+}
+
+.fa-stack-2x:hover {
+    color: #333;
+}
+
+.fa-facebook {
+    color: #fff;
+}
+
+.fa-facebook:hover {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #fff;
+}
+
+.fa-twitter:hover {
+    color: #55acee;
+}
+
+.fa-youtube {
+    color: #fff;
+}
+
+.fa-youtube:hover {
+    color: #bb0000;
+}
+
+.fa-linkedin {
+    color: #fff;
+}
+
+.fa-linkedin:hover {
+    color: #007bb5;
+}
+
+.fa-instagram {
+    color: #fff;
+}
+
+.fa-instagram:hover {
+    color: #e95950;
+}
+
+.fa-pinterest {
+    color: #fff;
+}
+
+.fa-pinterest:hover {
+    color: #cb2027;
+}
+
+.fa-snapchat {
+    color: #fff;
+}
+
+.fa-snapchat:hover {
+    color: #fffc00;
+}
+
+.fa-dropbox {
+    color: #fff;
+}
+
+.fa-dropbox:hover {
+    color: #007ee5;
+}
+
+.fa-yelp {
+    color: #fff;
+}
+
+.fa-yelp:hover {
+    color: #c41200;
+}
+
+.fa-google-plus {
+    color: #fff;
+}
+
+.fa-google-plus:hover {
+    color: #dd4b39;
+}
+    /* .col-md-5,
+    .col-md-7 {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    
+    .tableText {
+        text-align: center;
+        padding-top: 195px;
+    }
+     */
+         .navbar-toggle svg {
+margin: -6px 0 -6px 5px;
+fill: #000;
+}
+/* BACK TO TOP */
+/*    Back to top button*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    background: #eee;
+    position: relative;
+    height: 100%;
+}
+.headerContainer,
+.bodyContainer,
+.footerContainer {
+    max-width: 960px;
+    margin: 0 auto;
+    background: #FFF;
+}
+.padding {
+    padding: 20px;
+}
+.bodyContainer {
+    min-height: 500px;
+}
+a.back-to-top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    left: 20px;
+    bottom: 36px;
+    background: #27AE61 url("/xSites/Agents/agent11-premium-redo/Content/UploadedFiles/chevron-up.png") no-repeat center 80%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+a:hover.back-to-top {
+    background-color: #fff;
+color: #555; /* Add a dark-grey background on hover */
+}
+.ableText{
+    height: 400px;
+}
+</style>
+<div class="xs-site-container">
+    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+        <h3>When Character Matters</h3>
+        <i class="fa fa-phone"></i> <a href="tel:(214) 808-3100"> (214) 808-3100</a>
+        <br><i class="fa fa-envelope"></i> <a href="mailto:brent@ricegroupinc.com"> brent@ricegroupinc.com</a>
+        <br><br>
+        <a href="https://www.facebook.com/ricegroupinc"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ricegroupinc"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.yelp.com/biz/the-rice-group-plano-6?osq=the+rice+group%2C+inc."><i class="fa fa-yelp fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/brentrice/"><i class="fa fa-linkedin fa-2x"></i></a>
+        
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+        <!-- <img class="" src="/xsites/agents/agent11-premium-redo/Content/UploadedFiles/metro_properties_white.png" style="width: 220px; margin-right: 11px;"> -->
+        <h1>The Rice Group, Inc.</h1>
+        <h4>MLS® DISCLAIMER</h4><p>Click here for<br><a href="http://www.trec.texas.gov/forms/information-about-brokerage-services" target="_blank">INFORMATION ABOUT BROKERAGE SERVICES</a><br><br><a href="#demo" class="btn btn-info" data-toggle="collapse">Show More</a></p><div id="demo" class="collapse">
+                © 2017 North Texas Real Estate Information Systems, Inc. All rights reserved. Disclaimer: All information deemed reliable but not guaranteed and should be independently verified. All properties are subject to prior sale, change or withdrawal. Neither listing broker(s) nor The Rice Group, Inc. shall be responsible for any typographical errors, misinformation, misprints and shall be held totally harmless. The database information herein is provided from and copyrighted by the North Texas Real Estate Information Systems, Inc. NTREIS data may not be reproduced or redistributed and is only for people viewing this site. All information provided is deemed reliable but is not guaranteed and should be independently verified. The advertisements herein are merely indications to bid and are not offers to sell which may be accepted. All properties are subject to prior sale or withdrawal. All rights are reserved by copyright.
+              </div>
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+        <address>7013 Mills Branch Circle
+                <br> Plano, TX 75024-7482</address>
+                <!-- <img src="/xsites/agents/agent11-premium-redo/content/uploadedfiles/realtor-mls-white.png" width="150" alt="Equal Housing Lender"> -->
+                <img src="/xsites/agents/FairwayIndependentMortgageCorporation2/content/uploadedfiles/EHO-white.png" width="50" alt="Equal Housing Opportunity">
+    </div>
+</div>
+<!--Sticky Header Content-->
+<div class="hidden-xs" id="stickyheader">
+    <div class="col-sm-3 stickyheader-text" style="font-size:14pt;"><i class="fa fa-phone"></i> <a href="tel:(214) 808-3100"> (214) 808-3100</a>
+    </div>
+    <div class="col-sm-6">
+            <a href="/home">
+        <!-- <img src="/xsites/agents/agent11-premium-redo/Content/UploadedFiles/metro_properties_white.png" style="width: 140px;"> -->
+        <h1>The Rice Group, Inc.</h1>
+        
+        </a>
+    </div>
+
+    <div class="col-sm-3">
+        <a href="https://www.facebook.com/ricegroupinc"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ricegroupinc"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.yelp.com/biz/the-rice-group-plano-6?osq=the+rice+group%2C+inc."><i class="fa fa-yelp fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/brentrice/"><i class="fa fa-linkedin fa-2x"></i></a>    </div>
+</div>
+<div class="visible-xs" id="stickyheader">
+        <a href="/home">
+    <!-- <img src="/xsites/agents/agent11-premium-redo/Content/UploadedFiles/metro_properties_white.png" style="width: 130px; margin-right: 5px;"></a>&nbsp; -->
+    <span style="width: 130px; font-size: 25px;">The Rice Group, Inc.</span>
+
+    &nbsp;
+        <a href="https://www.facebook.com/ricegroupinc"><i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/ricegroupinc"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.yelp.com/biz/the-rice-group-plano-6?osq=the+rice+group%2C+inc."><i class="fa fa-yelp fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/brentrice/"><i class="fa fa-linkedin fa-2x"></i></a>
+    <br>
+        <a class="btn btn-primary" style="display:inline-block;color:#fff; float: left; margin-top: 14px; margin-left: 13px;" href="tel:(214) 808-3100">
+                Call
+            </a>
+    
+    </div>
+<script>    $("a.navbar-brand.hidden-xs.xs-company-name.xs-company-logo").removeClass("hidden-xs")
+</script>
+<!--Menu text on mobile-->
+<script>
+    (function() {
+
+        var template = '<span>Menu</span><svg xmlns="http://www.w3.org/2000/svg"; width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>';
+
+        var newMenu = document.getElementsByClassName('navbar-toggle');
+        newMenu[0].innerHTML = template;
+
+    })();
+</script>
+<!--End Menu text on mobile-->
+<!-- Fix For IOS Safari double click on mobile menu -->
+<script>
+    (function() {
+        if (window.innerWidth < 768) {
+            var parent = document.getElementsByClassName('dropdown-menu');
+        for (var i = 0; i < parent.length; i++) {
+            parent[i].childNodes.forEach(function(item) {
+                if (item.nodeName === 'LI') {
+                item.childNodes.forEach(function(subItem) {
+                    if (subItem.nodeName === 'A') {
+                        subItem.addEventListener('click', function() {
+                            window.location = this.href;
+                        })
+                    }
+                })
+             }
+            })
+        }
+
+        }
+    })();
+    </script>
+    <!-- End of IOS Safari double click on mobile menu -->
+    <!-- BACK TO TOP SCRIPT -->
+    <!-- <script>
+    $('body').prepend('<a href="#" class="back-to-top">Back to Top</a>');
+ 
+ var amountScrolled = 300;
+  
+ $(window).scroll(function() {
+     if ( $(window).scrollTop() > amountScrolled ) {
+         $('a.back-to-top').fadeIn('slow');
+     } else {
+         $('a.back-to-top').fadeOut('slow');
+     }
+ });
+  
+ $('a.back-to-top, a.simple-back-to-top').click(function() {
+     $('html, body').animate({
+         scrollTop: 0
+     }, 700);
+     return false;
+ });
+ </script> -->
+
+</div><br/><div class='tableText' style='text-align: center;'><div class='xs-site-footer-contact-info'></div><br><div class='xs-site-footer-copyright'>Portions Copyright &copy; 2019  Pipeline ROI, LLC<br>Another website by <a href='http://www.pipelineroi.com/' target='_blank'>Pipeline ROI.</a>&nbsp; | <a href='https://ricegroupinc.proiwebsites.com/apps/alamodelogin/login.aspx'>Admin Login</a> | <a href='/TermsOfUse'>Terms of Use</a> | <a href='/SiteMap'>Site Map</a> | <a href='/ListingProperties/default.aspx'>Area Listings</a><br>All rate, payment, and area information are estimates and approximations only.</div></div><meta id='cy01' data-key="8Q4L" class="Crypto"/><meta id='cy02' data-key="G3P1" class="Crypto"/><meta id='cy03' data-key="WW4K" class="Crypto"/><meta id='cy04' data-key="XK5F" class="Crypto"/><meta id='cy05' data-key="KCDA" class="Crypto"/><meta id='cy06' data-key="MRQV" class="Crypto"/><meta id='cy07' data-key="GMLE" class="Crypto"/><meta id='cy08' data-key="6IGU" class="Crypto"/><meta id='cy09' data-key="1PR0" class="Crypto"/><meta id='cy10' data-key="OMWE" class="Crypto"/><meta id="cykey" data-key=""/>
+
+
+<script src="/scripts/decrypt.min.js" type="text/javascript"></script>
+            <script type="text/javascript">
+
+                // Check to see this is a page with encryption
+
+
+                function validateEmail(email) {
+                    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                    return re.test(email); 
+                }
+
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    CheckForJquery();
+                    function CheckForJquery() {
+                        if (!window.jQuery) {
+                            var jq = document.createElement('script');
+                            jq.type = 'text/javascript';
+                            jq.src = '/scripts/jquery-1.8.3.min.js';
+                            document.getElementsByTagName('head')[0].appendChild(jq);
+                            window.setTimeout(CheckForJquery,1000);
+                            
+                        } else {
+
+
+                            $.ajax({
+                                type: "POST",
+                                url: "/scripts/key.aspx",
+                                data: "",
+                                dataType: "text",
+                                success: function(data) {
+                                    if (document.getElementById("cykey") != null) {
+
+                                        var Correctkeys = data.split(','),
+                                            MetaKeys = document.querySelectorAll('.crypto'),
+                                            ValidKey = document.getElementById("cykey"),
+                                            TempKey = "",
+                                            s = "",
+                                            keyname = "";
+
+                                        // iterate through the meta tags containing the randomized encrypted key pieces
+                                        for (var i = 0; i < Correctkeys.length; i++) {
+
+                                            keyname = Correctkeys[i];
+                                            TempKey = document.getElementById(keyname);
+                                            s = ValidKey.getAttribute("data-key");
+                                            if (TempKey != null) {
+                                                var newkey = s.concat(TempKey.getAttribute('data-key'));
+                                                ValidKey.setAttribute('data-key', newkey);
+                                            }
+                                        }
+                                        decrypt();
+
+                                    }
+                                }
+                            })
+                        }
+                    }
+
+                });
+
+            </script>
+
+
+
+            <!-- footer | END -->
+        </footer>
+        <script>
+            (() => {
+                let a = window.localStorage.getItem("cookieAck");
+                if (!a) {
+                    let d = document.createElement("div");
+                    d.style = "position: fixed; bottom: 0;left: 0;width: 100vw;z-index:2000;";
+                    d.id = "cookieAck";
+                    d.innerHTML = `<div style="display:flex;flex-wrap: wrap;align-items: center;justify-content: space-between;padding: 14px 20px;box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);background: rgba(255, 255, 255, 0.9);"><div>This website uses cookies to ensure you get the best experience on our website</div><div style="flex: 1;display: flex;justify-content: flex-end;"><div style="background: #3F51B5;padding: 6px 20px;color: white;cursor: pointer;border-radius: 6px;" onclick="acceptCookies()">Got it</div></div></div>`;
+                    document.body.appendChild(d);
+                }
+            })();
+            function acceptCookies() {
+                window.localStorage.setItem("cookieAck", true);
+                let dv = document.getElementById("cookieAck");
+                dv.parentNode.removeChild(dv);
+            }
+        </script>
+    </div>
+
+			
+		</form>
+
+		
+		<script src="/scripts/doubletaptogo.min.js"></script>
+		<script>
+			$('li.dropdown').doubleTapToGo();
+		</script>
+	</body>
+</html>

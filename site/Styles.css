@@ -1,0 +1,814 @@
+A img
+{
+      border:none
+}
+BODY
+{
+    FONT-SIZE: 10pt;
+    COLOR: #666666;
+    FONT-FAMILY: Verdana, Arial
+}
+TEXTAREA
+{
+    BEHAVIOR: url(/Behaviors/maxlength.htc)
+}
+.action_btn {
+	float: left;
+	clear: both;
+	background: url(graphics/clipart/agents/btn_left.png) no-repeat;
+	padding: 0 0 0 10px;
+	margin: 5px 0;
+}
+
+
+
+.action_btn a {
+	float: left;
+	height: 40px;
+	background: url(graphics/clipart/agents/btn_stretch.png) repeat-x left top;
+	line-height: 40px;
+	padding: 0 24px;
+  text-align: center;
+	font-size: 17px;
+	font-weight: bolder;
+	text-decoration: none;
+
+}
+
+
+.action_btn a:link {
+		text-decoration: none;
+}
+
+.action_btn a:visited {
+		text-decoration: none;
+}
+
+.action_btn a:hover {
+   text-decoration:underline;
+   
+ }
+
+
+.action_btn span {
+	background: url(graphics/clipart/agents/btn_right.png) no-repeat;
+	float: left;
+	width: 10px;
+	height: 40px;
+}
+
+
+.action_clear {
+	clear: both;
+}
+
+
+.action_btn3 
+{
+    background: url(graphics/clipart/appraisers/action_button3.png) no-repeat;
+    float: center;
+    clear: both;
+    width: 170px;
+    height: 27px;
+    font-size: 16px;
+    font-color: #FFFFFF;
+
+}
+
+.action_btn3 a 
+{
+	float: center;
+	line-height: 27px;
+	text-decoration: none;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+        text-shadow: #000000 1px 1px 1px;
+}
+
+.action_btn3 a:link 
+{
+  text-decoration: none;
+  font-weight:bold;
+}
+
+
+.action_btn3 a:visited 
+{
+  text-decoration: none;
+}
+
+.action_btn3 a:hover 
+{
+   text-decoration:underline;
+   color:#FFFFFF;   
+    
+   
+}
+
+#XSCallToActionAg
+{
+  margin-left: auto;
+  margin-right: auto;
+  width:88%;
+  border-collapse: collapse;
+ 
+  }
+
+
+
+
+#XSCallToActionGR
+{
+  margin-left: auto;
+  margin-right: auto;
+  width:88%;
+  border-collapse: collapse;
+  background-color: #F9CDA2
+}
+
+
+#XSCallToAction
+{
+  margin-left: auto;
+  margin-right: auto;
+  width:88%;
+  border-collapse: collapse;
+  background-color: #BAD9FC
+  }
+
+
+
+
+#XSCallToAction TD, #XSCallToActionAg TD, #XSCallToActionGR TD
+{
+  vertical-align:middle;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-right:10px;
+  padding-left:10px;
+  FONT-SIZE: 10pt; 
+  LINE-HEIGHT: 19px;
+  FONT-WEIGHT:bolder;
+  MARGIN: 0px 0px 0px 0px; 
+  COLOR: #222222;
+  FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+
+}
+
+#XSCallToAction A, #XSCallToActionAg A, #XSCallToActionGR A 
+
+{
+	color:#065CBB;
+	
+}
+
+	
+
+#XSCallToAction TD.NoTxtPad, #XSCallToActionAg TD.NoTxtPad, #XSCallToActionGR TD.NoTxtPad
+{
+  vertical-align:top;
+  padding-top:0px;
+  padding-bottom:0px;
+  padding-right:0px;
+  padding-left:0px;
+	FONT-SIZE: 0px; 
+  LINE-HEIGHT:0px;
+  MARGIN: 0px 0px 0px 0px; 
+  COLOR: #FFFFFF;
+  FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+
+.xscontent
+{
+	FONT-SIZE: 10pt; 
+	COLOR: #000000; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+        Font-Weight: Normal;
+}
+
+.xshead1
+{
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 14px; 
+	MARGIN: 10px 0px 0px 0px; 
+	COLOR: #1f2b3d; 
+	LINE-HEIGHT: 17px; 
+	FONT-FAMILY: verdana, arial, Helvetica, sans-serif;
+}
+
+.mailmerge
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 10pt;
+    COLOR: red;
+    FONT-FAMILY: Verdana;
+}
+.h1
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 14pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana
+}
+H1
+{
+	FONT-WEIGHT: Bold; 
+	FONT-SIZE: 17px; 
+	MARGIN: 10px 0px 10px 0px; 
+	COLOR: #444444;
+	LINE-HEIGHT: 18px; 
+	FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif;
+}
+H2
+{
+	FONT-WEIGHT: Bold; 
+	FONT-SIZE: 13px; 
+	MARGIN: 10px 0px 10px 0px; 
+	COLOR: #000000;
+	LINE-HEIGHT: 14px; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+.StatusText
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    COLOR: red;
+    FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif
+}
+.AlertText
+{
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: Verdana, Arial
+}
+.BottomTableBorder
+{
+    BORDER-BOTTOM: black 1px solid
+}
+.ToolHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif
+}
+.ControlFont
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial
+}
+.tableHeader
+{
+    PADDING-LEFT: 11px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Verdana;
+    BACKGROUND-COLOR: #48669f
+}
+.GridHeader
+{
+    FONT-WEIGHT: bold;
+    BACKGROUND-IMAGE: url(/admin/Graphics/topnav_bkg.jpg);
+    COLOR: black;
+    BACKGROUND-REPEAT: repeat-x
+}
+.GridLeft
+{
+    BORDER-TOP: #a6e6ee 2px solid;
+    BORDER-LEFT: #a6e6ee 2px solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: #82b5bb 2px solid
+}
+.GridMiddle
+{
+    BORDER-TOP: #a6e6ee 2px solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: #82b5bb 2px solid
+}
+.GridRight
+{
+    BORDER-RIGHT: #82b5bb 2px solid;
+    BORDER-TOP: #a6e6ee 2px solid;
+    COLOR: #000000;
+    BORDER-BOTTOM: #82b5bb 2px solid
+}
+.mol
+{
+    FONT-SIZE: 9px;
+    COLOR: #999999;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+TBODY
+{
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+.SectionHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+.ContentText
+{
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+
+.NewContentText
+{
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, Sans-Serif;
+	LINE-HEIGHT: 18px
+	
+}
+
+
+.NewContentTitle
+
+{
+    FONT-SIZE: 12pt;
+    FONT-WEIGHT: Bolder
+	COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, Sans-Serif;
+	LINE-HEIGHT: 18px;
+	
+	
+}
+.GreyText
+{
+    FONT-SIZE: 10pt;
+    COLOR: #666666;
+    FONT-FAMILY: Verdana, Arial
+}
+.SmallGreyText
+{
+    FONT-SIZE: 8pt;
+    COLOR: #666666;
+    FONT-FAMILY: Verdana, Arial
+}
+.TitleHeader
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif
+}
+A.DynContentText
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial
+}
+.DynContentText
+{
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Verdana, Arial
+}
+.ColumnTitle
+{
+    FONT-SIZE: medium;
+    FONT-FAMILY: Verdana;
+    BACKGROUND-COLOR: white
+}
+.ListBarGroupHeader
+{
+    BORDER-RIGHT: #808080 1px solid;
+    PADDING-RIGHT: 2px;
+    BACKGROUND-POSITION: 50% top;
+    BORDER-TOP: #ffffff 1px solid;
+    PADDING-LEFT: 2px;
+    BACKGROUND-IMAGE: url(../images/gradient_head.gif);
+    PADDING-BOTTOM: 1px;
+    BORDER-LEFT: #ffffff 1px solid;
+    PADDING-TOP: 1px;
+    BORDER-BOTTOM: #808080 1px solid;
+    BACKGROUND-REPEAT: repeat-x;
+    HEIGHT: 24px
+}
+.ListBarGroupTextHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #868686
+}
+.ListBarGroup
+{
+    COLOR: #000000;
+    FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ffffff;
+    TEXT-ALIGN: left
+}
+.ControlFont
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+.ControlFontBold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Verdana, Arial
+}
+.txtInput
+{
+    BORDER-RIGHT: #c0c0c0 1px solid;
+    BORDER-TOP: #c0c0c0 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #c0c0c0 1px solid;
+    COLOR: black;
+    BORDER-BOTTOM: #c0c0c0 1px solid;
+    FONT-FAMILY: Verdana, Arial
+}
+.GreenText
+{
+    FONT-SIZE: 11px;
+    COLOR: #006600;
+    FONT-FAMILY: Verdana
+}
+.SmallGreenText
+{
+    FONT-SIZE: 10px;
+    COLOR: green;
+    FONT-FAMILY: Verdana
+}
+.FormSelect
+{
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Arial;
+    POSITION: absolute
+}
+.AlertText
+{
+    FONT-SIZE: 12px;
+    COLOR: red;
+    FONT-FAMILY: Verdana
+}
+.PodBoxHeader
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana,Arial, Helvetica, sans-serif
+}
+.XpButton
+{
+    BEHAVIOR: url(/Behaviors/xpbutton.htc)
+}
+.NoWrap
+{
+    WHITE-SPACE: nowrap
+}
+
+.btn {
+	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 #ffffff;
+		-moz-box-shadow: inset 0 1px 0 #ffffff;
+		box-shadow: inset 0 1px 0 #ffffff;
+	background-color: White;
+		background-image: none;
+	border: 1px solid #b2b2b2;
+	color: #4d4d4d;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 10.5px;
+	font-weight: bold;
+	line-height: 22px;
+	width:151px;
+	overflow: hidden;
+	text-decoration: none;
+	padding: 0 8px;
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #ffffff;
+	white-space: nowrap;
+	text-align:center;
+}           
+.btn
+{
+	background: #cccccc url(/graphics/LeadCaptureContent/btn-gradient-gray.png) repeat-x top left;
+}
+
+
+/*added some styles for the uploader - Travis*/
+.upload-status-message {
+    display: none;
+    overflow: auto;
+}
+
+#file-uploader-empty.hidden {
+    display: none;
+}
+#file-uploader-empty {
+    padding-top: 1em;
+}
+
+.upload-holder {
+    margin: auto;
+    border: 1px solid #eee;
+    position: relative;
+    width: 367px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 .5em rgba(0,0,0,0.5);
+}
+.upload-holder .upload-area {
+    min-height: 100px;
+    max-height: 200px;
+    overflow-y:auto;
+    padding: 1em;
+}
+
+.upload-holder .bar {
+    background: #eee;
+    padding: .5em;
+    text-align: right;
+}
+.AjaxUploaderCancelAllButton {
+    display: none;
+}
+.AjaxUploaderQueueTable {
+    margin: 10px 0 0 0;
+}
+.AjaxUploaderProgressTable, .AjaxUploaderProgressTable * {
+    max-width: 330px !important;
+}
+#Uploader1__Progress {
+    overflow: hidden;
+}
+
+/*styles for template*/
+.home-page-headline-text 
+{
+	FONT-SIZE: 18px;
+	MARGIN: 10px 0px 10px 0px; 
+	COLOR: #000000;
+	LINE-HEIGHT: 18px; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.image-heading-holder {
+		position: relative;
+		border-width: 2px;
+		border-style: solid;
+		border-color: #fff;
+		margin: auto;
+		width: 570px;
+		height: 350px;
+		overflow: hidden;
+	}
+
+	.image-heading-holder img {
+		min-width: 100%;
+		height: auto;
+	}
+
+	.floating-heading 
+	{
+	    font-size: 20px;
+		position: absolute;
+		top: 70%;
+		right: 0;
+		padding-left: 2em;
+		padding-right: 2em;
+		padding-top: .75em;
+		padding-bottom: .75em;
+		background: rgba(0,0,0,0.75);
+		color: #fff;
+	}
+
+	.call-to-action-buttons {
+		text-align: center;
+	}
+
+	.call-to-action-buttons .fl-button {
+		text-align: center;
+		margin:.5em;
+	}
+
+	.fl-button {
+		-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+		-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+		box-shadow:inset 0px 1px 0px 0px #ffffff;
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+		background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+		background-color:#ededed;
+		-moz-border-radius:6px;
+		-webkit-border-radius:6px;
+		border-radius:6px;
+		border:1px solid #dcdcdc;
+		display:inline-block;
+		color:#777777;
+		font-family:arial;
+		font-size:15px;
+		font-weight:bold;
+		padding:6px 24px;
+		text-decoration:none;
+		text-shadow:1px 1px 0px #ffffff;
+	}
+
+	.fl-button:hover {
+		background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+		background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+		background-color:#dfdfdf;
+	}
+
+	.fl-button:active {
+		position:relative;
+		top:1px;
+	}
+
+	.highlight-box 
+	{
+	    border-width: .15em;
+	    border-style: solid;
+		padding: 1em;
+		margin: 1em;
+		background: #ededed;
+		font-weight: bold;
+		text-decoration: none;
+		text-shadow:1px 1px 0px #fff;
+	}
+
+	.fl-home-page-content {
+		font-size: 13px;
+	}
+
+	@media (max-width: 570px){
+		.image-heading-holder {
+			width: auto;
+			height: auto;
+		}
+
+		.fl-button {
+			display: block;
+		}
+	}
+	
+	.shadow {
+	    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+	}
+	
+	.rounded-corners {
+	    border-radius: 3px;
+	}
+	
+	.caution_on
+{
+    
+    display:block;
+}
+	
+	.caution_off
+{
+    
+    display:none;
+}
+
+/* changes required for new dynamic widget changes, -travis millward 2014-01-09*/
+.xs-dynamic-widget {
+	width: 182px;
+	margin: auto;
+	border-bottom: 1px solid;
+	padding-bottom: 1.3em;
+	margin-bottom: 1.3em;
+}
+.xs-dynamic-widget img 
+{
+	max-width: 100%;
+	height: auto;
+}
+.xs-dynamic-social-media-sites .xs-social-icon {
+	float: left;
+	margin: 0 4px 4px 0;
+}
+
+.xs-dynamic-mortgage-calculator .form-group .col-md-5
+{
+	width: 48%;
+	display: inline-block;
+}
+.xs-dynamic-mortgage-calculator .form-group .col-md-5 label {
+	font-size: smaller;
+}
+.xs-dynamic-mortgage-calculator .form-group.xs-sales-price-row .col-md-5 
+{
+	width: 41%;
+}
+.xs-dynamic-mortgage-calculator .form-group .col-md-7
+{
+	width: 48%;
+	display: inline-block;
+}
+.xs-dynamic-mortgage-calculator .form-group .col-md-7 input 
+{
+	width: 60%;
+}
+.xs-dynamic-mortgage-calculator .xs-calculate-mortgage-row 
+{
+	text-align: center;
+}
+
+.xs-dynamic-lead-forms 
+{
+	text-align: center;
+}
+
+.xs-dynamic-open-houses p a.btn 
+{
+	font-size: 10px;
+}
+
+/* Added some classes from bootstrap so that the new markup is compatible with sites that are on an old theme. -Travis Millward 2014-1-17 */
+
+
+.clearfix {
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0;
+	clear: both;
+	zoom: 1;
+}
+
+
+/* MyBlog.aspx and BlogPost.aspx */
+
+.xs-my-blog .xs-blog-content 
+{
+	width: 66.66666666666666%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-right: 1px solid;
+}
+
+.xs-my-blog .xs-blog-sidebar
+{
+	width: 33.33333333333333%;
+	float: left;
+	position: relative;
+	min-height: 1px;
+	padding-left: 5px;
+	padding-right: 5px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.text-danger 
+{
+	color: Red;
+}
+
+.xs-blog-form {
+	padding: 5px;
+}
+.xs-blog-form h3 
+{
+	text-align: center;
+	border-bottom: 1px solid;
+	padding-bottom: 10px;
+}
+
+.xs-blog-form .form-group label {
+	width: 30%;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+}
+.xs-blog-form .form-group 
+{
+	margin:10px;}
+.xs-blog-form .form-group input[type="text"],
+.xs-blog-form .form-group textarea {
+	width: 60%;
+	display: inline-block;
+}
+.xs-img-verify 
+{
+	padding-left: 30%;
+}
+.xs-blog-comment-submit 
+{
+	padding-left: 31%;
+	padding-bottom: 10px;
+}
