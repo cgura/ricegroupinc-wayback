@@ -32,6 +32,7 @@ $captures = foreach ($row in $rows[1..($rows.Count - 1)]) {
 $latest = $captures |
   Group-Object original |
   ForEach-Object { $_.Group | Sort-Object timestamp -Descending | Select-Object -First 1 } |
+  Where-Object { ([uri]$_.original).AbsolutePath -notmatch '(?i)^/listingproperties(?:/|$)' } |
   Sort-Object original
 $latest | ConvertTo-Json -Depth 3 | Set-Content -Encoding utf8 (Join-Path $metadataRoot 'latest-captures.json')
 $latest | Select-Object timestamp, original, mimetype, digest | Export-Csv -NoTypeInformation -Encoding utf8 (Join-Path $metadataRoot 'latest-captures.csv')
@@ -83,18 +84,20 @@ Get-ChildItem -Path $siteRoot -Filter '*.html' -Recurse | ForEach-Object {
   Set-Content -LiteralPath $_.FullName -Value $html -Encoding utf8
 }
 
-@"
+@'
 # Rice Group Inc. — Wayback restoration
 
 This repository is a static restoration of public captures from the Internet Archive.
 It stores the newest successful capture for each unique `ricegroupinc.com` URL in
 `site/` and the CDX capture index in `.wayback/`.
 
+The `listingproperties` path is intentionally excluded from the static restoration.
+
 ## Refreshing the archive
 
 Run `pwsh ./scripts/restore-wayback.ps1`. The restore is resumable; already-downloaded
 files are retained. Captures are replayed directly from the Wayback Machine, and this
 repository does not claim ownership of their underlying content.
-"@ | Set-Content -Encoding utf8 (Join-Path $projectRoot 'README.md')
+'@ | Set-Content -Encoding utf8 (Join-Path $projectRoot 'README.md')
 
 Write-Host "Indexed $($captures.Count) capture variants; restoring $($latest.Count) newest unique URLs."
