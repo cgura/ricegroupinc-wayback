@@ -1,7 +1,8 @@
 # Rice Group Inc. — Wayback restoration
 
 This repository is a static restoration of public captures from the Internet Archive.
-It stores the newest successful capture for each unique icegroupinc.com URL in
+It stores the newest successful capture for each unique 
+ricegroupinc.com URL in
 site/ and the CDX capture index in .wayback/.
 
 ## Refreshing the archive
