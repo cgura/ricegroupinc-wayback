@@ -1,6 +1,6 @@
 param(
-  [int]$MinimumDelaySeconds = 2,
-  [int]$MaximumDelaySeconds = 6,
+  [int]$MinimumDelaySeconds = 15,
+  [int]$MaximumDelaySeconds = 30,
   [switch]$SkipDownload,
   [switch]$RefreshIndex
 )
@@ -104,7 +104,7 @@ The `listingproperties` path is intentionally excluded from the static restorati
 ## Refreshing the archive
 
 Run `pwsh ./scripts/restore-wayback.ps1`. The restore is resumable; already-downloaded
-files are retained. Replay requests run one at a time, with a randomized 2–6 second
+files are retained. Replay requests run one at a time, with a randomized 15–30 second
 delay between requests. Captures are replayed directly from the Wayback Machine, and this
 repository does not claim ownership of their underlying content.
 '@ | Set-Content -Encoding utf8 (Join-Path $projectRoot 'README.md')

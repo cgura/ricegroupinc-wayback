@@ -17,7 +17,7 @@ jobs:
 
       - name: Retrieve public captures
         shell: pwsh
-        run: ./scripts/restore-wayback.ps1 -MinimumDelaySeconds 2 -MaximumDelaySeconds 6
+        run: ./scripts/restore-wayback.ps1 -MinimumDelaySeconds 15 -MaximumDelaySeconds 30
 
       - name: Commit restored content
         shell: bash
