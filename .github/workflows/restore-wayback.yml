@@ -1,0 +1,33 @@
+name: Restore Wayback archive
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Retrieve public captures
+        shell: pwsh
+        run: ./scripts/restore-wayback.ps1 -Throttle 2
+
+      - name: Commit restored content
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md .wayback site
+          if git diff --cached --quiet; then
+            echo "No archive changes to commit."
+          else
+            git commit -m "Restore latest Wayback captures"
+            git push
+          fi

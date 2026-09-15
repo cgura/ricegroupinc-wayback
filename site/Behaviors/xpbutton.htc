@@ -1,0 +1,267 @@
+<!--*************************************************
+GraphicsVirtualPath, cannot have the "/" on the end of the path
+Images must have ".gif" extension.
+Images must be sized accordingly: small-85x22px, medium-125x22px, and large-145x22px
+Images must be named with a prefix of "xpbutton_" then the size "sm","md","lg"
+Hover, Down, Disabled, and Highlight(or lost focus)images must have "_over", "_down", "_disabled", and "_lost" suffixes
+ButtonSize property must be specified on the control: ButtonSize="small", ButtonSize="medium", ButtonSize="large"
+*****************************************************-->
+<PUBLIC:COMPONENT  ID=_XPButton  Name="XPButton" lightweight=true >
+<PUBLIC:PROPERTY NAME="GraphicsVirtualPath"  value="/graphics/xpbuttons" />
+<PUBLIC:PROPERTY NAME="ButtonSize" value="medium"/>
+<PUBLIC:PROPERTY NAME="BtnHighlight" value="false" />
+
+<PUBLIC:METHOD   NAME="enabled"/>
+
+<PUBLIC:ATTACH EVENT="onmousedown" ONEVENT="mousedown()" />
+<PUBLIC:ATTACH EVENT="onmouseout" ONEVENT="mouseout()" />
+<PUBLIC:ATTACH EVENT="onmouseup" ONEVENT="mouseup()" />
+<PUBLIC:ATTACH EVENT="onmouseover" ONEVENT="mouseover()" />
+<PUBLIC:ATTACH EVENT="oncontentready" ONEVENT="buttonInit()" />
+<PUBLIC:ATTACH EVENT="onlosecapture" ONEVENT="lostCapture()" />
+<PUBLIC:ATTACH EVENT="ondeactivate" ONEVENT="deactivate()" />
+<PUBLIC:ATTACH EVENT="onactivate" ONEVENT="activate()" />
+
+<SCRIPT LANGUAGE="JSCRIPT">
+var bMouseOver;
+var bMouseDown;
+
+var szButtonDisabled;
+var szButtonDown;
+var szButtonOver;
+var szButton;
+var szButtonLost;
+
+var imgButtonSm = new Image();
+var imgButtonSmDown = new Image();
+var imgButtonSmDisabled = new Image();
+var imgButtonSmOver = new Image();
+var imgButtonSmLost = new Image();
+
+var imgButtonMd = new Image();
+var imgButtonMdDown = new Image();
+var imgButtonMdDisabled = new Image();
+var imgButtonMdOver = new Image();
+var imgButtonMdLost = new Image();
+
+var imgButtonLg = new Image();
+var imgButtonLgDown = new Image();
+var imgButtonLgDisabled = new Image();
+var imgButtonLgOver = new Image();
+var imgButtonLgLost = new Image();
+
+var imgButtonxLg = new Image();
+var imgButtonxLgDown = new Image();
+var imgButtonxLgDisabled = new Image();
+var imgButtonxLgOver = new Image();
+var imgButtonxLgLost = new Image();
+
+var imgButtonxxLg = new Image();
+var imgButtonxxLgDown = new Image();
+var imgButtonxxLgDisabled = new Image();
+var imgButtonxxLgOver = new Image();
+var imgButtonxxLgLost = new Image();
+	
+function buttonInit()
+{
+imgButtonSm.src = GraphicsVirtualPath + "/xpbutton_sm.gif";
+imgButtonSmDown.src = GraphicsVirtualPath + "/xpbutton_sm_down.gif";
+imgButtonSmDisabled.src = GraphicsVirtualPath + "/xpbutton_sm_disabled.gif";
+imgButtonSmOver.src = GraphicsVirtualPath + "/xpbutton_sm_over.gif";
+imgButtonSmLost.src = GraphicsVirtualPath + "/xpbutton_sm_lost.gif";
+
+imgButtonMd.src = GraphicsVirtualPath + "/xpbutton_md.gif";
+imgButtonMdDown.src = GraphicsVirtualPath + "/xpbutton_md_down.gif";
+imgButtonMdDisabled.src = GraphicsVirtualPath + "/xpbutton_md_disabled.gif";
+imgButtonMdOver.src = GraphicsVirtualPath + "/xpbutton_md_over.gif";
+imgButtonMdLost.src = GraphicsVirtualPath + "/xpbutton_md_lost.gif";
+
+imgButtonLg.src = GraphicsVirtualPath + "/xpbutton_lg.gif";
+imgButtonLgDown.src = GraphicsVirtualPath + "/xpbutton_lg_down.gif";
+imgButtonLgDisabled.src = GraphicsVirtualPath + "/xpbutton_lg_disabled.gif";
+imgButtonLgOver.src = GraphicsVirtualPath + "/xpbutton_lg_over.gif";
+imgButtonLgLost.src = GraphicsVirtualPath + "/xpbutton_lg_lost.gif";
+
+imgButtonxLg.src = GraphicsVirtualPath + "/xpbutton_xlg.gif";
+imgButtonxLgDown.src = GraphicsVirtualPath + "/xpbutton_xlg_down.gif";
+imgButtonxLgDisabled.src = GraphicsVirtualPath + "/xpbutton_xlg_disabled.gif";
+imgButtonxLgOver.src = GraphicsVirtualPath + "/xpbutton_xlg_over.gif";
+imgButtonxLgLost.src = GraphicsVirtualPath + "/xpbutton_xlg_lost.gif";
+
+imgButtonxxLg.src = GraphicsVirtualPath + "/xpbutton_xlg.gif";
+imgButtonxxLgDown.src = GraphicsVirtualPath + "/xpbutton_xlg_down.gif";
+imgButtonxxLgDisabled.src = GraphicsVirtualPath + "/xpbutton_xlg_disabled.gif";
+imgButtonxxLgOver.src = GraphicsVirtualPath + "/xpbutton_xlg_over.gif";
+imgButtonxxLgLost.src = GraphicsVirtualPath + "/xpbutton_xlg_lost.gif";
+
+	BtnHighlight=false;
+	switch (ButtonSize.toLowerCase())
+	{
+		case "small":
+			element.style.width = "85px";
+			element.style.height = "22px";
+			szButton = GraphicsVirtualPath + "/xpbutton_sm.gif";
+			szButtonDisabled = GraphicsVirtualPath + "/xpbutton_sm_disabled.gif";
+			szButtonDown = GraphicsVirtualPath + "/xpbutton_sm_down.gif";
+			szButtonOver = GraphicsVirtualPath + "/xpbutton_sm_over.gif";
+			szButtonLost = GraphicsVirtualPath + "/xpbutton_sm_lost.gif";
+			break;
+		case "medium":
+			element.style.width = "125px";
+			element.style.height = "22px";
+			szButton = GraphicsVirtualPath + "/xpbutton_md.gif";
+			szButtonDisabled = GraphicsVirtualPath + "/xpbutton_md_disabled.gif";
+			szButtonDown = GraphicsVirtualPath + "/xpbutton_md_down.gif";
+			szButtonOver = GraphicsVirtualPath + "/xpbutton_md_over.gif";
+			szButtonLost = GraphicsVirtualPath + "/xpbutton_md_lost.gif";
+			break;
+		case "large":
+			element.style.width = "145px";
+			element.style.height = "22px";
+			szButton = GraphicsVirtualPath + "/xpbutton_lg.gif";
+			szButtonDisabled = GraphicsVirtualPath + "/xpbutton_lg_disabled.gif";
+			szButtonDown = GraphicsVirtualPath + "/xpbutton_lg_down.gif";
+			szButtonOver = GraphicsVirtualPath + "/xpbutton_lg_over.gif";
+			szButtonLost = GraphicsVirtualPath + "/xpbutton_lg_lost.gif";
+			break;
+		case "xlarge":
+			element.style.width = "200px";
+			element.style.height = "22px";
+			szButton = GraphicsVirtualPath + "/xpbutton_xlg.gif";
+			szButtonDisabled = GraphicsVirtualPath + "/xpbutton_xlg_disabled.gif";
+			szButtonDown = GraphicsVirtualPath + "/xpbutton_xlg_down.gif";
+			szButtonOver = GraphicsVirtualPath + "/xpbutton_xlg_over.gif";
+			szButtonLost = GraphicsVirtualPath + "/xpbutton_xlg_lost.gif";
+			break;
+		case "xxlarge":
+			element.style.width = "275px";
+			element.style.height = "22px";
+			szButton = GraphicsVirtualPath + "/xpbutton_xxlg.gif";
+			szButtonDisabled = GraphicsVirtualPath + "/xpbutton_xxlg_disabled.gif";
+			szButtonDown = GraphicsVirtualPath + "/xpbutton_xxlg_down.gif";
+			szButtonOver = GraphicsVirtualPath + "/xpbutton_xxlg_over.gif";
+			szButtonLost = GraphicsVirtualPath + "/xpbutton_xxlg_lost.gif";
+			break;
+	}
+	
+	element.style.borderRight = "medium none";
+	element.style.borderTop = "medium none";
+	element.style.borderLeft = "medium none";
+	element.style.borderBottom = "medium none";
+	element.style.backgroundColor = "transparent";	
+	enabled(!element.disabled)
+}
+
+function lostCapture()
+{
+	bMouseDown = false;
+	BtnHighlight = true;
+	highlight();
+}
+
+function highlight()
+{
+	if (BtnHighlight)
+	{
+		if (bMouseOver)
+		{
+			if (!bMouseDown)
+			{
+				element.style.backgroundImage="url(" + szButtonOver + ")";
+			}
+			else
+			{
+				element.style.backgroundImage="url(" + szButtonDown + ")";
+			}
+		}
+		else
+		{
+			element.style.backgroundImage="url(" + szButtonLost + ")";
+		}
+	}
+	else
+	{
+		element.style.backgroundImage="url(" + szButton + ")";
+	}
+}
+
+function deactivate()
+{
+	BtnHighlight = false;
+	highlight();
+}
+
+function activate()
+{
+	BtnHighlight=true;
+	highlight();
+}
+
+function enabled(bEnabled)
+{
+	if (bEnabled)
+	{
+		element.disabled=!bEnabled;
+		element.style.backgroundImage="url(" + szButton + ")";
+	}
+	else
+	{
+		element.disabled=!bEnabled;
+		element.style.backgroundImage="url(" + szButtonDisabled + ")";	
+	}
+}
+
+function mousedown()
+{
+	bMouseDown=true;
+	BtnHighlight=true;
+	element.style.backgroundImage="url(" + szButtonDown + ")";
+}
+
+function mouseout()
+{
+	bMouseOver=false;
+	if (bMouseDown)
+	{
+		element.style.backgroundImage="url(" + szButtonOver + ")";
+	}
+	else
+	{
+		if (!BtnHighlight)
+		{
+			element.style.backgroundImage="url(" + szButton + ")";
+		}
+		else
+		{
+			element.style.backgroundImage="url(" + szButtonLost + ")";
+		}
+	}
+}
+
+function mouseup()
+{
+	bMouseDown=false;
+	if (!bMouseOver)
+	{
+		element.style.backgroundImage="url(" + szButton + ")";
+	}
+	else
+	{
+		element.style.backgroundImage="url(" + szButtonOver + ")";
+	}
+}
+
+function mouseover()
+{
+	bMouseOver=true;
+	if (bMouseDown)
+	{
+		element.style.backgroundImage="url(" + szButtonDown + ")";
+	}
+	else
+	{
+		element.style.backgroundImage="url(" + szButtonOver + ")";
+	}
+}
+</script>
+</PUBLIMC:COPONENT>
